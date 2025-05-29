@@ -333,6 +333,13 @@
     "image_with_text_henk3z": {
       "type": "image-with-text",
       "blocks": {
+        "text_JTtkyj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>MEHR ALS</p>",
+            "text_font_class": "fs-body-100"
+          }
+        },
         "heading_3tqkpt": {
           "type": "heading",
           "settings": {
@@ -359,6 +366,7 @@
         }
       },
       "block_order": [
+        "text_JTtkyj",
         "heading_3tqkpt",
         "subheading_TVDqcy",
         "button_fcwfWR"
