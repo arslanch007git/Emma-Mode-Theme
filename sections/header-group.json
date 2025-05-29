@@ -25,7 +25,7 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p>30-Tage-<strong>Geld-zurück-Garantie</strong></p>",
+            "title": "<p>30-Tage-Geld-zurück-Garantie</p>",
             "title_mobile": "",
             "link": ""
           }
