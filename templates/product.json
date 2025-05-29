@@ -383,65 +383,6 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "image_with_text_split": {
-      "type": "image-with-text-split",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "Geld-zurück-Garantie",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-1-base"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Wir bieten ein 30-tägiges Rückgabe- oder Umtauschrecht, wenn Sie aus irgendeinem Grund mit Ihrer Bestellung nicht zufrieden sind.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "image": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_size": 400,
-            "image_size_mobile": 200
-          }
-        },
-        "button": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "image",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_position": "left",
-        "image_mobile_position": "below-content",
-        "image_padding": "none",
-        "image": "shopify://shop_images/dress.webp",
-        "aspect_ratio": "portrait",
-        "focal_point": "image_presentation",
-        "content_alignment": "center",
-        "background_color": "#f7f5f1",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-top-only"
-      }
-    },
     "multi_column": {
       "type": "multi-column",
       "blocks": {
@@ -581,6 +522,70 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "gallery_carousel_WXBk7M": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "image_wjBgXi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wedding_dress_1.webp",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_RTqzfd": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "Image with caption",
+            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>"
+          }
+        },
+        "image_KJWxce": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "Image with caption",
+            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>"
+          }
+        },
+        "image_Eajtga": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "title": "Image with caption",
+            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_wjBgXi",
+        "image_RTqzfd",
+        "image_KJWxce",
+        "image_Eajtga"
+      ],
+      "name": "t:sections.gallery_carousel.presets.name",
+      "settings": {
+        "heading": "20.000+ zufriedene Frauen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "columns": "2",
+        "mobile_columns": "1",
+        "loop_carousel": true,
+        "aspect_ratio": "square",
+        "image_caption_style": "overlay",
+        "image_caption_size": "fs-body-100",
+        "overlay_text_background_style": "gradient",
+        "overlay_text_color": "#fff",
+        "overlay_text_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
@@ -588,8 +593,8 @@
     "product_tabs",
     "recommendations",
     "image_with_text_henk3z",
-    "image_with_text_split",
     "multi_column",
-    "recently_viewed_products_i6Xrzn"
+    "recently_viewed_products_i6Xrzn",
+    "gallery_carousel_WXBk7M"
   ]
 }
