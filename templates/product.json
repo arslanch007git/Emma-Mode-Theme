@@ -574,8 +574,17 @@
           "settings": {
             "image": "shopify://shop_images/wedding_dress_5.jpg",
             "focal_point": "image_presentation",
-            "title": "Image with caption",
-            "text": "<p>Use these sections to promote a particular feature with editorial photography.</p>"
+            "title": "",
+            "text": ""
+          }
+        },
+        "image_g6J6Dc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WEDDING_DRESS_6.webp",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
           }
         }
       },
@@ -584,16 +593,17 @@
         "image_wjBgXi",
         "image_KJWxce",
         "image_Eajtga",
-        "image_FAwLKW"
+        "image_FAwLKW",
+        "image_g6J6Dc"
       ],
       "settings": {
         "heading": "20.000+ zufriedene Frauen",
         "heading_tag": "h2",
         "subheading": "",
-        "link": "",
-        "link_text": "",
-        "columns": "2",
-        "mobile_columns": "1",
+        "link": "shopify://collections",
+        "link_text": "JETZT EINKAUFEN",
+        "columns": "4",
+        "mobile_columns": "2",
         "loop_carousel": true,
         "aspect_ratio": "portrait",
         "image_caption_style": "overlay",
