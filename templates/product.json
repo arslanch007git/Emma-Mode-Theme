@@ -352,9 +352,9 @@
         "button_fcwfWR": {
           "type": "button",
           "settings": {
-            "link": "",
-            "link_text": "Read more",
-            "button_style": "btn--primary"
+            "link": "shopify://collections",
+            "link_text": "Jetzt kaufen",
+            "button_style": "btn--secondary"
           }
         }
       },
