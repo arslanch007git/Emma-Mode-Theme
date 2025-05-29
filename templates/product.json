@@ -586,6 +586,15 @@
             "title": "",
             "text": ""
           }
+        },
+        "image_PYG7U9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wedding_dress_7.webp",
+            "focal_point": "image_presentation",
+            "title": "",
+            "text": ""
+          }
         }
       },
       "block_order": [
@@ -594,7 +603,8 @@
         "image_KJWxce",
         "image_Eajtga",
         "image_FAwLKW",
-        "image_g6J6Dc"
+        "image_g6J6Dc",
+        "image_PYG7U9"
       ],
       "settings": {
         "heading": "20.000+ zufriedene Frauen",
