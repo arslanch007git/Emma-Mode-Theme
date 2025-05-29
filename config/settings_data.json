@@ -36,7 +36,7 @@
     "body_letter_spacing": 0,
     "body_base_size": 17,
     "body_mobile_base_scale": 95,
-    "capitalize_navigation": true,
+    "capitalize_navigation": false,
     "navigation_letter_spacing": 0,
     "navigation_base_size": 17,
     "product_listing_title_uppercase": false,
