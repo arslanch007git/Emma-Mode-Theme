@@ -368,7 +368,7 @@
           "settings": {
             "link": "shopify://collections",
             "link_text": "JETZT EINKAUFEN",
-            "button_style": "btn--primary"
+            "button_style": "btn--callout"
           }
         }
       },
