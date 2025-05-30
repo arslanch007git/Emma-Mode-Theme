@@ -107,6 +107,7 @@
         "block-0",
         "block-1"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "center_center",
         "enable_animation": true,
@@ -162,6 +163,7 @@
         "block-2",
         "block-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_tag": "h2",
