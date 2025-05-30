@@ -336,14 +336,14 @@
         "text_JTtkyj": {
           "type": "text",
           "settings": {
-            "text": "<p>MEHR ALS</p>",
+            "text": "<p>ÜBER</p>",
             "text_font_class": "fs-body-100"
           }
         },
         "heading_3tqkpt": {
           "type": "heading",
           "settings": {
-            "title": "ÜBER EMMA",
+            "title": "EMMA MODE",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-3"
           }
