@@ -44,6 +44,7 @@
     "capitalize_buttons": false,
     "buttons_letter_spacing": 0,
     "enable_section_animations": true,
+    "swatch_options": "",
     "swatch_shape": "square",
     "swatch_image_fit": "cover",
     "use_variant_image_swatches": false,
