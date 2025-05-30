@@ -343,7 +343,7 @@
         "heading_3tqkpt": {
           "type": "heading",
           "settings": {
-            "title": "20.000+ zufriedene Frauen",
+            "title": "ÜBER EMMA",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-3"
           }
@@ -351,13 +351,14 @@
         "subheading_TVDqcy": {
           "type": "subheading",
           "settings": {
-            "subheading": "Wir stehen dafür, Frauen zu stärken, ihr Selbstbewusstsein zu fördern und ihnen zu helfen, zu strahlen – unabhängig von ihrer Figur oder Größe.",
+            "subheading": "Emma Mode steht für eine stilvolle Verbindung aus aktuellen Trends und zeitloser Eleganz. Unsere Kollektionen sind so gestaltet, dass jede Frau ihren persönlichen Stil selbstbewusst leben kann. Für uns ist Mode nicht nur Kleidung – sie ist ein Gefühl. Ein Gefühl von Leichtigkeit, Schönheit und Wohlbefinden, jeden Tag.",
             "subheading_tag": "h3",
             "subheading_font_class": "fs-heading-5-base"
           }
         },
         "button_fcwfWR": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "link": "shopify://collections",
             "link_text": "Jetzt kaufen",
@@ -373,13 +374,14 @@
       ],
       "settings": {
         "image_position": "right",
-        "text_alignment": "center",
-        "image": "shopify://shop_images/dress.webp",
-        "aspect_ratio": "natural",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/wedding_dress_9.webp",
+        "aspect_ratio": "portrait",
         "focal_point": "image_presentation",
         "image_caption": "",
-        "show_small_image": false,
-        "image_small_aspect_ratio": "square",
+        "show_small_image": true,
+        "image_small": "shopify://shop_images/WEDDING_DRESS_6.webp",
+        "image_small_aspect_ratio": "portrait",
         "image_small_focal_point": "image_presentation",
         "background_color": "",
         "text_color": "#000000",
@@ -581,7 +583,7 @@
         "image_g6J6Dc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/WEDDING_DRESS_6.webp",
+            "image": "shopify://shop_images/wedding_dress_10.webp",
             "focal_point": "image_presentation",
             "title": "",
             "text": ""
