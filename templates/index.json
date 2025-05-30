@@ -242,7 +242,7 @@
       "name": "t:sections.video_hero.presets.name",
       "settings": {
         "image_aspect": "custom",
-        "desktop_height": 80,
+        "desktop_height": 75,
         "mobile_height": 50,
         "video": "shopify://files/videos/wedding video.mp4",
         "media_link": "",
