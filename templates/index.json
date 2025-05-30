@@ -282,118 +282,8 @@
         "link": "",
         "link_text": "",
         "maximum_products": 6,
-        "columns": "3",
-        "mobile_columns": "2",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "multi_column_2": {
-      "type": "multi-column",
-      "blocks": {
-        "icon_column_1": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_2": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_3": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        },
-        "icon_column_4": {
-          "type": "icon_column",
-          "settings": {
-            "icon": "plant",
-            "icon_width": 24,
-            "icon_width_mobile": 20,
-            "accent": "",
-            "heading": "Column with icon",
-            "heading_tag": "h3",
-            "heading_font_class": "fs-heading-4-base",
-            "text": "<p>Pair text with an icon to highlight details about your product or store.</p>",
-            "text_font_class": "fs-body-75",
-            "text_max_width": 100,
-            "link": "",
-            "link_text": "",
-            "button_style": "btn--primary"
-          }
-        }
-      },
-      "block_order": [
-        "icon_column_1",
-        "icon_column_2",
-        "icon_column_3",
-        "icon_column_4"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_tag": "h2",
-        "subheading": "",
-        "heading_font_class": "fs-heading-3-base",
-        "heading_alignment": "center",
-        "content_vertical_alignment": "center",
-        "content_background_padding": "medium",
         "columns": "4",
-        "column_spacing": 28,
-        "row_spacing": 28,
-        "column_alignment": "center",
-        "enable_slider_mobile": false,
-        "columns_mobile": "2",
-        "column_spacing_mobile": 20,
-        "row_spacing_mobile": 20,
-        "column_alignment_mobile": "left",
-        "background_behind_columns": false,
-        "background_color": "#f7f7e8",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
+        "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -407,7 +297,6 @@
     "collection_list_grid_yWKbrK",
     "image_with_text_JX9J67",
     "video_hero_WyHtRH",
-    "featured_collection_slider_2",
-    "multi_column_2"
+    "featured_collection_slider_2"
   ]
 }
