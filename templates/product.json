@@ -102,7 +102,7 @@
             "show_payment_icons": true,
             "heading_text": "",
             "heading_icon": "none",
-            "optional_text": "<p><strong>Kostenloser Versand</strong> |<strong> Sicher Bezahlen</strong></p>",
+            "optional_text": "",
             "text_size": "regular",
             "trust_image_size": 100,
             "display_as_collapsible_row": false,
