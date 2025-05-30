@@ -276,7 +276,7 @@
         "collection_1"
       ],
       "settings": {
-        "heading": "Sandalen",
+        "heading": "DIESE WOCHE FAVORITEN",
         "heading_tag": "h2",
         "subheading": "",
         "link": "",
@@ -286,7 +286,7 @@
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
-        "section_padding": "section--vertical-padding-bottom-only"
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "multi_column_2": {
