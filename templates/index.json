@@ -125,11 +125,11 @@
       "type": "collection-list-grid",
       "name": "t:sections.collection_list_grid.presets.name",
       "settings": {
-        "heading": "Collection list",
+        "heading": "Unsere Kollektionen",
         "heading_tag": "h2",
         "subheading": "",
         "link": "shopify://collections",
-        "link_text": "View all collections",
+        "link_text": "",
         "columns": "3",
         "mobile_columns": "2",
         "collection_list": [
