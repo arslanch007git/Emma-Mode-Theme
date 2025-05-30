@@ -130,10 +130,12 @@
         "subheading": "",
         "link": "shopify://collections",
         "link_text": "View all collections",
-        "columns": "4",
+        "columns": "3",
         "mobile_columns": "2",
         "collection_list": [
-          "euro-sommer"
+          "euro-sommer",
+          "ibiza-party",
+          "wedding-guest"
         ],
         "collection_listing_aspect_ratio": "portrait",
         "label_style": "overlay",
