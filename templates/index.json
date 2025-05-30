@@ -141,7 +141,7 @@
         "collection_listing_aspect_ratio": "portrait",
         "label_style": "overlay",
         "overlay_title_background_style": "gradient",
-        "overlay_text_color": "#fff",
+        "overlay_text_color": "#ffffff",
         "overlay_title_background": "#000000",
         "enable_animation": true,
         "divider_style": "none",
@@ -212,7 +212,7 @@
         "heading_76C7Ef": {
           "type": "heading",
           "settings": {
-            "title": "Sommer 2025",
+            "title": "Frühling 2025",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-2"
           }
@@ -250,10 +250,10 @@
         "focal_point_mobile": "image_presentation",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 28,
         "enable_animation": true,
