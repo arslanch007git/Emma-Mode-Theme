@@ -63,22 +63,6 @@
           "settings": {
             "desktop_width": 10
           }
-        },
-        "footer-0": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "desktop_width": 30,
-            "desktop_padding": 0,
-            "collapse_on_mobile": false,
-            "title": "",
-            "show_title_on_desktop": false,
-            "text": "<p><strong>Name des Geschäfts: </strong>Style-bewusst Deutschland GmbH</p><p><strong>Adresse: </strong>Utrechtseweg 341, Amersfoort, Utrecht, 3818 EL, Netherlands (keine Absenderadresse, klicken Sie <a href=\"https://style-bewusst.com/pages/ruckgabe-und-erstattungspolitik\" title=\"Rückgabe- und Erstattungspolitik\">hier </a>für die Absenderadresse)</p>",
-            "image_max_width": 200,
-            "image_placement": "above_text",
-            "show_social_icons": false,
-            "enable_follow_on_shop": false
-          }
         }
       },
       "block_order": [
@@ -86,8 +70,7 @@
         "footer-3",
         "footer-1",
         "footer-2",
-        "spacer_397Fyb",
-        "footer-0"
+        "spacer_397Fyb"
       ],
       "settings": {
         "enable_locale_selector": false,
