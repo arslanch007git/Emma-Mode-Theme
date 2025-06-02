@@ -126,6 +126,26 @@
             "title_tag": "h3"
           }
         },
+        "usp_bg_3jnnYE": {
+          "type": "usp-bg",
+          "disabled": true,
+          "settings": {
+            "uspmt": 0,
+            "uspmb": 0,
+            "uspgap": 10,
+            "uspRadius": 0,
+            "enableFit": true,
+            "enableCenter": false,
+            "enableBg": true,
+            "uspBg": "#f6f0ea",
+            "usppy": 10,
+            "usppx": 10,
+            "uspimgsize": 20,
+            "usp-text": "<strong>UPDATE:</strong> due to high demand during our Spring Sale, only 19 units are still available at the current price!",
+            "uspclr": "#000000",
+            "usptxtsize": 14
+          }
+        },
         "text_icons_3": {
           "type": "product_callouts",
           "disabled": true,
@@ -216,6 +236,7 @@
         "quantity_selector",
         "buy_buttons",
         "secure_payment_HgEAF7",
+        "usp_bg_3jnnYE",
         "text_icons_3",
         "description",
         "accordion_UPkDyz",
