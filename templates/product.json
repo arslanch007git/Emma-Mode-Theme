@@ -67,17 +67,16 @@
         },
         "minventory_AXXdi3": {
           "type": "minventory",
-          "disabled": true,
           "settings": {
             "invenDot-mt": -20,
             "invenDot-mb": 25,
             "invenDot-adjust": 11,
-            "invenDot-gap": 20,
+            "invenDot-gap": 18,
             "invenDot-size": 10,
             "invenDot-clr": "#bc0000",
-            "invenText-size": 16,
+            "invenText-size": 14,
             "invenText-clr": "#bc0000",
-            "invenText": "19 in stock, ready to ship"
+            "invenText": "Low stock - almost sold out!"
           }
         },
         "variant_picker": {
