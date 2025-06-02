@@ -894,6 +894,92 @@
     {
       "type": "@app"
     },
+     {
+      "type": "minventory",
+      "name": "M Inventory",
+      "limit": 1,
+      "settings":[
+           {
+          "type": "range",
+          "id": "invenDot-mt",
+          "min": 0,
+          "max": 80,
+          "step": 1,
+          "unit": "px",
+          "label": "Spacing Top",
+          "default": 0
+        },
+       {
+          "type": "range",
+          "id": "invenDot-mb",
+          "min": 0,
+          "max": 80,
+          "step": 1,
+          "unit": "px",
+          "label": "Spacing Bottom",
+          "default": 0
+        },
+       {
+          "type": "range",
+          "id": "invenDot-adjust",
+          "min": 0,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "label": "Left spacing",
+          "default": 4
+        },
+       {
+          "type": "range",
+          "id": "invenDot-gap",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Gap",
+          "default": 20
+        },
+        {
+          "type": "range",
+          "id": "invenDot-size",
+          "min": 8,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Animated Dot Size",
+          "default": 10
+        },
+        {
+          "type": "color",
+          "id": "invenDot-clr",
+          "label": "Animated Dot Color",
+          "default": "#BC0000"
+        },
+          {
+          "type": "range",
+          "id": "invenText-size",
+          "min": 10,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Text Size",
+          "default": 16
+        },
+        {
+          "type": "color",
+          "id": "invenText-clr",
+          "label": "Text Color",
+          "default": "#BC0000"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "invenText",
+          "label": "Enter Text",
+          "default": "Dit is een bestseller (OP=OP)"
+          
+        }
+      ]
+    },
     {
       "type": "buy_buttons",
       "name": "t:sections.main_product_overview.blocks.buy_buttons.name",

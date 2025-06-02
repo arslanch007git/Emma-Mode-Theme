@@ -62,7 +62,22 @@
             show_siblings: settings.enable_product_sibling_swatches
           -%}
         {%- endif -%}
-
+      
+            {% when 'minventory' -%}
+                <style>         
+                .cstm-inventory-icon:after,
+                .cstm-inventory-icon:before {
+                    background: {{ block.settings.invenDot-clr }};
+                    width: {{ block.settings.invenDot-size }}px;
+                    height: {{ block.settings.invenDot-size }}px;
+                }
+                </style>
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                <div class="minventory-box" style="margin-top: {{block.settings.invenDot-mt}}px; margin-bottom: {{block.settings.invenDot-mb}}px; gap: {{block.settings.invenDot-gap}}px;{% unless current_variant.available %}display: none;{% endunless %}">
+                    <span class="cstm-inventory-icon" style="left: {{ block.settings.invenDot-adjust }}px ;width: {{ block.settings.invenDot-size }}px; height: {{ block.settings.invenDot-size }}px;"></span>
+                    <p style="color: {{ block.settings.invenText-clr }}; font-size: {{ block.settings.invenText-size }}px; margin: 0;">{{ block.settings.invenText }}</p>
+                </div>
+      
       {%- when 'quantity_selector' -%}
         {%- if prod != blank -%}
           {%-
