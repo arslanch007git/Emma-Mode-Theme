@@ -62,6 +62,42 @@
             show_siblings: settings.enable_product_sibling_swatches
           -%}
         {%- endif -%}
+
+            {% when 'usp-bg' -%}
+                {% style %}
+                    .usp-box-{{ block.id }}{
+                      margin-top: {{ block.settings.uspmt }}px; 
+                      margin-bottom: {{ block.settings.uspmb }}px; 
+                      gap: {{ block.settings.uspgap }}px;
+                      border-radius: {{ block.settings.uspRadius }}px;    
+                      {% if block.settings.enableFit %}
+                        width: fit-content;
+                      {% endif %}
+                      {% if block.settings.enableCenter %}
+                        justify-content: center;
+                    {% endif %}
+                      {% if block.settings.enableBg %}
+                        background: {{ block.settings.uspBg }};
+                        padding: {{ block.settings.usppy }}px  {{ block.settings.usppx }}px;
+                      {% endif %}
+                    }
+                    .usp-box-{{ block.id }} img{
+                      width: {{ block.settings.uspimgsize }}px;
+                      min-width: {{ block.settings.uspimgsize }}px;
+                    }
+                {% endstyle %}
+                {% if block.settings.usp-text != blank %}
+                <div class="usp-box usp-box-{{ block.id }}">
+                {% if block.settings.usp-img != blank %}
+                  <img src="{{ block.settings.usp-img | image_url }}" width="auto" height="auto" alt="Image">
+                {% endif %}
+                {% if block.settings.usp-text != blank %}
+                    <div class="usp-text">
+                      <p style="font-size: {{ block.settings.usptxtsize }}px; margin: 0; color: {{ block.settings.uspclr }}">{{ block.settings.usp-text }}</p>
+                  </div>
+                {% endif %}
+                </div>
+              {% endif %}
       
             {% when 'minventory' -%}
                 <style>         
