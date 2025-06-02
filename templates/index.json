@@ -291,26 +291,28 @@
     "m_guarantees_b6jwVR": {
       "type": "M-guarantees",
       "blocks": {
-        "service_GAhqek": {
-          "type": "service",
-          "settings": {
-            "title": "Enter Heading Here",
-            "desc": "Enter Text Here",
-            "text-decoration": "none"
-          }
-        },
         "service_A9arFg": {
           "type": "service",
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_93.png",
-            "title": "Enter Heading Here",
+            "title": "free global shipping",
             "desc": "<a href=\"/pages/contact\" title=\"Contact\">Enter Text Here</a>",
+            "text-decoration": "none"
+          }
+        },
+        "service_GAhqek": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/svgviewer-png-output_94.png",
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
             "text-decoration": "none"
           }
         },
         "service_efWxha": {
           "type": "service",
           "settings": {
+            "img": "shopify://shop_images/svgviewer-png-output_95.png",
             "title": "Enter Heading Here",
             "desc": "Enter Text Here",
             "text-decoration": "none"
@@ -318,20 +320,20 @@
         }
       },
       "block_order": [
-        "service_GAhqek",
         "service_A9arFg",
+        "service_GAhqek",
         "service_efWxha"
       ],
       "name": "M Guarantees",
       "settings": {
         "num": 3,
-        "bg-color": "#fff",
-        "card-bg-color": "#fff",
-        "iconsbgClr": "#dddddd",
-        "txt-color": "#000",
+        "bg-color": "#ffffff",
+        "card-bg-color": "#ffffff",
+        "iconsbgClr": "#e7d4d4",
+        "txt-color": "#000000",
         "padtop": 40,
         "padbtm": 40,
-        "width": 40,
+        "width": 68,
         "titlesize": 18,
         "titlemargin": 0,
         "descsize": 13,
