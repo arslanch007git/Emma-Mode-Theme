@@ -1836,6 +1836,91 @@
       "limit": 1,
       "settings": [
         {
+          "type": "header",
+          "content": "Normal Price Customizations"
+        },
+        {
+          "type": "checkbox",
+          "id": "ogbold",
+          "default": true,
+          "label": "Price Bold ?"
+        },
+        {
+          "type": "color",
+          "id": "ogpriceClr",
+          "label": "Price Color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "ogpriceSize",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 24,
+          "label": "Price Size"
+        },
+       {
+          "type": "header",
+          "content": "For on-sale products"
+        },
+       {
+          "type": "checkbox",
+          "id": "switch",
+          "default": true,
+          "label": "Switch Prices position"
+        },
+        {
+          "type": "header",
+          "content": "Original Price Customizations"
+        },
+        {
+          "type": "checkbox",
+          "id": "saleogbold",
+          "default": false,
+          "label": "Price Bold ?"
+        },
+        {
+          "type": "color",
+          "id": "saleogpriceClr",
+          "label": "Price Color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "saleogpriceSize",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 16,
+          "label": "Price Size"
+        },
+        {
+          "type": "header",
+          "content": "Sale Price Customizations"
+        },
+        {
+          "type": "checkbox",
+          "id": "bold",
+          "default": true,
+          "label": "Price Bold ?"
+        },
+        {
+          "type": "color",
+          "id": "priceClr",
+          "label": "Price Color",
+          "default": "#FF0000"
+        },
+        {
+          "type": "range",
+          "id": "priceSize",
+          "min": 10,
+          "max": 100,
+          "step": 1,
+          "default": 26,
+          "label": "Price Size"
+        },
+        {
           "type": "checkbox",
           "id": "show_divider",
           "label": "t:sections.main_product_overview.blocks.product_header.settings.show_divider.label",
