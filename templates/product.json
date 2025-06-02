@@ -723,7 +723,7 @@
             "title": "100% sichere Zahlungen",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
-            "link": ""
+            "link": "shopify://pages/zahlungsmethoden"
           }
         }
       },
