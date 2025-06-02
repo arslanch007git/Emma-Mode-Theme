@@ -78,10 +78,10 @@
                 <div class="usp-reviewbox usp-reviewbox-{{ block.id }}">
                 <div class="usp-reviewimgs">
                 {% if block.settings.usp-img != blank %}
-                    <img src="{{ block.settings.usp-img | image_url }}" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
+                    <img src="{{ block.settings.usp-img | image_url }}" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; height: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
                 {% endif %}
                 {% if block.settings.usp-img2 != blank %}
-                    <img src="{{ block.settings.usp-img2 | image_url }}" class="uspimg2" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
+                    <img src="{{ block.settings.usp-img2 | image_url }}" class="uspimg2" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; height: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
                 {% endif %}
                 </div>
                 {% if block.settings.usp-text != blank %}
