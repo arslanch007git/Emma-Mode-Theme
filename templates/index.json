@@ -294,7 +294,7 @@
         "service_A9arFg": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/svgviewer-png-output_93.png",
+            "img": "shopify://shop_images/box-svgrepo-com_3.svg",
             "title": "free global shipping",
             "desc": "learn more",
             "text-decoration": "underline",
@@ -304,7 +304,7 @@
         "service_GAhqek": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/svgviewer-png-output_94.png",
+            "img": "shopify://shop_images/cart-2-svgrepo-com.svg",
             "title": "14 days return policy",
             "desc": "learn more",
             "text-decoration": "underline",
@@ -314,7 +314,7 @@
         "service_efWxha": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/svgviewer-png-output_95.png",
+            "img": "shopify://shop_images/credit-card.png",
             "title": "100% secure payments",
             "desc": "learn more",
             "text-decoration": "underline",
