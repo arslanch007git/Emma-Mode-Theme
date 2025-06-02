@@ -76,7 +76,7 @@
             "invenDot-clr": "#bc0000",
             "invenText-size": 14,
             "invenText-clr": "#bc0000",
-            "invenText": "Low stock - almost sold out!"
+            "invenText": "Niedriger Bestand – fast ausverkauft!"
           }
         },
         "variant_picker": {
@@ -92,6 +92,7 @@
         },
         "stock_level_indicator": {
           "type": "inventory-counter",
+          "disabled": true,
           "settings": {
             "label": "",
             "inventory_max": "40",
