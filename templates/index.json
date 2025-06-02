@@ -334,10 +334,10 @@
         "padtop": 40,
         "padbtm": 40,
         "width": 68,
-        "titlesize": 18,
-        "titlemargin": 0,
+        "titlesize": 24,
+        "titlemargin": 18,
         "descsize": 13,
-        "descmargin": 0,
+        "descmargin": 18,
         "gap": 0
       }
     }
