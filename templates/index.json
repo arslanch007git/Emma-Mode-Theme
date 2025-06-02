@@ -305,7 +305,7 @@
           "type": "service",
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_94.png",
-            "title": "Enter Heading Here",
+            "title": "14 days return policy",
             "desc": "Enter Text Here",
             "text-decoration": "underline",
             "link": ""
@@ -315,7 +315,7 @@
           "type": "service",
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_95.png",
-            "title": "Enter Heading Here",
+            "title": "100% secure payments",
             "desc": "Enter Text Here",
             "text-decoration": "underline",
             "link": ""
