@@ -17,7 +17,7 @@
           "settings": {
             "ogbold": true,
             "ogpriceClr": "#000000",
-            "ogpriceSize": 24,
+            "ogpriceSize": 20,
             "saleogbold": false,
             "saleogpriceClr": "#000000",
             "saleogpriceSize": 15,
@@ -735,10 +735,10 @@
       "name": "M Guarantees",
       "settings": {
         "num": 3,
-        "bg-color": "#fff",
-        "card-bg-color": "#fff",
+        "bg-color": "#ffffff",
+        "card-bg-color": "#ffffff",
         "iconsbgClr": "#f6f0ea",
-        "txt-color": "#000",
+        "txt-color": "#000000",
         "padtop": 40,
         "padbtm": 40,
         "width": 68,
