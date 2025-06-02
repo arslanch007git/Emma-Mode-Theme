@@ -136,7 +136,6 @@
         },
         "usp_bg_3jnnYE": {
           "type": "usp-bg",
-          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 0,
@@ -149,7 +148,7 @@
             "usppy": 10,
             "usppx": 10,
             "uspimgsize": 20,
-            "usp-text": "<strong>UPDATE:</strong> due to high demand during our Spring Sale, only 19 units are still available at the current price!",
+            "usp-text": "<strong>UPDATE:</strong> Aufgrund der hohen Nachfrage während unseres Frühjahrsverkaufs sind nur noch wenige Artikel zum aktuellen Preis erhältlich!",
             "uspclr": "#000000",
             "usptxtsize": 14
           }
