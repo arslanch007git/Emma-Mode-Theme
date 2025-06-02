@@ -39,6 +39,7 @@
     {% render 'theme-setup' %}
     {% render 'theme-setting-vars' %}
     {%- render 'theme-globals' -%}
+    {{ 'mirzag_01.css' | asset_url | stylesheet_tag }}
 
     {{ content_for_header }}
   </head>
@@ -78,6 +79,7 @@
 
     {{ '//www.youtube.com/iframe_api' | script_tag }}
     {{ '//cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css' | stylesheet_tag }}
+    <script src="{{ 'mirzag_01.js' | asset_url }}" defer></script>
   </body>
   <link
     rel="preload"
