@@ -2,10 +2,10 @@
   <div class="page-width">
   <div class="cstm-services" style="gap:{{ section.settings.gap }}px; grid-template-columns: repeat({{ section.settings.num }}, 1fr);">
     {% for block in section.blocks %}
-      <div class="cstm-services-box" style="background:{{ section.settings.card-bg-color }}; border-radius:100%;">
+      <div class="cstm-services-box" style="background:{{ section.settings.card-bg-color }};">
         {% if block.settings.img != blank %}
-          <div style="padding:10px; background:{{ section.settings.iconsbgClr }}">
-          <img src="{{ block.settings.img | image_url }}" style="width: {{ section.settings.width }}px; height:{{ section.settings.width }}px; margin: 0 auto" class="cstm-services-img" alt="Image">
+          <div class="cstm-sb-icon-wrapper" style="background:{{ section.settings.iconsbgClr }}">
+          <img src="{{ block.settings.img | image_url }}" style="width: {{ section.settings.width }}px; height:{{ section.settings.width }}px;" class="cstm-services-img" alt="Image">
           </div>  
         {% endif %}
         {% if block.settings.title != blank %}
