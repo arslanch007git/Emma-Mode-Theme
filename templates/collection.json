@@ -9,6 +9,92 @@
  */
 {
   "sections": {
+    "slideshow_UDJC9L": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_WHYqML": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wedding_guest_image.webp",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "Slide",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Use this section to make a bold statement</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
+          }
+        },
+        "slide_g9xgqR": {
+          "type": "slide",
+          "settings": {
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "",
+            "text_position": "center_center",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "Slide",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-2",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "<p>Use this section to make a bold statement</p>",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "Read more",
+            "button_style_1": "btn--primary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#FFFFFF",
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#000000",
+            "color_overlay": "#000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "slide_WHYqML",
+        "slide_g9xgqR"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 100,
+        "mobile_height": 100,
+        "enable_autoplay": true,
+        "duration_autoplay": 6,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#fff",
+        "navigation_color_background": "",
+        "navigation_background_opacity": 100,
+        "enable_animation": true,
+        "section_padding": "none"
+      }
+    },
     "slideshow_4Tjkip": {
       "type": "slideshow",
       "blocks": {
@@ -104,91 +190,6 @@
         "pagination": "paginated",
         "enable_animation": true,
         "divider_style": "none"
-      }
-    },
-    "slideshow_UDJC9L": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_WHYqML": {
-          "type": "slide",
-          "settings": {
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "media_link": "",
-            "text_position": "center_center",
-            "text_position_mobile": "center_center",
-            "accent": "",
-            "title": "Slide",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2",
-            "subheading": "",
-            "subheading_tag": "h3",
-            "subheading_font_class": "fs-heading-5-base",
-            "text": "<p>Use this section to make a bold statement</p>",
-            "text_font_class": "fs-body-100",
-            "link_1": "",
-            "link_text_1": "Read more",
-            "button_style_1": "btn--primary",
-            "link_2": "",
-            "link_text_2": "Read more",
-            "button_style_2": "btn--primary",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
-            "button_text_color": "#000000",
-            "color_overlay": "#000",
-            "color_overlay_gradient": "",
-            "overlay_opacity": 40
-          }
-        },
-        "slide_g9xgqR": {
-          "type": "slide",
-          "settings": {
-            "focal_point": "image_presentation",
-            "mobile_focal_point": "image_presentation",
-            "media_link": "",
-            "text_position": "center_center",
-            "text_position_mobile": "center_center",
-            "accent": "",
-            "title": "Slide",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2",
-            "subheading": "",
-            "subheading_tag": "h3",
-            "subheading_font_class": "fs-heading-5-base",
-            "text": "<p>Use this section to make a bold statement</p>",
-            "text_font_class": "fs-body-100",
-            "link_1": "",
-            "link_text_1": "Read more",
-            "button_style_1": "btn--primary",
-            "link_2": "",
-            "link_text_2": "Read more",
-            "button_style_2": "btn--primary",
-            "text_color": "#FFFFFF",
-            "button_background_color": "#FFFFFF",
-            "button_text_color": "#000000",
-            "color_overlay": "#000",
-            "color_overlay_gradient": "",
-            "overlay_opacity": 40
-          }
-        }
-      },
-      "block_order": [
-        "slide_WHYqML",
-        "slide_g9xgqR"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 100,
-        "mobile_height": 100,
-        "enable_autoplay": true,
-        "duration_autoplay": 6,
-        "navigation_alignment": "center",
-        "navigation_color_foreground": "#fff",
-        "navigation_color_background": "",
-        "navigation_background_opacity": 100,
-        "enable_animation": true,
-        "section_padding": "none"
       }
     }
   },
