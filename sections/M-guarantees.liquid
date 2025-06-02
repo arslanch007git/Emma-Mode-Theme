@@ -5,7 +5,7 @@
       <div class="cstm-services-box" style="background:{{ section.settings.card-bg-color }};">
         {% if block.settings.img != blank %}
           <div class="cstm-sb-icon-wrapper" style=" width:{{ section.settings.width }}px; height:{{ section.settings.width }}px; background:{{ section.settings.iconsbgClr }}">
-          <img src="{{ block.settings.img | image_url }}" style="width:auto; height:auto;" class="cstm-services-img" alt="Image">
+          <img src="{{ block.settings.img | image_url }}" style="width:80%; height:auto;" class="cstm-services-img" alt="Image">
           </div>  
         {% endif %}
         {% if block.settings.title != blank %}
