@@ -1,3 +1,36 @@
+/* M Inventory  */
+.minventory-box {
+  display: flex;
+  align-items: baseline;
+}
+.cstm-inventory-icon {
+  position: relative;
+  display: inline-block;
+}
+.cstm-inventory-icon:before {
+  animation: inventory-animation 2s linear infinite;
+}
+.minventory-box p{
+  line-height: normal;
+}
+.cstm-inventory-icon:after,
+.cstm-inventory-icon:before {
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+@keyframes inventory-animation {
+  0% {
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
 .usp-box{
   display: flex; 
   align-items: center; 
