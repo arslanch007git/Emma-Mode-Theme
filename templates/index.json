@@ -296,9 +296,9 @@
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_93.png",
             "title": "free global shipping",
-            "desc": "Enter Text Here",
+            "desc": "learn more",
             "text-decoration": "underline",
-            "link": ""
+            "link": "shopify://policies/shipping-policy"
           }
         },
         "service_GAhqek": {
@@ -306,9 +306,9 @@
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_94.png",
             "title": "14 days return policy",
-            "desc": "Enter Text Here",
+            "desc": "learn more",
             "text-decoration": "underline",
-            "link": ""
+            "link": "shopify://policies/refund-policy"
           }
         },
         "service_efWxha": {
@@ -316,9 +316,9 @@
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_95.png",
             "title": "100% secure payments",
-            "desc": "Enter Text Here",
+            "desc": "learn more",
             "text-decoration": "underline",
-            "link": ""
+            "link": "shopify://policies/privacy-policy"
           }
         }
       },
