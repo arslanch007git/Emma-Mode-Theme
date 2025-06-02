@@ -589,20 +589,21 @@
         "service_mJFktp": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/cart-2-svgrepo-com.svg",
+            "img": "shopify://shop_images/box-svgrepo-com_3.svg",
             "title": "KOSTENLOSER VERSAND",
-            "desc": "Enter Text Here",
-            "text-decoration": "none",
+            "desc": "Weitere Informationen",
+            "text-decoration": "underline",
             "link": ""
           }
         },
         "service_j7whDM": {
           "type": "service",
           "settings": {
-            "title": "Enter Heading Here",
-            "desc": "Enter Text Here",
+            "img": "shopify://shop_images/return.png",
+            "title": "30 Tage Rückgaberecht",
+            "desc": "Weitere Informationen",
             "text-decoration": "none",
-            "link": ""
+            "link": "shopify://policies/refund-policy"
           }
         },
         "service_zBGQ3R": {
@@ -625,7 +626,7 @@
         "num": 3,
         "bg-color": "#fff",
         "card-bg-color": "#fff",
-        "iconsbgClr": "#dddddd",
+        "iconsbgClr": "#f6f0ea",
         "txt-color": "#000",
         "padtop": 40,
         "padbtm": 40,
