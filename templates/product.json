@@ -56,6 +56,20 @@
             "expand_by_default": false
           }
         },
+        "minventory_AXXdi3": {
+          "type": "minventory",
+          "settings": {
+            "invenDot-mt": 0,
+            "invenDot-mb": 0,
+            "invenDot-adjust": 4,
+            "invenDot-gap": 20,
+            "invenDot-size": 10,
+            "invenDot-clr": "#bc0000",
+            "invenText-size": 16,
+            "invenText-clr": "#bc0000",
+            "invenText": "19 in stock, ready to ship"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -169,12 +183,32 @@
             "page_for_content": "",
             "custom_liquid": ""
           }
+        },
+        "check_review_usp_3qCprz": {
+          "type": "check_review_usp",
+          "settings": {
+            "uspmt": 0,
+            "uspmb": 0,
+            "usppx": 0,
+            "usppy": 0,
+            "uspgap": 10,
+            "uspradius": 10,
+            "bg": "rgba(0,0,0,0)",
+            "usp-img": "shopify://shop_images/360_F_250169262_ctUwoXkVzIMcV7rT0jqcg0kcNOimE8Nh.webp",
+            "uspimgsize": 40,
+            "usp-text": "<strong>Rachel K.</strong>",
+            "verify-img": "shopify://shop_images/verifyIcon.webp",
+            "usp-text2": " and <strong>7k+</strong> other women love <strong>Livia Boutique</strong>.",
+            "uspclr": "#000000",
+            "usptxtsize": 14
+          }
         }
       },
       "block_order": [
         "product_header",
         "text_1",
         "text_icons_2",
+        "minventory_AXXdi3",
         "variant_picker",
         "stock_level_indicator",
         "quantity_selector",
@@ -183,7 +217,8 @@
         "text_icons_3",
         "description",
         "accordion_UPkDyz",
-        "accordion_EJYLbz"
+        "accordion_EJYLbz",
+        "check_review_usp_3qCprz"
       ],
       "settings": {
         "enable_sticky_product_details": true,
