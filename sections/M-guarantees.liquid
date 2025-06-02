@@ -12,7 +12,7 @@
           <h4 style="color: {{ section.settings.txt-color }}; font-size: {{ section.settings.titlesize }}px; margin: {{ section.settings.titlemargin }}px 0 0 0"">{{ block.settings.title }}</h4>
         {% endif %}
         {% if block.settings.desc != blank %}
-          <p style="text-decoration:{{ block.settings.text-decoration }};color: {{ section.settings.txt-color }}; font-size: {{ section.settings.descsize }}px; margin: {{ section.settings.descmargin }}px 0 0 0">{{ block.settings.desc }}</p>
+          <a class="cstm-link" href="{{ block.settings.link }}" style="text-decoration:{{ block.settings.text-decoration }};color: {{ section.settings.txt-color }}; font-size: {{ section.settings.descsize }}px; margin: {{ section.settings.descmargin }}px 0 0 0">{{ block.settings.desc }}</a>
         {% endif %}
       </div>
       {% endfor %}
@@ -176,7 +176,12 @@
               }
             ],
             "default": "none"
-          }          
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Button link"
+          }
         ]
       }
     ],
