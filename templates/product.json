@@ -58,10 +58,11 @@
         },
         "minventory_AXXdi3": {
           "type": "minventory",
+          "disabled": true,
           "settings": {
-            "invenDot-mt": 0,
-            "invenDot-mb": 0,
-            "invenDot-adjust": 4,
+            "invenDot-mt": -20,
+            "invenDot-mb": 25,
+            "invenDot-adjust": 11,
             "invenDot-gap": 20,
             "invenDot-size": 10,
             "invenDot-clr": "#bc0000",
@@ -186,6 +187,7 @@
         },
         "check_review_usp_3qCprz": {
           "type": "check_review_usp",
+          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 0,
