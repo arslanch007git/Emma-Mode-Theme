@@ -63,6 +63,39 @@
           -%}
         {%- endif -%}
 
+                {% when 'check_review_usp' -%}
+            {% style %}
+                .usp-reviewbox-{{ block.id }}{
+                    margin-top: {{ block.settings.uspmt }}px; 
+                    margin-bottom: {{ block.settings.uspmb }}px; 
+                    gap: {{ block.settings.uspgap }}px;
+                    border-radius: {{ block.settings.uspradius }}px;
+                    background: {{ block.settings.bg }};
+                    padding: {{ block.settings.usppy }}px {{ block.settings.usppx }}px; 
+                }
+            {% endstyle %}
+                {% if block.settings.usp-text != blank %}
+                <div class="usp-reviewbox usp-reviewbox-{{ block.id }}">
+                <div class="usp-reviewimgs">
+                {% if block.settings.usp-img != blank %}
+                    <img src="{{ block.settings.usp-img | image_url }}" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
+                {% endif %}
+                {% if block.settings.usp-img2 != blank %}
+                    <img src="{{ block.settings.usp-img2 | image_url }}" class="uspimg2" width="{{ block.settings.uspimgsize }}px" height="auto" alt="Image" style="width: {{ block.settings.uspimgsize }}px; min-width: {{ block.settings.uspimgsize }}px;">
+                {% endif %}
+                </div>
+                {% if block.settings.usp-text != blank %}
+                    <div class="usp-reviewtext">
+                    <p style="font-size: {{ block.settings.usptxtsize }}px; margin: 0; color: {{ block.settings.uspclr }}">{{ block.settings.usp-text }}</p>
+                    {% if block.settings.verify-img != blank %}
+                        <img src="{{ block.settings.verify-img | image_url }}" class="mcheck-verify-img" width="16px" height="auto" alt="Image" style="width: 16px; min-width: 16px;">
+                    {% endif %}
+                    <p style="font-size: {{ block.settings.usptxtsize }}px; margin: 0; color: {{ block.settings.uspclr }}">{{ block.settings.usp-text2 }}</p> 
+                </div>
+                {% endif %}
+                </div>
+            {% endif %}
+      
             {% when 'usp-bg' -%}
                 {% style %}
                     .usp-box-{{ block.id }}{
