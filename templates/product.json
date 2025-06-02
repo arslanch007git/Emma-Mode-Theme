@@ -15,6 +15,15 @@
         "product_header": {
           "type": "product_header",
           "settings": {
+            "ogbold": true,
+            "ogpriceClr": "#000000",
+            "ogpriceSize": 24,
+            "saleogbold": false,
+            "saleogpriceClr": "#000000",
+            "saleogpriceSize": 15,
+            "bold": true,
+            "priceClr": "#ff0000",
+            "priceSize": 19,
             "show_divider": true,
             "show_vendor": false,
             "show_sku": false,
