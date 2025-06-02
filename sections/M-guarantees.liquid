@@ -2,7 +2,7 @@
   <div class="page-width">
   <div class="cstm-services" style="gap:{{ section.settings.gap }}px; grid-template-columns: repeat({{ section.settings.num }}, 1fr);">
     {% for block in section.blocks %}
-      <div class="cstm-services-box" style="background:{{ section.settings.card-bg-color }}">
+      <div class="cstm-services-box" style="background:{{ section.settings.card-bg-color }}; border-radius:100%;">
         {% if block.settings.img != blank %}
           <div style="padding:10px; background:{{ section.settings.iconsbgClr }}">
           <img src="{{ block.settings.img | image_url }}" style="width: {{ section.settings.width }}px; height:{{ section.settings.width }}px; margin: 0 auto" class="cstm-services-img" alt="Image">

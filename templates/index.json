@@ -303,7 +303,7 @@
           "type": "service",
           "settings": {
             "title": "Enter Heading Here",
-            "desc": "Enter Text Here",
+            "desc": "<a href=\"/pages/contact\" title=\"Contact\">Enter Text Here</a>",
             "text-decoration": "none"
           }
         },
