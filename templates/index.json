@@ -296,8 +296,9 @@
           "settings": {
             "img": "shopify://shop_images/svgviewer-png-output_93.png",
             "title": "free global shipping",
-            "desc": "<a href=\"/pages/contact\" title=\"Contact\">Enter Text Here</a>",
-            "text-decoration": "none"
+            "desc": "Enter Text Here",
+            "text-decoration": "underline",
+            "link": ""
           }
         },
         "service_GAhqek": {
@@ -306,7 +307,8 @@
             "img": "shopify://shop_images/svgviewer-png-output_94.png",
             "title": "Enter Heading Here",
             "desc": "Enter Text Here",
-            "text-decoration": "none"
+            "text-decoration": "underline",
+            "link": ""
           }
         },
         "service_efWxha": {
@@ -315,7 +317,8 @@
             "img": "shopify://shop_images/svgviewer-png-output_95.png",
             "title": "Enter Heading Here",
             "desc": "Enter Text Here",
-            "text-decoration": "none"
+            "text-decoration": "underline",
+            "link": ""
           }
         }
       },
