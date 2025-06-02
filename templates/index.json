@@ -287,6 +287,56 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "m_guarantees_b6jwVR": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_GAhqek": {
+          "type": "service",
+          "settings": {
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
+            "text-decoration": "none"
+          }
+        },
+        "service_A9arFg": {
+          "type": "service",
+          "settings": {
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
+            "text-decoration": "none"
+          }
+        },
+        "service_efWxha": {
+          "type": "service",
+          "settings": {
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
+            "text-decoration": "none"
+          }
+        }
+      },
+      "block_order": [
+        "service_GAhqek",
+        "service_A9arFg",
+        "service_efWxha"
+      ],
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#fff",
+        "card-bg-color": "#fff",
+        "iconsbgClr": "#dddddd",
+        "txt-color": "#000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 40,
+        "titlesize": 18,
+        "titlemargin": 0,
+        "descsize": 13,
+        "descmargin": 0,
+        "gap": 0
+      }
     }
   },
   "order": [
@@ -296,6 +346,7 @@
     "collection_list_grid_yWKbrK",
     "image_with_text_JX9J67",
     "video_hero_WyHtRH",
-    "featured_collection_slider_2"
+    "featured_collection_slider_2",
+    "m_guarantees_b6jwVR"
   ]
 }
