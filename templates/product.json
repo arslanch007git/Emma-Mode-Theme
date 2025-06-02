@@ -602,16 +602,17 @@
             "img": "shopify://shop_images/return.png",
             "title": "30 Tage Rückgaberecht",
             "desc": "Weitere Informationen",
-            "text-decoration": "none",
+            "text-decoration": "underline",
             "link": "shopify://policies/refund-policy"
           }
         },
         "service_zBGQ3R": {
           "type": "service",
           "settings": {
-            "title": "Enter Heading Here",
-            "desc": "Enter Text Here",
-            "text-decoration": "none",
+            "img": "shopify://shop_images/credit-card.png",
+            "title": "100% sichere Zahlungen",
+            "desc": "Weitere Informationen",
+            "text-decoration": "underline",
             "link": ""
           }
         }
