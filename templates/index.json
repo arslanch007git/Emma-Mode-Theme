@@ -302,6 +302,7 @@
         "service_A9arFg": {
           "type": "service",
           "settings": {
+            "img": "shopify://shop_images/svgviewer-png-output_93.png",
             "title": "Enter Heading Here",
             "desc": "<a href=\"/pages/contact\" title=\"Contact\">Enter Text Here</a>",
             "text-decoration": "none"
