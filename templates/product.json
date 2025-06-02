@@ -583,6 +583,60 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
+    "m_guarantees_cdf7Bz": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_mJFktp": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/cart-2-svgrepo-com.svg",
+            "title": "KOSTENLOSER VERSAND",
+            "desc": "Enter Text Here",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_j7whDM": {
+          "type": "service",
+          "settings": {
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_zBGQ3R": {
+          "type": "service",
+          "settings": {
+            "title": "Enter Heading Here",
+            "desc": "Enter Text Here",
+            "text-decoration": "none",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_mJFktp",
+        "service_j7whDM",
+        "service_zBGQ3R"
+      ],
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#fff",
+        "card-bg-color": "#fff",
+        "iconsbgClr": "#dddddd",
+        "txt-color": "#000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 68,
+        "titlesize": 24,
+        "titlemargin": 18,
+        "descsize": 13,
+        "descmargin": 18,
+        "gap": 0
+      }
+    },
     "recently_viewed_products_i6Xrzn": {
       "type": "recently-viewed-products",
       "settings": {
@@ -700,6 +754,7 @@
     "recommendations",
     "image_with_text_henk3z",
     "multi_column",
+    "m_guarantees_cdf7Bz",
     "recently_viewed_products_i6Xrzn",
     "gallery_carousel_WXBk7M"
   ]
