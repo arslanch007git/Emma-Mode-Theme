@@ -32,6 +32,9 @@
         {% if is_quick %}<div class="quick-product--header-block-wrap">{% endif %}
           {% style %}
           {% if product.compare_at_price > product.price %}
+              .mprice-block .product__price{
+                align-items: center;
+              }
               .mprice-block .product__price s[data-compare-price]{
               color: {{ block.settings.saleogpriceClr }};
               font-size: {{ block.settings.saleogpriceSize }}px;
