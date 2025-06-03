@@ -215,7 +215,6 @@
         },
         "check_review_usp_3qCprz": {
           "type": "check_review_usp",
-          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 0,
@@ -224,11 +223,11 @@
             "uspgap": 10,
             "uspradius": 10,
             "bg": "rgba(0,0,0,0)",
-            "usp-img": "shopify://shop_images/360_F_250169262_ctUwoXkVzIMcV7rT0jqcg0kcNOimE8Nh.webp",
+            "usp-img": "shopify://shop_images/model_for_review.webp",
             "uspimgsize": 40,
-            "usp-text": "<strong>Rachel K.</strong>",
+            "usp-text": "<strong>Lina S.</strong>",
             "verify-img": "shopify://shop_images/verifyIcon.webp",
-            "usp-text2": " and <strong>7k+</strong> other women love <strong>Livia Boutique</strong>.",
+            "usp-text2": "Und mehr als <strong>7.000</strong> weitere Frauen tragen <strong>Emma Mode</strong>",
             "uspclr": "#000000",
             "usptxtsize": 14
           }
