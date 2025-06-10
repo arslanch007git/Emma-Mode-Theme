@@ -327,6 +327,7 @@
         "service_GAhqek",
         "service_efWxha"
       ],
+      "disabled": true,
       "name": "M Guarantees",
       "settings": {
         "num": 3,
