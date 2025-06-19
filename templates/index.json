@@ -135,7 +135,7 @@
         "collection_list": [
           "euro-sommer",
           "ibiza-party",
-          "wedding-guest"
+          "hochzeitsgast"
         ],
         "collection_listing_aspect_ratio": "portrait",
         "label_style": "overlay",
@@ -266,7 +266,7 @@
           "type": "collection",
           "settings": {
             "show_view_all": true,
-            "collection": "wedding-guest",
+            "collection": "hochzeitsgast",
             "collection_name": "Collection"
           }
         }
