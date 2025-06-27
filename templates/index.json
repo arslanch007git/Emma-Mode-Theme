@@ -23,7 +23,7 @@
             "text_position": "center_center",
             "text_position_mobile": "center_center",
             "accent": "Rein & Verspielt",
-            "title": "Frühling sverkauf",
+            "title": "Sommerausverkauf",
             "heading_tag": "h3",
             "heading_font_class": "fs-heading-display-3",
             "subheading": "",
@@ -211,7 +211,7 @@
         "heading_76C7Ef": {
           "type": "heading",
           "settings": {
-            "title": "Frühling 2025",
+            "title": "sommer 2025",
             "heading_tag": "h2",
             "heading_font_class": "fs-heading-display-2"
           }
