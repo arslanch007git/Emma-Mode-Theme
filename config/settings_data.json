@@ -66,7 +66,7 @@
     "product_card_swatch_size": "small",
     "product_listing_show_siblings_product_image": "custom",
     "show_product_card_chips": false,
-    "product_listing_aspect_ratio": "portrait",
+    "product_listing_aspect_ratio": "square",
     "product_listing_media_fit": "cover",
     "product_listing_show_rating": false,
     "product_listing_show_discount": false,
