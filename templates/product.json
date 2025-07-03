@@ -725,17 +725,17 @@
             "url": ""
           }
         },
-        "image_A9Fkbq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/vrouw_3.avif",
-            "url": ""
-          }
-        },
         "image_FcGTXr": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/vrouw_2.avif",
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_58_52.png",
+            "url": ""
+          }
+        },
+        "image_A9Fkbq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_1.png",
             "url": ""
           }
         },
@@ -749,8 +749,8 @@
       },
       "block_order": [
         "image_g8k7Te",
-        "image_A9Fkbq",
         "image_FcGTXr",
+        "image_A9Fkbq",
         "image_XTk8XJ"
       ],
       "name": "SS - Scrolling images",
