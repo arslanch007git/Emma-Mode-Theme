@@ -85,20 +85,6 @@
             "expand_by_default": false
           }
         },
-        "minventory_AXXdi3": {
-          "type": "minventory",
-          "settings": {
-            "invenDot-mt": -20,
-            "invenDot-mb": 25,
-            "invenDot-adjust": 11,
-            "invenDot-gap": 18,
-            "invenDot-size": 10,
-            "invenDot-clr": "#bc0000",
-            "invenText-size": 14,
-            "invenText-clr": "#bc0000",
-            "invenText": "Niedriger Bestand – fast ausverkauft!"
-          }
-        },
         "bf_size_charts_block_YAkPqf": {
           "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
           "settings": {}
@@ -130,6 +116,20 @@
           "disabled": true,
           "settings": {
             "show_labels": true
+          }
+        },
+        "minventory_AXXdi3": {
+          "type": "minventory",
+          "settings": {
+            "invenDot-mt": 30,
+            "invenDot-mb": 25,
+            "invenDot-adjust": 11,
+            "invenDot-gap": 18,
+            "invenDot-size": 10,
+            "invenDot-clr": "#d21404",
+            "invenText-size": 14,
+            "invenText-clr": "#000000",
+            "invenText": "Weniger als 6 auf Lager"
           }
         },
         "buy_buttons": {
@@ -262,11 +262,11 @@
         "product_header",
         "text_1",
         "text_icons_2",
-        "minventory_AXXdi3",
         "bf_size_charts_block_YAkPqf",
         "variant_picker",
         "stock_level_indicator",
         "quantity_selector",
+        "minventory_AXXdi3",
         "buy_buttons",
         "secure_payment_HgEAF7",
         "usp_bg_3jnnYE",
