@@ -966,13 +966,29 @@
             "question": "Wie werden Ihre Schmuckstücke hergestellt?",
             "answer": "<p>Jedes Stück wird mit größter Sorgfalt aus hochwertigen, ethisch einwandfreien Materialien handgefertigt. Ich überwache jeden Schritt, um außergewöhnliche Qualität und Langlebigkeit zu gewährleisten.</p>"
           }
+        },
+        "item_EajA4x": {
+          "type": "item",
+          "settings": {
+            "question": "Wie sollte ich meinen Schmuck pflegen?",
+            "answer": "<p>Um die Schönheit Ihrer Schmuckstücke zu bewahren, sollten Sie diese alle drei Monate pflegen und in einem Staubbeutel aufbewahren. Wenn Sie Beratung benötigen, können Sie sich jederzeit an mich wenden – ich helfe Ihnen gerne weiter.</p>"
+          }
+        },
+        "item_XWNNeP": {
+          "type": "item",
+          "settings": {
+            "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+            "answer": "<p>Ich biete sichere Zahlungen mit Visa, MasterCard, American Express und PayPal an. Ihre Daten sind bei uns sicher.</p>"
+          }
         }
       },
       "block_order": [
         "item_7KJ93W",
         "item_yTcqN6",
         "item_XeHez4",
-        "item_d8h67q"
+        "item_d8h67q",
+        "item_EajA4x",
+        "item_XWNNeP"
       ],
       "name": "SS - FAQ Pro",
       "settings": {
