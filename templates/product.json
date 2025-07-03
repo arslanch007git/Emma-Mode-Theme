@@ -12,6 +12,24 @@
     "main": {
       "type": "main-product--default",
       "blocks": {
+        "check_review_usp_GV63GY": {
+          "type": "check_review_usp",
+          "settings": {
+            "uspmt": 0,
+            "uspmb": 13,
+            "usppx": 10,
+            "usppy": 4,
+            "uspgap": 10,
+            "uspradius": 55,
+            "bg": "#f3f3f3",
+            "usp-img": "shopify://shop_images/handmade_with_love.webp",
+            "uspimgsize": 40,
+            "usp-text": "Mit Liebe handgefertigt von Claudia",
+            "usp-text2": "",
+            "uspclr": "#000000",
+            "usptxtsize": 16
+          }
+        },
         "product_header": {
           "type": "product_header",
           "settings": {
@@ -32,24 +50,6 @@
             "show_product_rating": false,
             "show_sale_badge": false,
             "show_custom_badges": true
-          }
-        },
-        "check_review_usp_GV63GY": {
-          "type": "check_review_usp",
-          "settings": {
-            "uspmt": 0,
-            "uspmb": 0,
-            "usppx": 10,
-            "usppy": 4,
-            "uspgap": 10,
-            "uspradius": 55,
-            "bg": "#f3f3f3",
-            "usp-img": "shopify://shop_images/handmade_with_love.webp",
-            "uspimgsize": 40,
-            "usp-text": "Mit Liebe handgefertigt von Claudia",
-            "usp-text2": "",
-            "uspclr": "#000000",
-            "usptxtsize": 16
           }
         },
         "text_1": {
@@ -256,8 +256,8 @@
         }
       },
       "block_order": [
-        "product_header",
         "check_review_usp_GV63GY",
+        "product_header",
         "text_1",
         "text_icons_2",
         "minventory_AXXdi3",
