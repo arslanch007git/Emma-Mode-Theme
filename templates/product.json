@@ -85,10 +85,6 @@
             "expand_by_default": false
           }
         },
-        "bf_size_charts_block_YAkPqf": {
-          "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -270,7 +266,6 @@
         "product_header",
         "text_1",
         "text_icons_2",
-        "bf_size_charts_block_YAkPqf",
         "variant_picker",
         "stock_level_indicator",
         "quantity_selector",
