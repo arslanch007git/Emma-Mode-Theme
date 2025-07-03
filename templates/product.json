@@ -125,9 +125,9 @@
             "invenDot-mb": 25,
             "invenDot-adjust": 11,
             "invenDot-gap": 18,
-            "invenDot-size": 10,
+            "invenDot-size": 12,
             "invenDot-clr": "#d21404",
-            "invenText-size": 14,
+            "invenText-size": 18,
             "invenText-clr": "#000000",
             "invenText": "Weniger als 6 auf Lager"
           }
