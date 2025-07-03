@@ -231,9 +231,9 @@
           "settings": {
             "expand_by_default": false,
             "column_placement": "right",
-            "heading": "Rückgaberecht",
+            "heading": "Lebenslange Garantie auf die Farbe",
             "heading_tag": "h3",
-            "content": "<p>Wir bieten ein 30-tägiges Rückgabe, wenn Sie aus irgendeinem Grund mit Ihrer Bestellung nicht zufrieden sind.</p>",
+            "content": "<p>Ich bin überzeugt, dass unser Schmuck mit der Zeit nicht seine Farbe verliert. Ich bin von unserer Qualität so überzeugt, dass wir <strong>eine lebenslange Garantie</strong> auf alle farbbedingten Mängel gewähren.<br/></p><p>Sollte Ihr Schmuck seine goldene Farbe verlieren, befolgen Sie einfach meine Rücksendeanweisungen und ich sende Ihnen einen brandneuen Ersatz. <strong>Ohne Fragen.</strong></p>",
             "page_for_content": "",
             "custom_liquid": ""
           }
