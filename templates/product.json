@@ -835,8 +835,18 @@
           "settings": {
             "img": "shopify://shop_images/box-svgrepo-com.svg",
             "title": "KOSTENLOSER VERSAND",
-            "desc": "Weitere Informationen",
-            "text-decoration": "underline",
+            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_zBGQ3R": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
+            "title": "Wasserdicht und anlaufbeständig",
+            "desc": "Alle meine Schmuckstücke sind langlebig und dafür gemacht, jeden Tag und überall getragen zu werden.",
+            "text-decoration": "none",
             "link": ""
           }
         },
@@ -845,26 +855,16 @@
           "settings": {
             "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
             "title": "Handwerksgarantie",
-            "desc": "Weitere Informationen",
-            "text-decoration": "underline",
+            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
+            "text-decoration": "none",
             "link": "shopify://policies/refund-policy"
-          }
-        },
-        "service_zBGQ3R": {
-          "type": "service",
-          "settings": {
-            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
-            "title": "Wasserdicht und anlaufbeständig",
-            "desc": "Weitere Informationen",
-            "text-decoration": "underline",
-            "link": "shopify://pages/zahlungsmethoden"
           }
         }
       },
       "block_order": [
         "service_mJFktp",
-        "service_j7whDM",
-        "service_zBGQ3R"
+        "service_zBGQ3R",
+        "service_j7whDM"
       ],
       "name": "M Guarantees",
       "settings": {
