@@ -624,8 +624,16 @@
             "url": ""
           }
         },
+        "image_7eJmzD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_20_59_48.png",
+            "url": ""
+          }
+        },
         "image_RfTnjk": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_20_56_38.png",
             "url": ""
@@ -662,6 +670,7 @@
       },
       "block_order": [
         "image_g8k7Te",
+        "image_7eJmzD",
         "image_RfTnjk",
         "image_FcGTXr",
         "image_A9Fkbq",
