@@ -980,6 +980,13 @@
             "question": "Welche Zahlungsmethoden akzeptieren Sie?",
             "answer": "<p>Ich biete sichere Zahlungen mit Visa, MasterCard, American Express und PayPal an. Ihre Daten sind bei uns sicher.</p>"
           }
+        },
+        "item_fVakEm": {
+          "type": "item",
+          "settings": {
+            "question": "Bieten Sie kostenlosen Versand an?",
+            "answer": "<p>Ja, kostenloser Versand auf alle Bestellungen. Sobald deine Bestellung versendet wurde, erhältst du eine Sendungsverfolgung – damit du genau weißt, wo dein Paket ist.</p>"
+          }
         }
       },
       "block_order": [
@@ -988,7 +995,8 @@
         "item_XeHez4",
         "item_d8h67q",
         "item_EajA4x",
-        "item_XWNNeP"
+        "item_XWNNeP",
+        "item_fVakEm"
       ],
       "name": "SS - FAQ Pro",
       "settings": {
