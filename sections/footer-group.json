@@ -20,10 +20,9 @@
             "desktop_width": 32,
             "desktop_padding": 2,
             "collapse_on_mobile": true,
-            "title": "",
-            "show_title_on_desktop": false,
-            "text": "<p>Bei Juna Mode vereinen wir aktuelle Trends mit zeitloser Eleganz. Unsere Mission ist es, jeder Frau das Selbstbewusstsein zu geben, ihren eigenen Stil auszudrücken. Mode ist für uns mehr als Kleidung – es geht darum, sich jeden Tag wohl und schön zu fühlen.</p>",
-            "image": "shopify://shop_images/juna_mode_500_x_100_px.png",
+            "title": "Meine Arbeitszeiten:",
+            "show_title_on_desktop": true,
+            "text": "<p>Ich bin immer für Sie da! Ich bin jeden Tag der Woche erreichbar.</p><p><strong>Arbeitszeiten:</strong></p><ul><li>Mo – Fr: 9:00 – 17:00 Uhr</li><li>Sa: 10:00 – 16:00 Uhr</li><li>So: geschlossen</li></ul><p>Ich bemühe mich, Ihnen innerhalb von 24 Stunden zu antworten, aber ich bin stets bestrebt, so schnell wie möglich zu reagieren.</p><p><br/></p>",
             "image_max_width": 200,
             "image_placement": "above_text",
             "show_social_icons": false,
@@ -57,20 +56,13 @@
             "show_title_on_desktop": true,
             "link_list": "footer"
           }
-        },
-        "spacer_397Fyb": {
-          "type": "spacer",
-          "settings": {
-            "desktop_width": 10
-          }
         }
       },
       "block_order": [
         "text_7KBXnP",
         "footer-3",
         "footer-1",
-        "footer-2",
-        "spacer_397Fyb"
+        "footer-2"
       ],
       "settings": {
         "enable_locale_selector": false,
