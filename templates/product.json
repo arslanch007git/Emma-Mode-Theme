@@ -721,30 +721,28 @@
         "image_g8k7Te": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_44_22.png",
             "url": ""
           }
         },
         "image_A9Fkbq": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/vrouw_3.avif",
             "url": ""
           }
         },
         "image_FcGTXr": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/vrouw_2.avif",
             "url": ""
           }
         },
         "image_XTk8XJ": {
           "type": "image",
           "settings": {
-            "url": ""
-          }
-        },
-        "image_QVQG9x": {
-          "type": "image",
-          "settings": {
+            "image": "shopify://shop_images/vrouw_1.avif",
             "url": ""
           }
         }
@@ -753,8 +751,7 @@
         "image_g8k7Te",
         "image_A9Fkbq",
         "image_FcGTXr",
-        "image_XTk8XJ",
-        "image_QVQG9x"
+        "image_XTk8XJ"
       ],
       "name": "SS - Scrolling images",
       "settings": {
