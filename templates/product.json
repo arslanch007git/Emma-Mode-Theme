@@ -21,12 +21,12 @@
             "usppy": 4,
             "uspgap": 10,
             "uspradius": 55,
-            "bg": "#46bab0",
+            "bg": "#f3f3f3",
             "usp-img": "shopify://shop_images/handmade_with_love.webp",
             "uspimgsize": 40,
             "usp-text": "<strong>Mit Liebe handgefertigt von Claudia</strong>",
             "usp-text2": "",
-            "uspclr": "#ffffff",
+            "uspclr": "#000000",
             "usptxtsize": 14
           }
         },
