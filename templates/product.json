@@ -219,9 +219,9 @@
           "settings": {
             "expand_by_default": false,
             "column_placement": "right",
-            "heading": "Kostenloser Versand",
+            "heading": "Mein persönliches Versprechen an Sie",
             "heading_tag": "h3",
-            "content": "<p>Wir bieten kostenlosen Versand nach Deutschland! Jede Bestellung kann jederzeit mithilfe einer individuellen Trackingnummer nachverfolgt werden.</p>",
+            "content": "<p>Ich stecke mein Herz in jedes einzelne Stück und garantiere höchste Handwerkskunst mit einer lebenslangen Garantie. Sollten Sie aus irgendeinem Grund nicht mit Ihrem Schmuckstück zufrieden sein, können Sie es ganz einfach und unkompliziert zurückgeben. Sie erhalten den Kaufpreis vollständig zurück, ohne dass Fragen gestellt werden. Ihre Zufriedenheit bedeutet mir alles, und ich möchte, dass Sie sich bei jedem Kauf sicher sein können, dass er meine Hingabe für Qualität und Sorgfalt widerspiegelt.</p>",
             "page_for_content": "",
             "custom_liquid": ""
           }
