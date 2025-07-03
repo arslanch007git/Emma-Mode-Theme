@@ -11,38 +11,6 @@
   "type": "header",
   "name": "t:groups.header_group.name",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "title": "<p>SOMMERAUSVERKAUF – BIS ZU 55% RABATT</p>",
-            "title_mobile": "",
-            "link": ""
-          }
-        },
-        "announcement-bar-1": {
-          "type": "announcement",
-          "settings": {
-            "title": "<p>KOSTENLOSER VERSAND</p>",
-            "title_mobile": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0",
-        "announcement-bar-1"
-      ],
-      "settings": {
-        "enable_sticky_announcement_bar": "never",
-        "autoplay_enabled": true,
-        "autoplay_delay": 4,
-        "color_background": "#f6f0ea",
-        "color_text": "#000000"
-      }
-    },
     "header": {
       "type": "header",
       "blocks": {
@@ -116,10 +84,42 @@
         "color_text_transparent": "#ffffff",
         "color_count_transparent": "#000000"
       }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p>SOMMERAUSVERKAUF – BIS ZU 55% RABATT</p>",
+            "title_mobile": "",
+            "link": ""
+          }
+        },
+        "announcement-bar-1": {
+          "type": "announcement",
+          "settings": {
+            "title": "<p>KOSTENLOSER VERSAND</p>",
+            "title_mobile": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement-bar-1"
+      ],
+      "settings": {
+        "enable_sticky_announcement_bar": "never",
+        "autoplay_enabled": true,
+        "autoplay_delay": 4,
+        "color_background": "#f6f0ea",
+        "color_text": "#000000"
+      }
     }
   },
   "order": [
-    "announcement-bar",
-    "header"
+    "header",
+    "announcement-bar"
   ]
 }
