@@ -414,7 +414,7 @@
       "settings": {
         "title": "Andere Kunden kauften auch",
         "subheading": "",
-        "maximum_products": 8,
+        "maximum_products": 15,
         "columns": "5",
         "mobile_columns": "2",
         "enable_animation": true,
@@ -606,6 +606,7 @@
     },
     "recently_viewed_products_i6Xrzn": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "title": "Zuletzt angesehen",
         "heading_tag": "h2",
