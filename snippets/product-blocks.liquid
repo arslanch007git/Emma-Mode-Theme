@@ -27,7 +27,8 @@
     {%- case block.type -%}
       {%- when '@app' -%}
         {% render block %}
-
+{%- when 'selluxe_discount_banner' -%}
+  {%- render 'selluxe-discount-banner', block: block -%}
       {%- when 'product_header' -%}
         {% if is_quick %}<div class="quick-product--header-block-wrap">{% endif %}
           {% style %}
