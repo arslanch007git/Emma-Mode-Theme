@@ -41,7 +41,7 @@
     "navigation_base_size": 17,
     "product_listing_title_uppercase": false,
     "product_listing_title_letter_spacing": 0,
-    "capitalize_buttons": false,
+    "capitalize_buttons": true,
     "buttons_letter_spacing": 0,
     "enable_section_animations": true,
     "swatch_options": "",
