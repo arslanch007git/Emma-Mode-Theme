@@ -1,0 +1,52 @@
+<style>
+  .selluxe-discount-banner {
+    text-align: center;
+    background-color: {{ block.settings.bg_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    padding: 24px 16px;
+    {% if block.settings.enable_shadow %}
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    {% endif %}
+    margin-top: {{ block.settings.margin_top }}px;
+    margin-bottom: {{ block.settings.margin_bottom }}px;
+  }
+
+  .selluxe-discount-banner-title {
+    font-size: {{ block.settings.title_font_size }}px;
+    font-weight: {{ block.settings.title_font_weight }};
+    margin-bottom: 14px;
+  }
+
+  .selluxe-discount-line {
+    margin: 6px 0;
+  }
+
+  .selluxe-discount-line-1 {
+    font-size: {{ block.settings.line_1_font_size }}px;
+    font-weight: {{ block.settings.line_1_font_weight }};
+  }
+
+  .selluxe-discount-line-2 {
+    font-size: {{ block.settings.line_2_font_size }}px;
+    font-weight: {{ block.settings.line_2_font_weight }};
+  }
+
+  .selluxe-discount-line-3 {
+    font-size: {{ block.settings.line_3_font_size }}px;
+    font-weight: {{ block.settings.line_3_font_weight }};
+  }
+</style>
+
+<div class="selluxe-discount-banner">
+  <div class="selluxe-discount-banner-title">{{ block.settings.title }}</div>
+
+  <div class="selluxe-discount-line selluxe-discount-line-1">
+    {{ block.settings.line_1 }}
+  </div>
+  <div class="selluxe-discount-line selluxe-discount-line-2">
+    {{ block.settings.line_2 }}
+  </div>
+  <div class="selluxe-discount-line selluxe-discount-line-3">
+    {{ block.settings.line_3 }}
+  </div>
+</div>
