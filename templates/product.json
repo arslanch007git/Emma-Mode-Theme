@@ -161,6 +161,7 @@
         },
         "usp_bg_3jnnYE": {
           "type": "usp-bg",
+          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 0,
@@ -169,12 +170,12 @@
             "enableFit": true,
             "enableCenter": false,
             "enableBg": true,
-            "uspBg": "#f6f0ea",
+            "uspBg": "#46bab0",
             "usppy": 10,
             "usppx": 10,
             "uspimgsize": 20,
             "usp-text": "<strong>UPDATE:</strong> Aufgrund der hohen Nachfrage während unseres Frühjahrsverkaufs sind nur noch wenige Artikel zum aktuellen Preis erhältlich!",
-            "uspclr": "#000000",
+            "uspclr": "#ffffff",
             "usptxtsize": 14
           }
         },
@@ -713,6 +714,100 @@
         "descmargin": 18,
         "gap": 0
       }
+    },
+    "ss_scrolling_images_tUBYc4": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_g8k7Te": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_A9Fkbq": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_FcGTXr": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_XTk8XJ": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        },
+        "image_QVQG9x": {
+          "type": "image",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_g8k7Te",
+        "image_A9Fkbq",
+        "image_FcGTXr",
+        "image_XTk8XJ",
+        "image_QVQG9x"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<h1><strong>Über 20.000 zufriedene Kunden</strong></h1>",
+        "heading_custom": true,
+        "heading_font": "crimson_text_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 13,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": false,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#FFFFFF",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -722,6 +817,7 @@
     "multi_column",
     "recently_viewed_products_i6Xrzn",
     "gallery_carousel_WXBk7M",
-    "m_guarantees_cdf7Bz"
+    "m_guarantees_cdf7Bz",
+    "ss_scrolling_images_tUBYc4"
   ]
 }
