@@ -89,6 +89,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "title": "<p>SOMMERAUSVERKAUF – BIS ZU 55% RABATT</p>",
             "title_mobile": "",
@@ -98,7 +99,7 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p>KOSTENLOSER VERSAND</p>",
+            "title": "<p>KOSTENLOSER VERSAND INNERHALB DEUTSCHLANDS</p>",
             "title_mobile": "",
             "link": ""
           }
