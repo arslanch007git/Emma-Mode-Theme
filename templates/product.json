@@ -732,10 +732,24 @@
             "url": ""
           }
         },
+        "image_RfTnjk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image-2.webp",
+            "url": ""
+          }
+        },
         "image_A9Fkbq": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Untitled_design_1.png",
+            "url": ""
+          }
+        },
+        "image_hxpUAW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_16_48_33.png",
             "url": ""
           }
         },
@@ -750,7 +764,9 @@
       "block_order": [
         "image_g8k7Te",
         "image_FcGTXr",
+        "image_RfTnjk",
         "image_A9Fkbq",
+        "image_hxpUAW",
         "image_XTk8XJ"
       ],
       "name": "SS - Scrolling images",
@@ -761,7 +777,7 @@
         "heading_size": 40,
         "heading_height": 130,
         "heading_align": "center",
-        "slider_speed": 13,
+        "slider_speed": 37,
         "slider_gap": 10,
         "slider_gap_mobile": 10,
         "slider_mt": 50,
