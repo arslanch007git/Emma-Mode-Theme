@@ -935,6 +935,101 @@
         "descmargin": 18,
         "gap": 0
       }
+    },
+    "ss_faq_1_pro_wH8BCD": {
+      "type": "ss-faq-1-pro",
+      "blocks": {
+        "item_7KJ93W": {
+          "type": "item",
+          "settings": {
+            "question": "Wie kann ich Sie erreichen?",
+            "answer": "<p>Ich bin immer für Sie da, um Ihnen persönlich zu helfen! Ob Sie Fragen haben oder Unterstützung benötigen, ich antworte Ihnen innerhalb von 24 Stunden – oft sogar viel schneller.</p><p>Meine Arbeitszeiten:</p><ul><li>Mo – Fr: 9:00 – 17:00 Uhr</li><li>Sa: 10:00 – 16:00 Uhr</li><li>So: geschlossen</li></ul><p>Schreiben Sie mir eine E-Mail an: kontakt@claudia-schmuckatelier.com</p>"
+          }
+        },
+        "item_yTcqN6": {
+          "type": "item",
+          "settings": {
+            "question": "Question Text",
+            "answer": "<p>Answer Text</p>"
+          }
+        },
+        "item_XeHez4": {
+          "type": "item",
+          "settings": {
+            "question": "Question Text",
+            "answer": "<p>Answer Text</p>"
+          }
+        },
+        "item_d8h67q": {
+          "type": "item",
+          "settings": {
+            "question": "Question Text",
+            "answer": "<p>Answer Text</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_7KJ93W",
+        "item_yTcqN6",
+        "item_XeHez4",
+        "item_d8h67q"
+      ],
+      "name": "SS - FAQ Pro",
+      "settings": {
+        "heading": "Häufig gestellte Fragen",
+        "heading_custom": true,
+        "heading_font": "crimson_text_n4",
+        "heading_size": 32,
+        "heading_height": 100,
+        "heading_align": "center",
+        "items_mt": 20,
+        "items_padding_horizontal": 0,
+        "items_padding_vertical": 0,
+        "items_gap": 12,
+        "items_gap_mobile": 12,
+        "items_radius": 0,
+        "align_radius": false,
+        "hide_icon": true,
+        "question_custom": false,
+        "question_font": "assistant_n4",
+        "question_size": 16,
+        "question_height": 100,
+        "question_padding_horizontal": 20,
+        "question_padding_vertical": 12,
+        "question_radius": 4,
+        "question_icon_size": 18,
+        "answer_custom": false,
+        "answer_font": "josefin_sans_n4",
+        "answer_size": 16,
+        "answer_height": 100,
+        "answer_padding_horizontal": 20,
+        "answer_padding_vertical": 20,
+        "answer_mt": 0,
+        "answer_mb": 0,
+        "answer_radius": 4,
+        "heading_color": "#000000",
+        "items_bg_color": "",
+        "question_color": "#000000",
+        "question_hover_color": "#FFFFFF",
+        "question_bg_color": "#f5f5f5",
+        "question_bg_hover_color": "#2D281D",
+        "question_icon_color": "#FFFFFF",
+        "question_icon_hover_color": "#D5CAA6",
+        "answer_color": "#000000",
+        "answer_link_hover_color": "#FFFFFF",
+        "answer_bg_color": "",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_width": 110,
+        "border_thickness": 0
+      }
     }
   },
   "order": [
@@ -948,6 +1043,7 @@
     "recently_viewed_products_i6Xrzn",
     "ss_scrolling_images_tUBYc4",
     "gallery_carousel_WXBk7M",
-    "m_guarantees_cdf7Bz"
+    "m_guarantees_cdf7Bz",
+    "ss_faq_1_pro_wH8BCD"
   ]
 }
