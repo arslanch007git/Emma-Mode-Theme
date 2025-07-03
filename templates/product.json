@@ -21,13 +21,13 @@
             "usppy": 4,
             "uspgap": 10,
             "uspradius": 55,
-            "bg": "#f3f3f3",
+            "bg": "#46bab0",
             "usp-img": "shopify://shop_images/handmade_with_love.webp",
             "uspimgsize": 40,
-            "usp-text": "Mit Liebe handgefertigt von Claudia",
+            "usp-text": "<strong>Mit Liebe handgefertigt von Claudia</strong>",
             "usp-text2": "",
-            "uspclr": "#000000",
-            "usptxtsize": 16
+            "uspclr": "#ffffff",
+            "usptxtsize": 14
           }
         },
         "product_header": {
@@ -422,113 +422,6 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
-    "ss_scrolling_images_tUBYc4": {
-      "type": "ss-scrolling-images",
-      "blocks": {
-        "image_g8k7Te": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_44_22.png",
-            "url": ""
-          }
-        },
-        "image_FcGTXr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_58_52.png",
-            "url": ""
-          }
-        },
-        "image_RfTnjk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Image-2.webp",
-            "url": ""
-          }
-        },
-        "image_A9Fkbq": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_design_1.png",
-            "url": ""
-          }
-        },
-        "image_hxpUAW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_16_48_33.png",
-            "url": ""
-          }
-        },
-        "image_XTk8XJ": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_g8k7Te",
-        "image_FcGTXr",
-        "image_RfTnjk",
-        "image_A9Fkbq",
-        "image_hxpUAW",
-        "image_XTk8XJ"
-      ],
-      "name": "SS - Scrolling images",
-      "settings": {
-        "heading": "<h1><strong>Über 20.000 zufriedene Kunden</strong></h1>",
-        "heading_custom": true,
-        "heading_font": "crimson_text_n4",
-        "heading_size": 40,
-        "heading_height": 130,
-        "heading_align": "center",
-        "slider_speed": 37,
-        "slider_gap": 10,
-        "slider_gap_mobile": 10,
-        "slider_mt": 50,
-        "slider_direction": "left",
-        "pause_hover": false,
-        "image_width_desktop": 300,
-        "image_width_mobile": 120,
-        "image_height_desktop": 400,
-        "image_height_mobile": 200,
-        "image_radius": 10,
-        "use_content": false,
-        "content_position": "center",
-        "content_max_width": 340,
-        "content_max_width_mobile": 340,
-        "content_padding_vertical": 30,
-        "content_padding_horizontal": 30,
-        "content_distance": 60,
-        "content_radius": 10,
-        "content_border_thickness": 0,
-        "use_shadow": true,
-        "text": "",
-        "text_custom": false,
-        "text_font": "assistant_n4",
-        "text_size": 24,
-        "text_height": 130,
-        "heading_color": "#000000",
-        "content_bg": "#FFFFFF",
-        "content_border_color": "#000000",
-        "text_color": "#000000",
-        "background_color": "#FFFFFF",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "multi_column": {
       "type": "multi-column",
       "blocks": {
@@ -655,6 +548,39 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
+    "rich_text_DaEhdi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WBqVXG": {
+          "type": "heading",
+          "settings": {
+            "title": "Alles handgefertigt",
+            "heading_tag": "h4",
+            "heading_font_class": "fs-heading-3-base"
+          }
+        },
+        "text_jGweCT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Werfen Sie einen Blick hinter die Kulissen</p>",
+            "text_font_class": "fs-body-200"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WBqVXG",
+        "text_jGweCT"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 1000
+      }
+    },
     "video_hero_EWNn7W": {
       "type": "video-hero",
       "name": "t:sections.video_hero.presets.name",
@@ -690,6 +616,113 @@
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "ss_scrolling_images_tUBYc4": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_g8k7Te": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_44_22.png",
+            "url": ""
+          }
+        },
+        "image_FcGTXr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_58_52.png",
+            "url": ""
+          }
+        },
+        "image_RfTnjk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image-2.webp",
+            "url": ""
+          }
+        },
+        "image_A9Fkbq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_1.png",
+            "url": ""
+          }
+        },
+        "image_hxpUAW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_16_48_33.png",
+            "url": ""
+          }
+        },
+        "image_XTk8XJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_g8k7Te",
+        "image_FcGTXr",
+        "image_RfTnjk",
+        "image_A9Fkbq",
+        "image_hxpUAW",
+        "image_XTk8XJ"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<h1><strong>Über 20.000 zufriedene Kunden</strong></h1>",
+        "heading_custom": true,
+        "heading_font": "crimson_text_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 37,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 300,
+        "image_width_mobile": 120,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": false,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#FFFFFF",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "gallery_carousel_WXBk7M": {
@@ -843,39 +876,6 @@
         "descsize": 13,
         "descmargin": 18,
         "gap": 0
-      }
-    },
-    "rich_text_DaEhdi": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WBqVXG": {
-          "type": "heading",
-          "settings": {
-            "title": "Alles handgefertigt",
-            "heading_tag": "h4",
-            "heading_font_class": "fs-heading-3-base"
-          }
-        },
-        "text_jGweCT": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Werfen Sie einen Blick hinter die Kulissen</p>",
-            "text_font_class": "fs-body-200"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WBqVXG",
-        "text_jGweCT"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "alignment": "center_center",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom",
-        "content_width": "custom",
-        "custom_content_width": 1000
       }
     }
   },
