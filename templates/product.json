@@ -828,7 +828,7 @@
         "service_mJFktp": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/box-svgrepo-com_3.svg",
+            "img": "shopify://shop_images/free_shipping_moonstone.avif",
             "title": "KOSTENLOSER VERSAND",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
@@ -838,7 +838,7 @@
         "service_j7whDM": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/return.png",
+            "img": "shopify://shop_images/return_moonstone.webp",
             "title": "30 Tage Rückgaberecht",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
@@ -848,7 +848,7 @@
         "service_zBGQ3R": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/credit-card.png",
+            "img": "shopify://shop_images/secure_payment_moonstone.avif",
             "title": "100% sichere Zahlungen",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
@@ -866,7 +866,7 @@
         "num": 3,
         "bg-color": "#ffffff",
         "card-bg-color": "#ffffff",
-        "iconsbgClr": "#f6f0ea",
+        "iconsbgClr": "rgba(0,0,0,0)",
         "txt-color": "#000000",
         "padtop": 40,
         "padbtm": 40,
