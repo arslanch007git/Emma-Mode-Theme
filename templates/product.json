@@ -880,62 +880,6 @@
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
-    "m_guarantees_cdf7Bz": {
-      "type": "M-guarantees",
-      "blocks": {
-        "service_mJFktp": {
-          "type": "service",
-          "settings": {
-            "img": "shopify://shop_images/box-svgrepo-com.svg",
-            "title": "KOSTENLOSER VERSAND",
-            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
-            "text-decoration": "none",
-            "link": ""
-          }
-        },
-        "service_zBGQ3R": {
-          "type": "service",
-          "settings": {
-            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
-            "title": "Wasserdicht und anlaufbeständig",
-            "desc": "Alle meine Schmuckstücke sind langlebig und dafür gemacht, jeden Tag und überall getragen zu werden.",
-            "text-decoration": "none",
-            "link": ""
-          }
-        },
-        "service_j7whDM": {
-          "type": "service",
-          "settings": {
-            "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
-            "title": "Handwerksgarantie",
-            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
-            "text-decoration": "none",
-            "link": "shopify://policies/refund-policy"
-          }
-        }
-      },
-      "block_order": [
-        "service_mJFktp",
-        "service_zBGQ3R",
-        "service_j7whDM"
-      ],
-      "name": "M Guarantees",
-      "settings": {
-        "num": 3,
-        "bg-color": "#ffffff",
-        "card-bg-color": "#ffffff",
-        "iconsbgClr": "#961f48",
-        "txt-color": "#000000",
-        "padtop": 40,
-        "padbtm": 40,
-        "width": 68,
-        "titlesize": 24,
-        "titlemargin": 18,
-        "descsize": 13,
-        "descmargin": 18,
-        "gap": 0
-      }
-    },
     "ss_faq_1_pro_wH8BCD": {
       "type": "ss-faq-1-pro",
       "blocks": {
@@ -1054,6 +998,62 @@
         "content_width": 110,
         "border_thickness": 0
       }
+    },
+    "m_guarantees_cdf7Bz": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_mJFktp": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/box-svgrepo-com.svg",
+            "title": "KOSTENLOSER VERSAND",
+            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_zBGQ3R": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
+            "title": "Wasserdicht und anlaufbeständig",
+            "desc": "Alle meine Schmuckstücke sind langlebig und dafür gemacht, jeden Tag und überall getragen zu werden.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_j7whDM": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
+            "title": "Handwerksgarantie",
+            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
+            "text-decoration": "none",
+            "link": "shopify://policies/refund-policy"
+          }
+        }
+      },
+      "block_order": [
+        "service_mJFktp",
+        "service_zBGQ3R",
+        "service_j7whDM"
+      ],
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#ffffff",
+        "card-bg-color": "#ffffff",
+        "iconsbgClr": "#961f48",
+        "txt-color": "#000000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 68,
+        "titlesize": 24,
+        "titlemargin": 18,
+        "descsize": 13,
+        "descmargin": 18,
+        "gap": 0
+      }
     }
   },
   "order": [
@@ -1067,7 +1067,7 @@
     "recently_viewed_products_i6Xrzn",
     "ss_scrolling_images_tUBYc4",
     "gallery_carousel_WXBk7M",
-    "m_guarantees_cdf7Bz",
-    "ss_faq_1_pro_wH8BCD"
+    "ss_faq_1_pro_wH8BCD",
+    "m_guarantees_cdf7Bz"
   ]
 }
