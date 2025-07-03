@@ -687,7 +687,7 @@
         "slider_direction": "left",
         "pause_hover": true,
         "image_width_desktop": 300,
-        "image_width_mobile": 120,
+        "image_width_mobile": 150,
         "image_height_desktop": 400,
         "image_height_mobile": 200,
         "image_radius": 10,
