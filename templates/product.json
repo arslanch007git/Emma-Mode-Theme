@@ -949,8 +949,8 @@
         "item_yTcqN6": {
           "type": "item",
           "settings": {
-            "question": "Question Text",
-            "answer": "<p>Answer Text</p>"
+            "question": "Wie lange habe ich Zeit, meine Bestellung zurückzusenden?",
+            "answer": "<p>Wenn Ihr Schmuckstück nicht perfekt ist, haben Sie <strong>60 Tage </strong>Zeit, es ohne Probleme zurückzugeben. Senden Sie mir einfach eine E-Mail, und ich kümmere mich um alles.</p>"
           }
         },
         "item_XeHez4": {
@@ -1012,9 +1012,9 @@
         "question_color": "#000000",
         "question_hover_color": "#FFFFFF",
         "question_bg_color": "#f5f5f5",
-        "question_bg_hover_color": "#2D281D",
+        "question_bg_hover_color": "#961f48",
         "question_icon_color": "#FFFFFF",
-        "question_icon_hover_color": "#D5CAA6",
+        "question_icon_hover_color": "#ffffff",
         "answer_color": "#000000",
         "answer_link_hover_color": "#FFFFFF",
         "answer_bg_color": "",
