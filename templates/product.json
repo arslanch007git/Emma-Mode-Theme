@@ -40,7 +40,7 @@
             "saleogpriceClr": "#000000",
             "saleogpriceSize": 15,
             "bold": true,
-            "priceClr": "#ff0000",
+            "priceClr": "#45ac51",
             "priceSize": 19,
             "show_divider": true,
             "show_vendor": false,
