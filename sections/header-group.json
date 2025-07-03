@@ -78,7 +78,7 @@
         "secondary_menu": "",
         "featured_link_label": "",
         "featured_link_color": "#db4827",
-        "enable_transparent_on_home": true,
+        "enable_transparent_on_home": false,
         "enable_transparent_template_list": "Standaard-collectie",
         "logo_transparent": "shopify://shop_images/juna_mode_white_logo_500_x_100_px.png",
         "color_text_transparent": "#ffffff",
