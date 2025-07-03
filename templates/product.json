@@ -155,13 +155,6 @@
             "title_tag": "h3"
           }
         },
-        "custom_liquid_EJxd7A": {
-          "type": "custom_liquid",
-          "settings": {
-            "column_placement": "right",
-            "custom_liquid": "<div style=\"background-color: #f1f1f1; padding: 0.75rem 1rem; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-family: 'DIN Next', Arial, sans-serif;\">\n  <!-- Verzendicoon -->\n  <div style=\"margin-right: 0.75rem; display: flex; align-items: center;\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"#333\" viewBox=\"0 0 16 16\">\n      <path d=\"M1 4.5A.5.5 0 0 1 1.5 4h9a.5.5 0 0 1 .5.5V5h3.5a.5.5 0 0 1 .447.276l1.5 3A.5.5 0 0 1 16 8v3a.5.5 0 0 1-.5.5H15a2 2 0 1 1-4 0h-3a2 2 0 1 1-4 0H2.5a.5.5 0 0 1-.5-.5v-9zM12.5 6h-2v2h3.5L12.5 6zm-1 6a1 1 0 1 0 2 0 1 1 0 0 0-2 0zM5 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0z\"/>\n    </svg>\n  </div>\n  <!-- Verzendtekst -->\n  <div style=\"font-size: 0.9rem; color: #333; text-align: center; line-height: 1.4; margin-top: 0.25rem;\">\n    Versand am, <strong id=\"shipping-date\">Laden...</strong>\n  </div>\n</div>\n\n<script>\n  // Functie om de volgende verzenddag en datum te berekenen\n  function updateShippingDate() {\n    const dagen = [\"Sonntag\", \"Montag\", \"Dienstag\", \"Mittwoch\", \"Donnerstag\", \"Freitag\", \"Samstag\"];\n    const maandNamen = [\"Januar\", \"Februar\", \"März\", \"April\", \"Mai\", \"Juni\", \"Juli\", \"August\", \"September\", \"Oktober\", \"November\", \"Dezember\"];\n\n    const vandaag = new Date();\n    let volgendeDag = new Date();\n\n    // Controleer of het zaterdag of zondag is en stel maandag in\n    if (vandaag.getDay() === 6) { // Zaterdag\n      volgendeDag.setDate(vandaag.getDate() + 2);\n    } else if (vandaag.getDay() === 0) { // Zondag\n      volgendeDag.setDate(vandaag.getDate() + 1);\n    } else {\n      volgendeDag.setDate(vandaag.getDate() + 1); // Volgende dag voor andere dagen\n    }\n\n    const dagNaam = dagen[volgendeDag.getDay()];\n    const dagNummer = volgendeDag.getDate();\n    const maand = maandNamen[volgendeDag.getMonth()];\n\n    // Datum invullen in het element\n    document.getElementById(\"shipping-date\").innerText = `${dagNaam}, ${dagNummer}. ${maand}`;\n  }\n\n  // Functie uitvoeren bij laden van de pagina\n  updateShippingDate();\n</script>\n\n<style>\n  @font-face {\n    font-family: 'DIN Next';\n    src: url('path-to-your-font/DINNext.woff2') format('woff2'),\n         url('path-to-your-font/DINNext.woff') format('woff');\n    font-weight: normal;\n    font-style: normal;\n  }\n</style>"
-          }
-        },
         "usp_bg_3jnnYE": {
           "type": "usp-bg",
           "disabled": true,
@@ -272,7 +265,6 @@
         "minventory_AXXdi3",
         "buy_buttons",
         "secure_payment_HgEAF7",
-        "custom_liquid_EJxd7A",
         "usp_bg_3jnnYE",
         "text_icons_3",
         "description",
