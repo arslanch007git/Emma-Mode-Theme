@@ -198,66 +198,6 @@
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
-    "video_hero_WyHtRH": {
-      "type": "video-hero",
-      "blocks": {
-        "accent_7NyHxH": {
-          "type": "accent",
-          "settings": {
-            "accent": "Mach dich bereit für"
-          }
-        },
-        "heading_76C7Ef": {
-          "type": "heading",
-          "settings": {
-            "title": "sommer 2025",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-2"
-          }
-        },
-        "text_fHaKCz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Mit Liebe geschaffene Luxusartikel</p>",
-            "text_font_class": "fs-body-100"
-          }
-        },
-        "button_r7DE4P": {
-          "type": "button",
-          "settings": {
-            "link": "shopify://collections",
-            "link_text": "JETZT EINKAUFEN",
-            "button_style": "btn--callout"
-          }
-        }
-      },
-      "block_order": [
-        "accent_7NyHxH",
-        "heading_76C7Ef",
-        "text_fHaKCz",
-        "button_r7DE4P"
-      ],
-      "name": "t:sections.video_hero.presets.name",
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 75,
-        "mobile_height": 50,
-        "video": "shopify://files/videos/wedding video.mp4",
-        "media_link": "",
-        "focal_point": "image_presentation",
-        "focal_point_mobile": "image_presentation",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
-        "button_text_color": "#000000",
-        "color_overlay": "#000000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 28,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
-      }
-    },
     "featured_collection_slider_2": {
       "type": "featured-collection-slider",
       "blocks": {
@@ -351,7 +291,6 @@
     "collection_list_slider",
     "collection_list_grid_yWKbrK",
     "image_with_text_JX9J67",
-    "video_hero_WyHtRH",
     "featured_collection_slider_2",
     "m_guarantees_b6jwVR"
   ]
