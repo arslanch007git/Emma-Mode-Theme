@@ -589,10 +589,10 @@
         "focal_point_mobile": "image_presentation",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#ffffff",
-        "button_background_color": "#ffffff",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
         "button_text_color": "#000000",
-        "color_overlay": "#000000",
+        "color_overlay": "#000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -624,17 +624,17 @@
             "url": ""
           }
         },
+        "image_RfTnjk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_20_56_38.png",
+            "url": ""
+          }
+        },
         "image_FcGTXr": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_12_58_52.png",
-            "url": ""
-          }
-        },
-        "image_RfTnjk": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Image-2.webp",
             "url": ""
           }
         },
@@ -655,15 +655,15 @@
         "image_XTk8XJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/hand_met_ring_768x1152_1cd37baa-e697-4709-9665-4a796e1eeeaf.jpg",
+            "image": "shopify://shop_images/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
             "url": ""
           }
         }
       },
       "block_order": [
         "image_g8k7Te",
-        "image_FcGTXr",
         "image_RfTnjk",
+        "image_FcGTXr",
         "image_A9Fkbq",
         "image_hxpUAW",
         "image_XTk8XJ"
@@ -703,10 +703,10 @@
         "text_size": 24,
         "text_height": 130,
         "heading_color": "#000000",
-        "content_bg": "#ffffff",
+        "content_bg": "#FFFFFF",
         "content_border_color": "#000000",
         "text_color": "#000000",
-        "background_color": "#ffffff",
+        "background_color": "#FFFFFF",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
