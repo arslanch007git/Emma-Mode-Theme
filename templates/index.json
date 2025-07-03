@@ -50,8 +50,8 @@
       ],
       "settings": {
         "image_aspect": "original",
-        "desktop_height": 50,
-        "mobile_height": 75,
+        "desktop_height": 100,
+        "mobile_height": 50,
         "enable_autoplay": true,
         "duration_autoplay": 6,
         "navigation_alignment": "center",
