@@ -589,10 +589,10 @@
         "focal_point_mobile": "image_presentation",
         "text_position": "center_center",
         "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
+        "text_color": "#ffffff",
+        "button_background_color": "#ffffff",
         "button_text_color": "#000000",
-        "color_overlay": "#000",
+        "color_overlay": "#000000",
         "color_overlay_gradient": "",
         "overlay_opacity": 0,
         "enable_animation": true,
@@ -712,10 +712,10 @@
         "text_size": 24,
         "text_height": 130,
         "heading_color": "#000000",
-        "content_bg": "#FFFFFF",
+        "content_bg": "#ffffff",
         "content_border_color": "#000000",
         "text_color": "#000000",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
@@ -833,7 +833,7 @@
         "service_mJFktp": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/free_shipping_moonstone.avif",
+            "img": "shopify://shop_images/box-svgrepo-com.svg",
             "title": "KOSTENLOSER VERSAND",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
@@ -843,8 +843,8 @@
         "service_j7whDM": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/return_moonstone.webp",
-            "title": "30 Tage Rückgaberecht",
+            "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
+            "title": "Handwerksgarantie",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
             "link": "shopify://policies/refund-policy"
@@ -853,8 +853,8 @@
         "service_zBGQ3R": {
           "type": "service",
           "settings": {
-            "img": "shopify://shop_images/secure_payment_moonstone.avif",
-            "title": "100% sichere Zahlungen",
+            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
+            "title": "Wasserdicht und anlaufbeständig",
             "desc": "Weitere Informationen",
             "text-decoration": "underline",
             "link": "shopify://pages/zahlungsmethoden"
@@ -871,7 +871,7 @@
         "num": 3,
         "bg-color": "#ffffff",
         "card-bg-color": "#ffffff",
-        "iconsbgClr": "rgba(0,0,0,0)",
+        "iconsbgClr": "#961f48",
         "txt-color": "#000000",
         "padtop": 40,
         "padbtm": 40,
