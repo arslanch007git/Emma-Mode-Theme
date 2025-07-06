@@ -87,8 +87,9 @@
         },
         "product_callouts_mini_XdhknG": {
           "type": "product_callouts_mini",
+          "disabled": true,
           "settings": {
-            "icon_1": "paper-airplane",
+            "icon_1": "sunflower",
             "text_1": "Fast",
             "icon_2": "paper-airplane",
             "text_2": "Trustworthy",
