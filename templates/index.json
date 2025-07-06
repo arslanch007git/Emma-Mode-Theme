@@ -449,6 +449,62 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "m_guarantees_9ndB7J": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_HnxhTG": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/box-svgrepo-com.svg",
+            "title": "KOSTENLOSER VERSAND",
+            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_mhxC7f": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/diamond-svgrepo-com_1.svg",
+            "title": "Wasserdicht und anlaufbeständig",
+            "desc": "Alle meine Schmuckstücke sind langlebig und dafür gemacht, jeden Tag und überall getragen zu werden.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_nLWdKD": {
+          "type": "service",
+          "settings": {
+            "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
+            "title": "Handwerksgarantie",
+            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
+            "text-decoration": "none",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_HnxhTG",
+        "service_mhxC7f",
+        "service_nLWdKD"
+      ],
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#fff",
+        "card-bg-color": "#fff",
+        "iconsbgClr": "#961f48",
+        "txt-color": "#000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 68,
+        "titlesize": 24,
+        "titlemargin": 18,
+        "descsize": 13,
+        "descmargin": 18,
+        "gap": 0
+      }
     }
   },
   "order": [
@@ -461,6 +517,7 @@
     "m_guarantees_b6jwVR",
     "image_with_text_FtqEj3",
     "video_hero_4YFiHQ",
-    "ss_scrolling_images_xFdg93"
+    "ss_scrolling_images_xFdg93",
+    "m_guarantees_9ndB7J"
   ]
 }
