@@ -725,19 +725,20 @@
         "image_A9Fkbq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Untitled_design_1.png",
+            "image": "shopify://shop_images/ChatGPT_Image_6_jul_2025_13_47_17.png",
             "url": ""
           }
         },
         "image_hxpUAW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_jul_2025_16_48_33.png",
+            "image": "shopify://shop_images/ChatGPT_Image_6_jul_2025_14_04_05.png",
             "url": ""
           }
         },
         "image_XTk8XJ": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
             "url": ""
