@@ -42,7 +42,7 @@
             "bold": true,
             "priceClr": "#45ac51",
             "priceSize": 19,
-            "show_divider": true,
+            "show_divider": false,
             "show_vendor": false,
             "show_sku": false,
             "show_discount": true,
@@ -55,8 +55,8 @@
         "text_1": {
           "type": "text",
           "settings": {
-            "text_font_class": "fs-body-100",
-            "text": "",
+            "text_font_class": "fs-body-75",
+            "text": "<p><em>Diese kraftvollen Mondsteine befreien Sie von Ihren Sorgen und Ihrem Stress, erleichtern Ihnen den Weg und helfen Ihnen, die Reise des Lebens mit Klarheit zu meistern.</em></p>",
             "column_placement": "right"
           }
         },
@@ -83,6 +83,23 @@
             "text_6": "",
             "display_as_collapsible_row": false,
             "expand_by_default": false
+          }
+        },
+        "product_callouts_mini_XdhknG": {
+          "type": "product_callouts_mini",
+          "settings": {
+            "icon_1": "paper-airplane",
+            "text_1": "Fast",
+            "icon_2": "paper-airplane",
+            "text_2": "Trustworthy",
+            "icon_3": "chat",
+            "text_3": "Organic",
+            "icon_4": "none",
+            "text_4": "",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": ""
           }
         },
         "variant_picker": {
@@ -281,6 +298,7 @@
         "product_header",
         "text_1",
         "text_icons_2",
+        "product_callouts_mini_XdhknG",
         "variant_picker",
         "stock_level_indicator",
         "quantity_selector",
