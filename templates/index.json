@@ -122,6 +122,7 @@
     },
     "collection_list_grid_yWKbrK": {
       "type": "collection-list-grid",
+      "disabled": true,
       "name": "t:sections.collection_list_grid.presets.name",
       "settings": {
         "heading": "Unsere Kollektionen",
@@ -205,7 +206,7 @@
           "type": "collection",
           "settings": {
             "show_view_all": true,
-            "collection": "hochzeitsgast",
+            "collection": "moonstone",
             "collection_name": "Collection"
           }
         }
@@ -214,7 +215,7 @@
         "collection_1"
       ],
       "settings": {
-        "heading": "DIESE WOCHE FAVORITEN",
+        "heading": "Schmuck, der Ihr Selbstbewusstsein stärkt",
         "heading_tag": "h2",
         "subheading": "",
         "link": "",
