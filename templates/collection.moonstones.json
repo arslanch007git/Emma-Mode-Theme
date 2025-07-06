@@ -195,6 +195,7 @@
         "image_LF8PDW": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_6_jul_2025_14_04_05.png",
             "url": ""
           }
         }
