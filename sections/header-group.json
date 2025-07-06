@@ -99,7 +99,7 @@
         "announcement-bar-1": {
           "type": "announcement",
           "settings": {
-            "title": "<p><strong>RUHESTANDSNAHER VERKAUF | BIS ZU  80% RABATT</strong></p>",
+            "title": "<p>RUHESTANDSNAHER VERKAUF<strong> - </strong>BIS ZU  <strong>80% RABATT</strong></p>",
             "title_mobile": "",
             "link": ""
           }
