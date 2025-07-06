@@ -755,10 +755,10 @@
       ],
       "name": "SS - Scrolling images",
       "settings": {
-        "heading": "<h1><strong>Über 20.000 zufriedene Kunden</strong></h1>",
+        "heading": "<h1><strong>Über 20.000 Frauen spüren mehr Klarheit & Intuition</strong></h1>",
         "heading_custom": true,
         "heading_font": "crimson_text_n4",
-        "heading_size": 40,
+        "heading_size": 36,
         "heading_height": 130,
         "heading_align": "center",
         "slider_speed": 37,
