@@ -1,0 +1,523 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_NkAmWL": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_pAiJTa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_6_jul_2025_11_05_29.png",
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "media_link": "",
+            "text_position": "flex-start_flex-end",
+            "text_position_mobile": "center_center",
+            "accent": "",
+            "title": "",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-display-3",
+            "subheading": "",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base",
+            "text": "",
+            "text_font_class": "fs-body-100",
+            "link_1": "",
+            "link_text_1": "",
+            "button_style_1": "btn--secondary",
+            "link_2": "",
+            "link_text_2": "Read more",
+            "button_style_2": "btn--primary",
+            "text_color": "#ffffff",
+            "button_background_color": "#ffffff",
+            "button_text_color": "#000000",
+            "color_overlay": "#000000",
+            "color_overlay_gradient": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "slide_pAiJTa"
+      ],
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 100,
+        "mobile_height": 50,
+        "enable_autoplay": true,
+        "duration_autoplay": 6,
+        "navigation_alignment": "center",
+        "navigation_color_foreground": "#ffffff",
+        "navigation_color_background": "",
+        "navigation_background_opacity": 100,
+        "enable_animation": true,
+        "section_padding": "none"
+      }
+    },
+    "image_hero_split": {
+      "type": "image-hero-split",
+      "blocks": {
+        "image_1": {
+          "type": "image",
+          "settings": {
+            "focal_point": "image_presentation",
+            "mobile_focal_point": "image_presentation",
+            "title": "Image hero split",
+            "heading_tag": "h2",
+            "text": "",
+            "link": "\/",
+            "link_text": "Shop Now",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "image_1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_aspect": "custom",
+        "desktop_height": 90,
+        "mobile_height": 75,
+        "text_position": "center",
+        "text_color": "#fcfcf9",
+        "button_background_color": "#faf7c3",
+        "button_text_color": "#242526",
+        "color_overlay": "#000000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 20,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "collection_list_slider": {
+      "type": "collection-list-slider",
+      "disabled": true,
+      "settings": {
+        "heading": "Collections",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "columns": "4",
+        "mobile_columns": "2",
+        "collection_list": [],
+        "collection_listing_aspect_ratio": "portrait",
+        "label_style": "overlay",
+        "overlay_title_background_style": "solid",
+        "overlay_text_color": "#f7f7e8",
+        "overlay_title_background": "#242526",
+        "enable_animation": true,
+        "divider_style": "solid",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "collection_list_grid_yWKbrK": {
+      "type": "collection-list-grid",
+      "disabled": true,
+      "name": "t:sections.collection_list_grid.presets.name",
+      "settings": {
+        "heading": "Unsere Kollektionen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "shopify:\/\/collections",
+        "link_text": "",
+        "columns": "3",
+        "mobile_columns": "2",
+        "collection_list": [
+          "euro-sommer",
+          "ibiza-party",
+          "hochzeitsgast"
+        ],
+        "collection_listing_aspect_ratio": "portrait",
+        "label_style": "overlay",
+        "overlay_title_background_style": "gradient",
+        "overlay_text_color": "#ffffff",
+        "overlay_title_background": "#000000",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "image_with_text_JX9J67": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kiDPnG": {
+          "type": "heading",
+          "settings": {
+            "title": "Zeitlose Eleganz",
+            "heading_tag": "h3",
+            "heading_font_class": "fs-heading-1-base"
+          }
+        },
+        "subheading_qwJ9jj": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Entdecken Sie unsere Kollektion hochwertiger Kleidungsstücke",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "button_mkkWaB": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/collections",
+            "link_text": "Jetzt ansehen",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kiDPnG",
+        "subheading_qwJ9jj",
+        "button_mkkWaB"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_position": "left",
+        "text_alignment": "center",
+        "aspect_ratio": "landscape",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-bottom-only"
+      }
+    },
+    "featured_collection_slider_2": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_1": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "moonstone",
+            "collection_name": "Collection"
+          }
+        }
+      },
+      "block_order": [
+        "collection_1"
+      ],
+      "settings": {
+        "heading": "Schmuck, der Ihr Selbstbewusstsein stärkt",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 6,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "m_guarantees_b6jwVR": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_A9arFg": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/box-svgrepo-com_3.svg",
+            "title": "free global shipping",
+            "desc": "learn more",
+            "text-decoration": "underline",
+            "link": "shopify:\/\/policies\/shipping-policy"
+          }
+        },
+        "service_GAhqek": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/cart-2-svgrepo-com.svg",
+            "title": "14 days return policy",
+            "desc": "learn more",
+            "text-decoration": "underline",
+            "link": "shopify:\/\/policies\/refund-policy"
+          }
+        },
+        "service_efWxha": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/credit-card.png",
+            "title": "100% secure payments",
+            "desc": "learn more",
+            "text-decoration": "underline",
+            "link": "shopify:\/\/policies\/privacy-policy"
+          }
+        }
+      },
+      "block_order": [
+        "service_A9arFg",
+        "service_GAhqek",
+        "service_efWxha"
+      ],
+      "disabled": true,
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#ffffff",
+        "card-bg-color": "#ffffff",
+        "iconsbgClr": "#e7d4d4",
+        "txt-color": "#000000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 68,
+        "titlesize": 24,
+        "titlemargin": 18,
+        "descsize": 13,
+        "descmargin": 18,
+        "gap": 0
+      }
+    },
+    "image_with_text_FtqEj3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qTNJYf": {
+          "type": "heading",
+          "settings": {
+            "title": "Über mich",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "text_GUzwrE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ich bin Claudia, Schmuckdesignerin aus Freiburg mit einer Liebe für das Leise, das Echte und die Kraft der Natur.<\/strong><\/p><p>Der Mond und kleine Steine begleiteten mich schon als Kind, gaben mir Halt in einer Welt, die oft laut war. Jahre später erinnerte mich ein Mondstein von meiner Mutter daran, wer ich wirklich bin.<\/p><p>Heute fertige ich jedes Schmuckstück von Hand – still, bewusst und mit Herz. Mondstein ist dabei mein Herzstein: ein Symbol für Neubeginn, Intuition und innere Stärke.<\/p><p>Vielleicht suchst du gerade selbst nach etwas Echtem. Etwas, das dich erinnert, wer du bist. Dafür mache ich diesen Schmuck mit Liebe.<\/p><p><strong>Claudia<\/strong><\/p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qTNJYf",
+        "text_GUzwrE"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "center",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2025-07-03_at_12.48.05.jpg",
+        "aspect_ratio": "portrait",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#FFFFFF",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "video_hero_4YFiHQ": {
+      "type": "video-hero",
+      "name": "t:sections.video_hero.presets.name",
+      "settings": {
+        "image_aspect": "original",
+        "desktop_height": 50,
+        "mobile_height": 100,
+        "video": "shopify:\/\/files\/videos\/Ring making video.mp4",
+        "media_link": "",
+        "focal_point": "image_presentation",
+        "focal_point_mobile": "image_presentation",
+        "text_position": "center_center",
+        "text_position_mobile": "center_center",
+        "text_color": "#FFFFFF",
+        "button_background_color": "#FFFFFF",
+        "button_text_color": "#000000",
+        "color_overlay": "#000",
+        "color_overlay_gradient": "",
+        "overlay_opacity": 0,
+        "enable_animation": true,
+        "section_padding": "section--vertical-padding-none"
+      }
+    },
+    "ss_scrolling_images_xFdg93": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_pwXfjr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_jul_2025_12_44_22.png",
+            "url": ""
+          }
+        },
+        "image_J4FXmC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_jul_2025_20_59_48.png",
+            "url": ""
+          }
+        },
+        "image_UewJxX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_jul_2025_12_58_52.png",
+            "url": ""
+          }
+        },
+        "image_B9aRfr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_1.png",
+            "url": ""
+          }
+        },
+        "image_BWk48A": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_pwXfjr",
+        "image_J4FXmC",
+        "image_UewJxX",
+        "image_B9aRfr",
+        "image_BWk48A"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<h1><strong>Über 20.000 zufriedene Kunden<\/strong><\/h1>",
+        "heading_custom": true,
+        "heading_font": "crimson_text_n6",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 37,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": true,
+        "image_width_desktop": 300,
+        "image_width_mobile": 140,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 10,
+        "use_content": false,
+        "content_position": "center",
+        "content_max_width": 340,
+        "content_max_width_mobile": 340,
+        "content_padding_vertical": 30,
+        "content_padding_horizontal": 30,
+        "content_distance": 60,
+        "content_radius": 10,
+        "content_border_thickness": 0,
+        "use_shadow": true,
+        "text": "",
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 24,
+        "text_height": 130,
+        "heading_color": "#000000",
+        "content_bg": "#FFFFFF",
+        "content_border_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "m_guarantees_9ndB7J": {
+      "type": "M-guarantees",
+      "blocks": {
+        "service_HnxhTG": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/box-svgrepo-com.svg",
+            "title": "KOSTENLOSER VERSAND",
+            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_mhxC7f": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/diamond-svgrepo-com_1.svg",
+            "title": "Wasserdicht und anlaufbeständig",
+            "desc": "Alle meine Schmuckstücke sind langlebig und dafür gemacht, jeden Tag und überall getragen zu werden.",
+            "text-decoration": "none",
+            "link": ""
+          }
+        },
+        "service_nLWdKD": {
+          "type": "service",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/checkmark-svgrepo-com.svg",
+            "title": "Handwerksgarantie",
+            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
+            "text-decoration": "none",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_HnxhTG",
+        "service_mhxC7f",
+        "service_nLWdKD"
+      ],
+      "name": "M Guarantees",
+      "settings": {
+        "num": 3,
+        "bg-color": "#fff",
+        "card-bg-color": "#fff",
+        "iconsbgClr": "#961f48",
+        "txt-color": "#000",
+        "padtop": 40,
+        "padbtm": 40,
+        "width": 68,
+        "titlesize": 24,
+        "titlemargin": 18,
+        "descsize": 13,
+        "descmargin": 18,
+        "gap": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow_NkAmWL",
+    "image_hero_split",
+    "collection_list_slider",
+    "collection_list_grid_yWKbrK",
+    "image_with_text_JX9J67",
+    "featured_collection_slider_2",
+    "m_guarantees_b6jwVR",
+    "image_with_text_FtqEj3",
+    "video_hero_4YFiHQ",
+    "ss_scrolling_images_xFdg93",
+    "m_guarantees_9ndB7J"
+  ]
+}
