@@ -679,6 +679,18 @@
         "content": "t:settings_schema.product_listing.settings.paragraph__quick_shop.content"
       },
       {
+        "type": "color",
+        "id": "background_color",
+        "label": "Quickbuy button background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Quickbuy button text color",
+        "default": "#FFFFFF"
+      },
+      {
         "id": "enable_quick_add",
         "type": "checkbox",
         "label": "t:settings_schema.product_listing.settings.enable_quick_add.label",
