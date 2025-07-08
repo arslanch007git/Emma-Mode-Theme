@@ -159,7 +159,15 @@
       {{ quick_shop_button_attributes }}
       tabindex="0"
     >
-      <span>{{ quick_shop_button_text }}</span>
+      <span class="button-width-arrow">
+        {{ quick_shop_button_text }}
+        <!-- <img src="{{ 'button-arrow-2x.png' | asset_url }}" height="" width="" alt="button-arrow" /> -->
+        <svg viewBox="0 -4.5 20 20" xmlns="http://www.w3.org/2000/svg">
+          <g stroke-width="0"/>
+          <g stroke-linecap="round" stroke-linejoin="round"/>
+          <path fill-rule="evenodd" d="M20 5.267 14.343 0l-1.414 1.217 3.243 3.01H0v1.958h16.172L12.929 9.53 14.343 11z"/>
+        </svg>
+      </span>
 
       <div class="btn__loading-wrap">
         <div class="btn__loading-bar"></div>
