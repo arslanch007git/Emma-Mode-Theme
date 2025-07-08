@@ -895,6 +895,114 @@
       "type": "@app"
     },
     {
+      "type": "selluxe_tp_stars",
+      "name": "Selluxe Stars",
+      "settings": [
+        {
+          "type": "color",
+          "id": "tp_star_color",
+          "label": "Star color",
+          "default": "#000000"
+        },
+        {
+          "type": "range",
+          "id": "tp_rating",
+          "default": 4.5,
+          "label": "Star rating",
+          "min": 0,
+          "max": 5,
+          "step": 0.1
+        },
+        {
+          "type": "number",
+          "id": "tp_reviews",
+          "default": 389,
+          "label": "Star reviews"
+        },
+        {
+          "type": "text",
+          "id": "review_text",
+          "default": "[rating] (Base sur [reviews] avis)",
+          "label": "Change 'review' text"
+        }
+      ]
+    },
+    {
+      "type": "selluxe_social_badge",
+      "name": "Selluxe Social Badge",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon/image"
+        },
+        {
+          "type": "range",
+          "id": "icon_size",
+          "label": "Icon size",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type":"inline_richtext",
+          "id": "social_text",
+          "label": "Text",
+          "info": "use [counter] to show counter",
+          "default": "Over [counter]M views on Facebook. To show icon use [icon]"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "counter",
+          "label": "Count",
+          "default":"6.2"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Text size",
+          "min": 10,
+          "max": 30,
+          "step": 1,
+          "unit": "px",
+          "default": 12
+        },
+        {
+          "type":"header",
+          "content": "Badge settings"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background color"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color",
+          "default": "#1877f2"
+        },
+        {
+          "type": "range",
+          "id": "border_radius",
+          "label": "Border radius",
+          "min": 0,
+          "max": 50,
+          "step": 5,
+          "unit": "px",
+          "default": 50
+        },
+      ]
+    },
+    {
   "type": "selluxe_discount_banner",
   "name": "Selluxe Discount Banner",
   "settings": [
