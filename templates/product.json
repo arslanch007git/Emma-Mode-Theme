@@ -156,6 +156,20 @@
             "invenText": "Weniger als <strong>6</strong> auf Lager"
           }
         },
+        "selluxe_social_badge_hLrRB9": {
+          "type": "selluxe_social_badge",
+          "disabled": true,
+          "settings": {
+            "icon_size": 16,
+            "social_text": "[icon] Over [counter]M views on Facebook",
+            "counter": "6.2",
+            "text_size": 12,
+            "text_color": "#151515",
+            "background_color": "",
+            "border_color": "#1877f2",
+            "border_radius": 50
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -315,6 +329,7 @@
         "stock_level_indicator",
         "quantity_selector",
         "minventory_AXXdi3",
+        "selluxe_social_badge_hLrRB9",
         "buy_buttons",
         "secure_payment_HgEAF7",
         "selluxe_discount_banner_PUFjhG",
