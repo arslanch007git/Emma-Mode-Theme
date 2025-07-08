@@ -270,6 +270,7 @@
         -%}
       {% endunless %}
 
+      {% comment %}
       {% if quick_shop_type != 'none' and quick_view_is_beneath != true %}
         <div class="product-item__hover-action-wrap">
           {{ quick_shop_button }}
@@ -279,6 +280,7 @@
       {% if quick_shop_type != 'none' %}
         {{ quick_shop_button_hoverless }}
       {% endif %}
+      {% endcomment %}
     </div>
 
     <div class="product-item__meta">
@@ -401,6 +403,16 @@
           {% endif %}
         {% endif %}
 
+        {% if quick_shop_type != 'none' and quick_view_is_beneath != true %}
+          <div class="product-item__hover-action-wrap">
+            {{ quick_shop_button }}
+          </div>
+        {% endif %}
+  
+        {% if quick_shop_type != 'none' %}
+          {{ quick_shop_button_hoverless }}
+        {% endif %}
+        
         {% if has_hover_swatches or has_hover_chips %}
           {% liquid
             assign option_string = blank
