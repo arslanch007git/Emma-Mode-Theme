@@ -27,8 +27,16 @@
     {%- case block.type -%}
       {%- when '@app' -%}
         {% render block %}
-{%- when 'selluxe_discount_banner' -%}
-  {%- render 'selluxe-discount-banner', block: block -%}
+
+      {%- when 'selluxe_social_badge' -%}
+        {%- render 'selluxe-social-badges', block: block -%}
+
+      {%- when 'selluxe_tp_stars' -%}
+        {%- render 'selluxe-tp-stars' block: block -%}
+      
+      {%- when 'selluxe_discount_banner' -%}
+        {%- render 'selluxe-discount-banner', block: block -%}
+      
       {%- when 'product_header' -%}
         {% if is_quick %}<div class="quick-product--header-block-wrap">{% endif %}
           {% style %}
