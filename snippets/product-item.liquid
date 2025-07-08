@@ -1,3 +1,42 @@
+{% style %}
+.product-item__hover-action-wrap {
+  position: relative;
+  visibility: visible !important;
+  opacity: 1;
+}
+  
+.product-item__hover-action-wrap button {
+  background:{{ settings.background_color }} !important;
+  color:{{ settings.text_color }} !important;
+  overflow:hidden;
+  transition:0.2s ease-in-out;
+}
+  
+.product-item__hover-action-wrap .button-width-arrow {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+  font-weight:bold;
+}
+  
+.product-item__hover-action-wrap .button-width-arrow>svg {
+  height:auto;
+  width:30px;
+  position: relative;
+  margin-right: -65px;
+  right: -60px;
+  transition:0.3s ease-in-out;
+  fill:{{ settings.text_color }} !important;
+}
+
+.product-item__hover-action-wrap button:hover .button-width-arrow>svg {
+  margin-right: 0px;
+  right: 0px;
+}
+  
+{% endstyle %}
+
 {%- liquid
   comment
     pass in :
