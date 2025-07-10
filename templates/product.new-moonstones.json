@@ -525,11 +525,40 @@
     },
     "recommendations": {
       "type": "recommended-products",
+      "disabled": true,
       "settings": {
         "title": "Das wird Ihnen auch gefallen",
         "subheading": "",
         "maximum_products": 15,
         "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_grid_airRpG": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "collection_tifTxf": {
+          "type": "collection",
+          "settings": {
+            "collection": "mondstein-kollektion-neu"
+          }
+        }
+      },
+      "block_order": [
+        "collection_tifTxf"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "Das wird Ihnen auch gefallen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
@@ -1128,6 +1157,7 @@
     "product_tabs",
     "image_with_text_gMPh73",
     "recommendations",
+    "featured_collection_grid_airRpG",
     "multi_column",
     "rich_text_DaEhdi",
     "video_hero_EWNn7W",
