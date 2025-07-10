@@ -14,12 +14,11 @@
       "blocks": {
         "selluxe_tp_stars_VXDnFr": {
           "type": "selluxe_tp_stars",
-          "disabled": true,
           "settings": {
             "tp_star_color": "#fed801",
             "tp_rating": 4.8,
             "tp_reviews": 1700,
-            "review_text": "[rating]/5 [reviews]+ reviews"
+            "review_text": "[rating]/5 [reviews]+ Bewertungen"
           }
         },
         "check_review_usp_GV63GY": {
