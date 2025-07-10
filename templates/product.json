@@ -144,23 +144,22 @@
         "minventory_AXXdi3": {
           "type": "minventory",
           "settings": {
-            "invenDot-mt": 30,
-            "invenDot-mb": 25,
+            "invenDot-mt": -16,
+            "invenDot-mb": 46,
             "invenDot-adjust": 11,
             "invenDot-gap": 18,
             "invenDot-size": 12,
             "invenDot-clr": "#d21404",
-            "invenText-size": 18,
+            "invenText-size": 16,
             "invenText-clr": "#000000",
             "invenText": "Weniger als <strong>6</strong> auf Lager"
           }
         },
         "selluxe_social_badge_hLrRB9": {
           "type": "selluxe_social_badge",
-          "disabled": true,
           "settings": {
             "icon_size": 16,
-            "social_text": "[icon] Over [counter]M views on Facebook",
+            "social_text": "[icon] Über [counter]M Aufrufe auf Facebook",
             "counter": "6.2",
             "text_size": 12,
             "text_color": "#151515",
@@ -301,7 +300,7 @@
           "type": "check_review_usp",
           "settings": {
             "uspmt": 0,
-            "uspmb": 0,
+            "uspmb": 17,
             "usppx": 0,
             "usppy": 0,
             "uspgap": 10,
