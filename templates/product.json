@@ -144,17 +144,6 @@
             "invenText": "Weniger als <strong>6</strong> auf Lager"
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "variant_popup_option": "Größe",
-            "variant_popup_icon": "measuring-tape",
-            "variant_popup_text": "Größentabelle",
-            "variant_popup_page": "",
-            "swatch_size": "medium",
-            "chip_layout": "natural"
-          }
-        },
         "selluxe_social_badge_hLrRB9": {
           "type": "selluxe_social_badge",
           "settings": {
@@ -166,6 +155,17 @@
             "background_color": "",
             "border_color": "#1877f2",
             "border_radius": 50
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_popup_option": "Größe",
+            "variant_popup_icon": "measuring-tape",
+            "variant_popup_text": "Größentabelle",
+            "variant_popup_page": "",
+            "swatch_size": "medium",
+            "chip_layout": "natural"
           }
         },
         "buy_buttons": {
@@ -326,8 +326,8 @@
         "stock_level_indicator",
         "quantity_selector",
         "minventory_AXXdi3",
-        "variant_picker",
         "selluxe_social_badge_hLrRB9",
+        "variant_picker",
         "buy_buttons",
         "secure_payment_HgEAF7",
         "selluxe_discount_banner_PUFjhG",
