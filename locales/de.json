@@ -427,7 +427,7 @@
         "other": "{{count}} {{ chip_name }}",
         "zero": "Keine {{ chip_name }}"
       },
-      "choose_options": "Optionen auswählen",
+      "choose_options": "In Den Warenkorb",
       "country_placeholder": "Land/Region",
       "description": "Beschreibung",
       "estimate_shipping": "Einkaufen beginnen",
