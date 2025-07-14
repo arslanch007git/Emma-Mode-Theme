@@ -470,6 +470,34 @@
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
+    "featured_collection_grid_airRpG": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "collection_tifTxf": {
+          "type": "collection",
+          "settings": {
+            "collection": "mondstein-kollektion-neu"
+          }
+        }
+      },
+      "block_order": [
+        "collection_tifTxf"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "Das wird Ihnen auch gefallen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "image_with_text_gMPh73": {
       "type": "image-with-text",
       "blocks": {
@@ -493,7 +521,7 @@
         "text_a9hCUh": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Ich bin Claudia, Schmuckdesignerin aus Freiburg mit einer Liebe für das Leise, das Echte und die Kraft der Natur.</strong></p><p>Der Mond und kleine Steine begleiteten mich schon als Kind, gaben mir Halt in einer Welt, die oft laut war. Jahre später erinnerte mich ein Mondstein von meiner Mutter daran, wer ich wirklich bin.</p><p>Heute fertige ich jedes Schmuckstück von Hand – still, bewusst und mit Herz. Mondstein ist dabei mein Herzstein: ein Symbol für Neubeginn, Intuition und innere Stärke.</p><p>Vielleicht suchst du gerade selbst nach etwas Echtem. Etwas, das dich erinnert, wer du bist. Dafür mache ich diesen Schmuck mit Liebe.</p><p><strong>Claudia</strong></p>",
+            "text": "<p>Ich bin Claudia Meissner – Gründerin von Claudia Schmuck Atelier und seit fast 20 Jahren mit Herz und Hand Schmuckgestalterin.</p><p>Mondstein war von Anfang an mein Begleiter – ein Symbol für Ruhe, Wandel und innere Stärke. Jedes Stück, das ich fertige, erzählt eine stille Geschichte.</p><p>Nun ist es an der Zeit, Abschied zu nehmen:</p><p>Ich gehe in den Ruhestand und möchte meine letzten Schmuckstücke weitergeben – als Zeichen für Neuanfang, Trost oder einfach als stiller Begleiter.</p><p><strong>Deshalb gibt es jetzt meine letzte Kollektion mit bis zu 80% Rabatt – solange der Vorrat reicht.</strong></p><p>Danke für deine Wertschätzung und dass du Teil meiner Reise bist.</p>",
             "text_font_class": "fs-body-100"
           }
         }
@@ -531,34 +559,6 @@
         "subheading": "",
         "maximum_products": 15,
         "columns": "5",
-        "mobile_columns": "2",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "featured_collection_grid_airRpG": {
-      "type": "featured-collection-grid",
-      "blocks": {
-        "collection_tifTxf": {
-          "type": "collection",
-          "settings": {
-            "collection": "mondstein-kollektion-neu"
-          }
-        }
-      },
-      "block_order": [
-        "collection_tifTxf"
-      ],
-      "name": "t:sections.featured_collection_grid.presets.name",
-      "settings": {
-        "heading": "Das wird Ihnen auch gefallen",
-        "heading_tag": "h2",
-        "subheading": "",
-        "link": "",
-        "link_text": "",
-        "maximum_collections": 4,
-        "columns": "4",
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
@@ -1155,9 +1155,9 @@
   "order": [
     "main",
     "product_tabs",
+    "featured_collection_grid_airRpG",
     "image_with_text_gMPh73",
     "recommendations",
-    "featured_collection_grid_airRpG",
     "multi_column",
     "rich_text_DaEhdi",
     "video_hero_EWNn7W",
