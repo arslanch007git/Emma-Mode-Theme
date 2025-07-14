@@ -470,6 +470,19 @@
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
+    "recommendations": {
+      "type": "recommended-products",
+      "settings": {
+        "title": "Das wird Ihnen auch gefallen",
+        "subheading": "",
+        "maximum_products": 15,
+        "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "image_with_text_gMPh73": {
       "type": "image-with-text",
       "blocks": {
@@ -493,7 +506,7 @@
         "text_a9hCUh": {
           "type": "text",
           "settings": {
-            "text": "<p>Ich bin Claudia Meissner – Gründerin von Claudia Schmuck Atelier und seit fast 20 Jahren mit Herz und Hand Schmuckgestalterin.</p><p>Mondstein war von Anfang an mein Begleiter – ein Symbol für Ruhe, Wandel und innere Stärke. Jedes Stück, das ich fertige, erzählt eine stille Geschichte.</p><p>Nun ist es an der Zeit, Abschied zu nehmen:</p><p>Ich gehe in den Ruhestand und möchte meine letzten Schmuckstücke weitergeben – als Zeichen für Neuanfang, Trost oder einfach als stiller Begleiter.</p><p><strong>Deshalb gibt es jetzt meine letzte Kollektion mit bis zu 80 % Rabatt – solange der Vorrat reicht.</strong></p><p>Danke für deine Wertschätzung und dass du Teil meiner Reise bist.</p>",
+            "text": "<p>Ich bin Claudia Meissner – Gründerin von Claudia Schmuck Atelier und seit fast 20 Jahren mit Herz und Hand Schmuckgestalterin.</p><p>Mondstein war von Anfang an mein Begleiter – ein Symbol für Ruhe, Wandel und innere Stärke. Jedes Stück, das ich fertige, erzählt eine stille Geschichte.</p><p>Nun ist es an der Zeit, Abschied zu nehmen:</p><p>Ich gehe in den Ruhestand und möchte meine letzten Schmuckstücke weitergeben – als Zeichen für Neuanfang, Trost oder einfach als stiller Begleiter.</p><p><strong>Deshalb gibt es jetzt meine letzte Kollektion mit bis zu 80% Rabatt – solange der Vorrat reicht.</strong></p><p>Danke für deine Wertschätzung und dass du Teil meiner Reise bist.</p>",
             "text_font_class": "fs-body-100"
           }
         }
@@ -518,19 +531,6 @@
         "text_color": "#000000",
         "button_background_color": "#000000",
         "button_text_color": "#ffffff",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "recommendations": {
-      "type": "recommended-products",
-      "settings": {
-        "title": "Das wird Ihnen auch gefallen",
-        "subheading": "",
-        "maximum_products": 15,
-        "columns": "5",
-        "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -1126,8 +1126,8 @@
   "order": [
     "main",
     "product_tabs",
-    "image_with_text_gMPh73",
     "recommendations",
+    "image_with_text_gMPh73",
     "multi_column",
     "rich_text_DaEhdi",
     "video_hero_EWNn7W",
