@@ -146,6 +146,7 @@
         },
         "selluxe_social_badge_hLrRB9": {
           "type": "selluxe_social_badge",
+          "disabled": true,
           "settings": {
             "icon_size": 16,
             "social_text": "[icon] Über [counter]M Aufrufe auf Facebook",
