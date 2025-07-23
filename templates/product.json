@@ -69,31 +69,6 @@
             "column_placement": "right"
           }
         },
-        "text_icons_2": {
-          "type": "product_callouts",
-          "settings": {
-            "title": "",
-            "title_tag": "h3",
-            "add_box": false,
-            "add_dividers": false,
-            "icon_1": "package-closed",
-            "custom_icon_image_1": "shopify://shop_images/diamond-svgrepo-com.svg",
-            "text_1": "<p>Hypoallergen und anlaufbeständig</p>",
-            "icon_2": "stopwatch",
-            "custom_icon_image_2": "shopify://shop_images/award-svgrepo-com.svg",
-            "text_2": "<p>Geschützt durch lebenslange Garantie</p>",
-            "icon_3": "heart",
-            "text_3": "<p>20.000+ zufriedene Kunden</p>",
-            "icon_4": "none",
-            "text_4": "",
-            "icon_5": "none",
-            "text_5": "",
-            "icon_6": "none",
-            "text_6": "",
-            "display_as_collapsible_row": false,
-            "expand_by_default": false
-          }
-        },
         "product_callouts_mini_XdhknG": {
           "type": "product_callouts_mini",
           "disabled": true,
@@ -133,8 +108,8 @@
         "minventory_AXXdi3": {
           "type": "minventory",
           "settings": {
-            "invenDot-mt": -16,
-            "invenDot-mb": 46,
+            "invenDot-mt": 32,
+            "invenDot-mb": 23,
             "invenDot-adjust": 11,
             "invenDot-gap": 18,
             "invenDot-size": 12,
@@ -194,6 +169,31 @@
             "expand_by_default": true,
             "collapsible_row_title": "Payments & Security",
             "title_tag": "h3"
+          }
+        },
+        "text_icons_2": {
+          "type": "product_callouts",
+          "settings": {
+            "title": "",
+            "title_tag": "h3",
+            "add_box": false,
+            "add_dividers": false,
+            "icon_1": "package-closed",
+            "custom_icon_image_1": "shopify://shop_images/diamond-svgrepo-com.svg",
+            "text_1": "<p>Hypoallergen und anlaufbeständig</p>",
+            "icon_2": "stopwatch",
+            "custom_icon_image_2": "shopify://shop_images/award-svgrepo-com.svg",
+            "text_2": "<p>Geschützt durch lebenslange Garantie</p>",
+            "icon_3": "heart",
+            "text_3": "<p>20.000+ zufriedene Kunden</p>",
+            "icon_4": "none",
+            "text_4": "",
+            "icon_5": "none",
+            "text_5": "",
+            "icon_6": "none",
+            "text_6": "",
+            "display_as_collapsible_row": false,
+            "expand_by_default": false
           }
         },
         "selluxe_discount_banner_PUFjhG": {
@@ -322,7 +322,6 @@
         "check_review_usp_GV63GY",
         "product_header",
         "text_1",
-        "text_icons_2",
         "product_callouts_mini_XdhknG",
         "stock_level_indicator",
         "quantity_selector",
@@ -331,6 +330,7 @@
         "variant_picker",
         "buy_buttons",
         "secure_payment_HgEAF7",
+        "text_icons_2",
         "selluxe_discount_banner_PUFjhG",
         "usp_bg_3jnnYE",
         "text_icons_3",
