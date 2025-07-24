@@ -78,12 +78,13 @@
             "add_box": false,
             "add_dividers": false,
             "icon_1": "package-closed",
-            "custom_icon_image_1": "shopify://shop_images/diamond-svgrepo-com.svg",
+            "custom_icon_image_1": "shopify://shop_images/check-circle-svgrepo-com.svg",
             "text_1": "<p>Hypoallergen und anlaufbeständig</p>",
             "icon_2": "stopwatch",
-            "custom_icon_image_2": "shopify://shop_images/award-svgrepo-com.svg",
+            "custom_icon_image_2": "shopify://shop_images/check-circle-svgrepo-com.svg",
             "text_2": "<p>Geschützt durch lebenslange Garantie</p>",
             "icon_3": "heart",
+            "custom_icon_image_3": "shopify://shop_images/check-circle-svgrepo-com.svg",
             "text_3": "<p>20.000+ zufriedene Kunden</p>",
             "icon_4": "none",
             "text_4": "",
@@ -300,6 +301,7 @@
         },
         "check_review_usp_3qCprz": {
           "type": "check_review_usp",
+          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 17,
@@ -358,6 +360,59 @@
         "hide_mobile_carousel_dots": false,
         "enable_gift_card_recipient": true,
         "enable_animation": true
+      }
+    },
+    "image_with_text_gMPh73": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jtRfcG": {
+          "type": "heading",
+          "settings": {
+            "title": "Warum schließe ich?",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-display-3"
+          }
+        },
+        "subheading_nGgEqq": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Use these sections to promote a particular feature with editorial photography",
+            "subheading_tag": "h3",
+            "subheading_font_class": "fs-heading-5-base"
+          }
+        },
+        "text_a9hCUh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ich bin Claudia Meissner – Gründerin von Claudia Schmuck Atelier und seit fast 20 Jahren mit Herz und Hand Schmuckgestalterin.</p><p>Mondstein war von Anfang an mein Begleiter – ein Symbol für Ruhe, Wandel und innere Stärke. Jedes Stück, das ich fertige, erzählt eine stille Geschichte.</p><p>Nun ist es an der Zeit, Abschied zu nehmen:</p><p>Ich gehe in den Ruhestand und möchte meine letzten Schmuckstücke weitergeben – als Zeichen für Neuanfang, Trost oder einfach als stiller Begleiter.</p><p><strong>Deshalb gibt es jetzt meine letzte Kollektion mit bis zu 80% Rabatt – solange der Vorrat reicht.</strong></p><p>Danke für deine Wertschätzung und dass du Teil meiner Reise bist.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jtRfcG",
+        "subheading_nGgEqq",
+        "text_a9hCUh"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image_position": "right",
+        "text_alignment": "left",
+        "image": "shopify://shop_images/claudia.png",
+        "aspect_ratio": "natural",
+        "focal_point": "image_presentation",
+        "image_caption": "",
+        "show_small_image": false,
+        "image_small_aspect_ratio": "square",
+        "image_small_focal_point": "image_presentation",
+        "background_color": "",
+        "text_color": "#000000",
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
       }
     },
     "product_tabs": {
@@ -480,59 +535,6 @@
         "maximum_products": 15,
         "columns": "5",
         "mobile_columns": "2",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
-      }
-    },
-    "image_with_text_gMPh73": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_jtRfcG": {
-          "type": "heading",
-          "settings": {
-            "title": "Über mich",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-display-3"
-          }
-        },
-        "subheading_nGgEqq": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Use these sections to promote a particular feature with editorial photography",
-            "subheading_tag": "h3",
-            "subheading_font_class": "fs-heading-5-base"
-          }
-        },
-        "text_a9hCUh": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Ich bin Claudia Meissner – Gründerin von Claudia Schmuck Atelier und seit fast 20 Jahren mit Herz und Hand Schmuckgestalterin.</p><p>Mondstein war von Anfang an mein Begleiter – ein Symbol für Ruhe, Wandel und innere Stärke. Jedes Stück, das ich fertige, erzählt eine stille Geschichte.</p><p>Nun ist es an der Zeit, Abschied zu nehmen:</p><p>Ich gehe in den Ruhestand und möchte meine letzten Schmuckstücke weitergeben – als Zeichen für Neuanfang, Trost oder einfach als stiller Begleiter.</p><p><strong>Deshalb gibt es jetzt meine letzte Kollektion mit bis zu 80% Rabatt – solange der Vorrat reicht.</strong></p><p>Danke für deine Wertschätzung und dass du Teil meiner Reise bist.</p>",
-            "text_font_class": "fs-body-100"
-          }
-        }
-      },
-      "block_order": [
-        "heading_jtRfcG",
-        "subheading_nGgEqq",
-        "text_a9hCUh"
-      ],
-      "name": "t:sections.image_with_text.presets.name",
-      "settings": {
-        "image_position": "right",
-        "text_alignment": "left",
-        "image": "shopify://shop_images/WhatsApp_Image_2025-07-03_at_12.48.05.jpg",
-        "aspect_ratio": "natural",
-        "focal_point": "image_presentation",
-        "image_caption": "",
-        "show_small_image": false,
-        "image_small_aspect_ratio": "square",
-        "image_small_focal_point": "image_presentation",
-        "background_color": "",
-        "text_color": "#000000",
-        "button_background_color": "#000000",
-        "button_text_color": "#ffffff",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
@@ -1127,9 +1129,9 @@
   },
   "order": [
     "main",
+    "image_with_text_gMPh73",
     "product_tabs",
     "recommendations",
-    "image_with_text_gMPh73",
     "multi_column",
     "rich_text_DaEhdi",
     "video_hero_EWNn7W",
