@@ -144,6 +144,10 @@
             "chip_layout": "natural"
           }
         },
+        "bf_size_charts_block_Vyynxg": {
+          "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -328,6 +332,7 @@
         "minventory_AXXdi3",
         "selluxe_social_badge_hLrRB9",
         "variant_picker",
+        "bf_size_charts_block_Vyynxg",
         "buy_buttons",
         "secure_payment_HgEAF7",
         "text_icons_2",
