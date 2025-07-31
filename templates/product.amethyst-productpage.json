@@ -510,7 +510,7 @@
         "subheading": "",
         "link": "",
         "link_text": "",
-        "maximum_collections": 4,
+        "maximum_collections": 10,
         "columns": "5",
         "mobile_columns": "2",
         "enable_animation": true,
