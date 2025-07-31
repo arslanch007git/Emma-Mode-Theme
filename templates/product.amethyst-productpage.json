@@ -315,7 +315,7 @@
             "uspimgsize": 52,
             "usp-text": "<strong>Sylvia R.</strong>",
             "verify-img": "shopify://shop_images/verifyIcon.webp",
-            "usp-text2": "Und mehr als <strong>20.000</strong> weitere Frauen fanden dank der Mondsteine mehr Ruhe",
+            "usp-text2": "Und mehr als <strong>20.000</strong> weitere Frauen fanden dank der Amethyste mehr Ruhe",
             "uspclr": "#000000",
             "usptxtsize": 15
           }
@@ -511,7 +511,7 @@
         "link": "",
         "link_text": "",
         "maximum_collections": 4,
-        "columns": "4",
+        "columns": "5",
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
