@@ -505,7 +505,7 @@
       ],
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
-        "heading": "Featured collection",
+        "heading": "Das wird Ihnen auch gefallen",
         "heading_tag": "h2",
         "subheading": "",
         "link": "",
