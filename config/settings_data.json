@@ -64,6 +64,7 @@
     "background_color": "#961f48",
     "enable_quick_add": true,
     "enable_quick_view": false,
+    "enable_product_card_swatches": true,
     "product_card_swatch_size": "small",
     "product_listing_show_siblings_product_image": "custom",
     "show_product_card_chips": false,

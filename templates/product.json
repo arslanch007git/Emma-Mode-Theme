@@ -98,13 +98,6 @@
             "show_untracked_quantity": false
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {
-            "show_labels": true
-          }
-        },
         "minventory_AXXdi3": {
           "type": "minventory",
           "settings": {
@@ -142,6 +135,12 @@
             "variant_popup_page": "",
             "swatch_size": "medium",
             "chip_layout": "natural"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_labels": true
           }
         },
         "bf_size_charts_block_Vyynxg": {
@@ -328,10 +327,10 @@
         "text_1",
         "product_callouts_mini_XdhknG",
         "stock_level_indicator",
-        "quantity_selector",
         "minventory_AXXdi3",
         "selluxe_social_badge_hLrRB9",
         "variant_picker",
+        "quantity_selector",
         "bf_size_charts_block_Vyynxg",
         "buy_buttons",
         "secure_payment_HgEAF7",
