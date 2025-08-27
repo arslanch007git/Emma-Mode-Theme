@@ -138,73 +138,60 @@
     white-space: nowrap;
   }
 
-@media(max-width: 768px) {
-  .sticky-atc-bar {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    flex-wrap: nowrap;
-    {% if section.settings.sticky_position == "top" %}
-    top: 80px;
-    {% else %}
-    bottom: 0;
-    {% endif %}
-  }
+  /* -------- MOBILE STYLE -------- */
+  @media(max-width: 768px) {
+    .sticky-atc-bar {
+      flex-direction: column; /* Stack */
+      align-items: stretch;
+      gap: 8px;
+      padding: 10px;
+      {% if section.settings.sticky_position == "top" %}
+      top: 80px;
+      {% else %}
+      bottom: 0;
+      {% endif %}
+    }
 
-  .sticky-atc-left {
-    flex: 0 0 auto;
-    gap: 8px;
-  }
+    .sticky-atc-left {
+      display: none !important; /* hide image + title + price */
+    }
 
-  .sticky-atc-left img {
-    width: 50px;
-    height: 50px;
-  }
+    .sticky-atc-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-  .sticky-atc-info .title,
-  .sticky-atc-info .price {
-    display: none;
-  }
+    .sticky-atc-right form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
-  .quantity-wrapper {
-    display: none;
-  }
+    .sticky-atc-right select {
+      width: 100%;
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 4px;
+    }
 
-  .sticky-atc-right {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 12px; /* 🔧 Added: shift the whole right block inward */
-  }
+    .quantity-wrapper {
+      display: none !important; /* hide qty */
+    }
 
-  .sticky-atc-right form {
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
+    .add-to-cart-btn {
+      width: 100%;
+      padding: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      background: #000;
+      color: #fff;
+      border-radius: 4px;
+      text-align: center;
+    }
   }
-
-  .sticky-atc-right select {
-    width: 100%;
-    max-width: 100px;
-    font-size: 13px;
-    padding: 8px 14px;
-    flex-shrink: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-right: 30px;
-  }
-
-  .add-to-cart-btn {
-    white-space: nowrap;
-    padding: 10px 14px;
-    font-size: 13px;
-    flex-shrink: 0;
-  }
-}
-
 </style>
 
 <div class="sticky-atc-bar">
@@ -240,7 +227,7 @@
         <button type="button" id="qty-plus">+</button>
       </div>
 
-      <button type="submit" id="StickyATCButton" class="add-to-cart-btn">Add to Cart</button>
+      <button type="submit" id="StickyATCButton" class="add-to-cart-btn">IN DEN WARENKORB LEGEN</button>
     {% endform %}
   </div>
 </div>
@@ -272,7 +259,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     const variantId = document.getElementById('StickyVariant').value;
-    const quantity = document.getElementById('StickyQuantity').value;
+    const quantity = document.getElementById('StickyQuantity') ? document.getElementById('StickyQuantity').value : 1;
 
     fetch('/cart/add.js', {
       method: 'POST',
@@ -303,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { "label": "Bottom", "value": "bottom" }
       ],
       "label": "Position",
-      "default": "top"
+      "default": "bottom"
     },
     {
       "type": "color",
@@ -321,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "type": "color",
       "id": "button_color",
       "label": "Button background color",
-      "default": "#4CAF50"
+      "default": "#000000"
     },
     {
       "type": "color",
