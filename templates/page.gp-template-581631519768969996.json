@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_581631520070959884": {
+      "settings": {
+        "checksum": "95f7854c2528c91ae16d5ede5cf44afa404f89eb92a7e0c51b9eaf65271c8718_1_1_1_0_"
+      },
+      "type": "gp-section-581631520070959884"
+    },
+    "gp_section_581631520071025420": {
+      "settings": {
+        "checksum": "58bdfb5df35d009a80cdbd90ffa496d7c875844541c2584ae5dd5079c68dc858_1_1_1_0_"
+      },
+      "type": "gp-section-581631520071025420"
+    },
+    "gp_section_581631520071090956": {
+      "settings": {
+        "checksum": "468f860c2f69f2d095b309558578acb1f1c3681240e9ed5edb31a30c61492676_1_1_1_0_"
+      },
+      "type": "gp-section-581631520071090956"
+    },
+    "gp_section_581631520071156492": {
+      "settings": {
+        "checksum": "f1fa55f56880f6a223c6814082a8c78eba890ba3d8195f56afd8e8181f195547_1_1_1_0_"
+      },
+      "type": "gp-section-581631520071156492"
+    },
+    "gp_section_581631520071222028": {
+      "settings": {
+        "checksum": "94b5cff4055a4fd0adb05185caff2ceef340e6591d9d72d1f09b82867be0a8cb_1_1_1_0_"
+      },
+      "type": "gp-section-581631520071222028"
+    },
+    "gp_section_581631520071287564": {
+      "settings": {
+        "checksum": "6f057a79dbe01d205db882c002fe3abb9783fd3ce48890f745fb1936bfbdd0ce_1_1_1_0_",
+        "section_preload": "true"
+      },
+      "type": "gp-section-581631520071287564"
+    },
+    "gp_section_581631520071353100": {
+      "settings": {
+        "checksum": "fb0ddd05275e857d2351f4162e3d69a5e6a8fc5847265042bb9776d39f5aaac8_1_1_1_0_"
+      },
+      "type": "gp-section-581631520071353100"
+    }
+  },
+  "order": [
+    "gp_section_581631520071287564",
+    "gp_section_581631520071025420",
+    "gp_section_581631520071353100",
+    "gp_section_581631520071222028",
+    "gp_section_581631520071090956",
+    "gp_section_581631520071156492",
+    "gp_section_581631520070959884"
+  ],
+  "layout": "theme.gempages.blank"
+}
