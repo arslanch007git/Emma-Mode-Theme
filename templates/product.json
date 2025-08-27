@@ -1129,7 +1129,6 @@
     },
     "selluxe_sticky_atc_e8FH6e": {
       "type": "selluxe-sticky-atc",
-      "disabled": true,
       "name": "Sticky ATC Bar V2",
       "settings": {
         "sticky_position": "bottom",
