@@ -1126,6 +1126,26 @@
         "descmargin": 18,
         "gap": 0
       }
+    },
+    "selluxe_sticky_atc_e8FH6e": {
+      "type": "selluxe-sticky-atc",
+      "name": "Sticky ATC Bar V2",
+      "settings": {
+        "sticky_position": "bottom",
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "button_color": "#961f48",
+        "button_text_color": "#ffffff",
+        "price_color": "#000000",
+        "compare_price_color": "#888888",
+        "discount_bg_color": "#000000",
+        "discount_text_color": "#ffffff",
+        "image_radius": 6,
+        "select_radius": 6,
+        "qty_button_radius": 6,
+        "qty_input_radius": 6,
+        "button_radius": 6
+      }
     }
   },
   "order": [
@@ -1140,6 +1160,7 @@
     "ss_scrolling_images_tUBYc4",
     "gallery_carousel_WXBk7M",
     "ss_faq_1_pro_wH8BCD",
-    "m_guarantees_cdf7Bz"
+    "m_guarantees_cdf7Bz",
+    "selluxe_sticky_atc_e8FH6e"
   ]
 }
