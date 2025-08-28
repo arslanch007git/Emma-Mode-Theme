@@ -1140,6 +1140,8 @@
         "compare_price_color": "#888888",
         "discount_bg_color": "#961f48",
         "discount_text_color": "#ffffff",
+        "discount_text_prefix": "Rabatt",
+        "discount_badge_radius": 4,
         "image_radius": 6,
         "select_radius": 6,
         "qty_button_radius": 6,
