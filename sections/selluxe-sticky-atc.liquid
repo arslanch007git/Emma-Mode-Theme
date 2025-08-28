@@ -24,14 +24,14 @@
   .sticky-atc-left {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     flex: 1;
     min-width: 0;
   }
 
   .sticky-atc-left img {
-    width: 60px;
-    height: 60px;
+    width: 80px; /* bigger image */
+    height: 80px;
     object-fit: cover;
     border-radius: {{ section.settings.image_radius }}px;
     flex-shrink: 0;
@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: column;
     min-width: 0;
-    gap: 2px;
+    gap: 6px;
   }
 
   .sticky-atc-info .title {
@@ -52,29 +52,29 @@
     text-overflow: ellipsis;
   }
 
-  .sticky-atc-info .price {
+  .sticky-atc-info .price-row {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 14px;
+    gap: 10px;
     flex-wrap: wrap;
+    font-size: 14px;
   }
 
-  .sticky-atc-info .price .current {
+  .sticky-atc-info .price-row .current {
     color: {{ section.settings.price_color }};
     font-weight: 600;
   }
 
-  .sticky-atc-info .price .compare {
+  .sticky-atc-info .price-row .compare {
     text-decoration: line-through;
     color: {{ section.settings.compare_price_color }};
   }
 
-  .sticky-atc-info .price .discount {
+  .sticky-atc-info .price-row .discount {
     background: {{ section.settings.discount_bg_color }};
     color: {{ section.settings.discount_text_color }};
     font-size: 12px;
-    padding: 2px 6px;
+    padding: 3px 8px;
     border-radius: {{ section.settings.discount_badge_radius }}px;
     font-weight: 600;
     white-space: nowrap;
@@ -145,8 +145,8 @@
     .sticky-atc-bar {
       flex-direction: column;
       align-items: stretch;
-      gap: 8px;
-      padding: 10px;
+      gap: 10px;
+      padding: 12px;
       {% if section.settings.sticky_position == "top" %}
         top: 80px;
       {% else %}
@@ -155,8 +155,13 @@
     }
 
     .sticky-atc-left {
-      display: flex !important;
       width: 100%;
+      align-items: flex-start;
+    }
+
+    .sticky-atc-left img {
+      width: 70px;
+      height: 70px;
     }
 
     .sticky-atc-right {
@@ -175,20 +180,15 @@
     .add-to-cart-btn {
       width: 100%;
     }
-
-    .quantity-wrapper {
-      width: 100%;
-      justify-content: center;
-    }
   }
 </style>
 
 <div class="sticky-atc-bar">
   <div class="sticky-atc-left">
-    <img src="{{ product.featured_image | image_url: width: 100 }}" alt="{{ product.title }}">
+    <img src="{{ product.featured_image | image_url: width: 200 }}" alt="{{ product.title }}">
     <div class="sticky-atc-info">
       <div class="title">{{ product.title }}</div>
-      <div class="price">
+      <div class="price-row">
         <span class="current">{{ product.price | money }}</span>
         {% if product.compare_at_price > product.price %}
           <span class="compare">{{ product.compare_at_price | money }}</span>
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 {% schema %}
 {
-  "name": "Sticky ATC Bar V3",
+  "name": "Sticky ATC Bar V4",
   "settings": [
     { "type": "select", "id": "sticky_position", "label": "Position", "default": "bottom", "options": [ { "label": "Top", "value": "top" }, { "label": "Bottom", "value": "bottom" } ] },
     { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { "type": "color", "id": "compare_price_color", "label": "Compare Price color", "default": "#888888" },
     { "type": "color", "id": "discount_bg_color", "label": "Discount badge background", "default": "#880000" },
     { "type": "color", "id": "discount_text_color", "label": "Discount badge text", "default": "#ffffff" },
-    { "type": "text", "id": "discount_text_prefix", "label": "Discount text prefix", "default": "Save" },
+    { "type": "text", "id": "discount_text_prefix", "label": "Discount text prefix", "default": "Rabatt" },
     { "type": "range", "id": "discount_badge_radius", "label": "Discount badge radius", "min": 0, "max": 30, "default": 4, "unit": "px" },
     { "type": "range", "id": "image_radius", "label": "Image border radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
     { "type": "range", "id": "select_radius", "label": "Variant select radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
@@ -279,6 +279,6 @@ document.addEventListener("DOMContentLoaded", function () {
     { "type": "range", "id": "qty_input_radius", "label": "Quantity input radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
     { "type": "range", "id": "button_radius", "label": "ATC button radius", "min": 0, "max": 30, "default": 6, "unit": "px" }
   ],
-  "presets": [ { "name": "Sticky ATC Bar V3" } ]
+  "presets": [ { "name": "Sticky ATC Bar V4" } ]
 }
 {% endschema %}
