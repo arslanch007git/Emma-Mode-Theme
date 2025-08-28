@@ -255,4 +255,30 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 {% endif %}
+
+{% schema %}
+{
+  "name": "Sticky ATC Bar V4",
+  "settings": [
+    { "type": "select", "id": "sticky_position", "label": "Position", "default": "bottom", "options": [ { "label": "Top", "value": "top" }, { "label": "Bottom", "value": "bottom" } ] },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#000000" },
+    { "type": "color", "id": "button_color", "label": "Button background color", "default": "#000000" },
+    { "type": "color", "id": "button_text_color", "label": "Button text color", "default": "#ffffff" },
+    { "type": "color", "id": "price_color", "label": "Price color", "default": "#000000" },
+    { "type": "color", "id": "compare_price_color", "label": "Compare Price color", "default": "#888888" },
+    { "type": "color", "id": "discount_bg_color", "label": "Discount badge background", "default": "#880000" },
+    { "type": "color", "id": "discount_text_color", "label": "Discount badge text", "default": "#ffffff" },
+    { "type": "text", "id": "discount_text_prefix", "label": "Discount text prefix", "default": "Rabatt" },
+    { "type": "range", "id": "discount_badge_radius", "label": "Discount badge radius", "min": 0, "max": 30, "default": 4, "unit": "px" },
+    { "type": "range", "id": "image_radius", "label": "Image border radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "select_radius", "label": "Variant select radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "qty_button_radius", "label": "Quantity button radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "qty_input_radius", "label": "Quantity input radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "button_radius", "label": "ATC button radius", "min": 0, "max": 30, "default": 6, "unit": "px" }
+  ],
+  "presets": [ { "name": "Sticky ATC Bar V4" } ]
+}
+{% endschema %}
