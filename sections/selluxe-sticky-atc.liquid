@@ -3,15 +3,15 @@
   .sticky-atc-bar {
     position: fixed;
     {% if section.settings.sticky_position == "top" %}
-    top: 112px;
+      top: 112px;
     {% else %}
-    bottom: 0;
+      bottom: 0;
     {% endif %}
     left: 0;
     right: 0;
     background: {{ section.settings.background_color }};
     color: {{ section.settings.text_color }};
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 -2px 10px rgba(0,0,0,.08);
     z-index: 12;
     display: none;
     justify-content: space-between;
@@ -40,8 +40,8 @@
   .sticky-atc-info {
     display: flex;
     flex-direction: column;
-    gap: 4px;
     min-width: 0;
+    gap: 2px;
   }
 
   .sticky-atc-info .title {
@@ -54,9 +54,10 @@
 
   .sticky-atc-info .price {
     display: flex;
-    gap: 8px;
     align-items: center;
+    gap: 8px;
     font-size: 14px;
+    flex-wrap: wrap;
   }
 
   .sticky-atc-info .price .current {
@@ -74,7 +75,9 @@
     color: {{ section.settings.discount_text_color }};
     font-size: 12px;
     padding: 2px 6px;
-    border-radius: 4px;
+    border-radius: {{ section.settings.discount_badge_radius }}px;
+    font-weight: 600;
+    white-space: nowrap;
   }
 
   .sticky-atc-right form {
@@ -89,14 +92,15 @@
     font-size: 14px;
     border-radius: {{ section.settings.select_radius }}px;
     border: 1px solid #ccc;
-    min-width: 180px;
+    min-width: 160px;
   }
 
   .quantity-wrapper {
     display: flex;
     align-items: center;
-    border-radius: 6px;
+    border-radius: {{ section.settings.qty_input_radius }}px;
     overflow: hidden;
+    border: 1px solid #ccc;
   }
 
   .quantity-wrapper button {
@@ -106,7 +110,6 @@
     height: 32px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 1;
     cursor: pointer;
     border-radius: {{ section.settings.qty_button_radius }}px;
   }
@@ -116,7 +119,6 @@
     text-align: center;
     border: none;
     outline: none;
-    border-radius: {{ section.settings.qty_input_radius }}px;
     -moz-appearance: textfield;
   }
 
@@ -138,58 +140,45 @@
     white-space: nowrap;
   }
 
-  /* -------- MOBILE STYLE -------- */
+  /* -------- MOBILE -------- */
   @media(max-width: 768px) {
     .sticky-atc-bar {
-      flex-direction: column; /* Stack */
+      flex-direction: column;
       align-items: stretch;
       gap: 8px;
       padding: 10px;
       {% if section.settings.sticky_position == "top" %}
-      top: 80px;
+        top: 80px;
       {% else %}
-      bottom: 0;
+        bottom: 0;
       {% endif %}
     }
 
     .sticky-atc-left {
-      display: none !important; /* hide image + title + price */
+      display: flex !important;
+      width: 100%;
     }
 
     .sticky-atc-right {
       width: 100%;
-      display: flex;
       flex-direction: column;
       gap: 8px;
     }
 
     .sticky-atc-right form {
-      width: 100%;
-      display: flex;
       flex-direction: column;
       gap: 8px;
+      width: 100%;
     }
 
-    .sticky-atc-right select {
+    .sticky-atc-right select,
+    .add-to-cart-btn {
       width: 100%;
-      padding: 12px;
-      font-size: 15px;
-      border-radius: 4px;
     }
 
     .quantity-wrapper {
-      display: none !important; /* hide qty */
-    }
-
-    .add-to-cart-btn {
       width: 100%;
-      padding: 14px;
-      font-size: 15px;
-      font-weight: 600;
-      background: #000;
-      color: #fff;
-      border-radius: 4px;
-      text-align: center;
+      justify-content: center;
     }
   }
 </style>
@@ -204,7 +193,8 @@
         {% if product.compare_at_price > product.price %}
           <span class="compare">{{ product.compare_at_price | money }}</span>
           <span class="discount">
-            Save {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round }}%
+            {{ section.settings.discount_text_prefix }}
+            {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | round }}%
           </span>
         {% endif %}
       </div>
@@ -227,24 +217,19 @@
         <button type="button" id="qty-plus">+</button>
       </div>
 
-      <button type="submit" id="StickyATCButton" class="add-to-cart-btn">IN DEN WARENKORB LEGEN</button>
+      <button type="submit" id="StickyATCButton" class="add-to-cart-btn">{{ 'products.product.add_to_cart' | t }}</button>
     {% endform %}
   </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const stickyButton = document.querySelector('.sticky-atc-bar');
+  const stickyBar = document.querySelector('.sticky-atc-bar');
   const screenWidth = window.innerWidth;
-  const scrollThreshold = screenWidth <= 768 ? 1100 : 1000;
+  const threshold = screenWidth <= 768 ? 1100 : 1000;
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    if (currentScroll >= scrollThreshold) {
-      stickyButton.style.display = 'flex';
-    } else {
-      stickyButton.style.display = 'none';
-    }
+    stickyBar.style.display = window.scrollY >= threshold ? 'flex' : 'none';
   });
 
   const qtyInput = document.getElementById('StickyQuantity');
@@ -257,22 +242,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById('StickyATCButton')?.addEventListener('click', function (event) {
     event.preventDefault();
-
     const variantId = document.getElementById('StickyVariant').value;
-    const quantity = document.getElementById('StickyQuantity') ? document.getElementById('StickyQuantity').value : 1;
+    const quantity = qtyInput ? qtyInput.value : 1;
 
     fetch('/cart/add.js', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ id: variantId, quantity: quantity })
+      body: JSON.stringify({ id: variantId, quantity })
     })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Item added to cart:', data);
-    })
-    .catch(error => {
-      console.error('Error adding to cart:', error);
-    });
+    .then(res => res.json())
+    .then(data => console.log('Added:', data))
+    .catch(err => console.error('ATC error:', err));
   });
 });
 </script>
@@ -280,114 +260,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
 {% schema %}
 {
-  "name": "Sticky ATC Bar V2",
+  "name": "Sticky ATC Bar V3",
   "settings": [
-    {
-      "type": "select",
-      "id": "sticky_position",
-      "options": [
-        { "label": "Top", "value": "top" },
-        { "label": "Bottom", "value": "bottom" }
-      ],
-      "label": "Position",
-      "default": "bottom"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_color",
-      "label": "Button background color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button text color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "price_color",
-      "label": "Price color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "compare_price_color",
-      "label": "Compare at Price Color",
-      "default": "#888888"
-    },
-    {
-      "type": "color",
-      "id": "discount_bg_color",
-      "label": "Discount badge background",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "discount_text_color",
-      "label": "Discount badge text color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "range",
-      "id": "image_radius",
-      "label": "Image Border Radius",
-      "min": 0,
-      "max": 30,
-      "default": 6,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "select_radius",
-      "label": "Variant Select Border Radius",
-      "min": 0,
-      "max": 30,
-      "default": 6,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "qty_button_radius",
-      "label": "Quantity Button Border Radius",
-      "min": 0,
-      "max": 30,
-      "default": 6,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "qty_input_radius",
-      "label": "Quantity Input Border Radius",
-      "min": 0,
-      "max": 30,
-      "default": 6,
-      "unit": "px"
-    },
-    {
-      "type": "range",
-      "id": "button_radius",
-      "label": "ATC Button Border Radius",
-      "min": 0,
-      "max": 30,
-      "default": 6,
-      "unit": "px"
-    }
+    { "type": "select", "id": "sticky_position", "label": "Position", "default": "bottom", "options": [ { "label": "Top", "value": "top" }, { "label": "Bottom", "value": "bottom" } ] },
+    { "type": "color", "id": "background_color", "label": "Background color", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#000000" },
+    { "type": "color", "id": "button_color", "label": "Button background color", "default": "#000000" },
+    { "type": "color", "id": "button_text_color", "label": "Button text color", "default": "#ffffff" },
+    { "type": "color", "id": "price_color", "label": "Price color", "default": "#000000" },
+    { "type": "color", "id": "compare_price_color", "label": "Compare Price color", "default": "#888888" },
+    { "type": "color", "id": "discount_bg_color", "label": "Discount badge background", "default": "#880000" },
+    { "type": "color", "id": "discount_text_color", "label": "Discount badge text", "default": "#ffffff" },
+    { "type": "text", "id": "discount_text_prefix", "label": "Discount text prefix", "default": "Save" },
+    { "type": "range", "id": "discount_badge_radius", "label": "Discount badge radius", "min": 0, "max": 30, "default": 4, "unit": "px" },
+    { "type": "range", "id": "image_radius", "label": "Image border radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "select_radius", "label": "Variant select radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "qty_button_radius", "label": "Quantity button radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "qty_input_radius", "label": "Quantity input radius", "min": 0, "max": 30, "default": 6, "unit": "px" },
+    { "type": "range", "id": "button_radius", "label": "ATC button radius", "min": 0, "max": 30, "default": 6, "unit": "px" }
   ],
-  "presets": [
-    { "name": "Sticky ATC Bar V2" }
-  ]
+  "presets": [ { "name": "Sticky ATC Bar V3" } ]
 }
 {% endschema %}
