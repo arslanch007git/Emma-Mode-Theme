@@ -1,0 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_584229280238535434": {
+      "settings": {
+        "checksum": "46214d16247c4f667902c92dbca2868bf8944db5b38076ce01f7c9c7de755c1c_1_1_1_0_"
+      },
+      "type": "gp-section-584229280238535434"
+    },
+    "gp_section_584229280238600970": {
+      "settings": {
+        "checksum": "da114cd0dd3dbacac0254bd49fa0429f28b4705a12b2697ad9f295ac0b4d6aa8_1_1_1_0_"
+      },
+      "type": "gp-section-584229280238600970"
+    },
+    "gp_section_584229280238732042": {
+      "settings": {
+        "checksum": "2d1962e8235b500bb7f0fcad8ac328d97ebfd2dd59e967a4f79a42b3b9635434_1_1_1_0_"
+      },
+      "type": "gp-section-584229280238732042"
+    },
+    "gp_section_584229280238797578": {
+      "settings": {
+        "checksum": "08397b86d0a194f2cc3eb7f844b19740dc8846474600a95d39b6c69476420c4f_1_1_1_0_"
+      },
+      "type": "gp-section-584229280238797578"
+    },
+    "gp_section_584229280238863114": {
+      "settings": {
+        "checksum": "4869a0334ad8e6adabb8b18ce53be4a3fecbb4ccadfa3ba8162db44a9c2166a3_1_1_1_0_"
+      },
+      "type": "gp-section-584229280238863114"
+    },
+    "gp_section_584229280238928650": {
+      "settings": {
+        "checksum": "3542e350ea509c43fb05f943df6aa223a0ba05218bbb03ff72655a617456986a_1_1_1_0_",
+        "section_preload": "true"
+      },
+      "type": "gp-section-584229280238928650"
+    }
+  },
+  "order": [
+    "gp_section_584229280238928650",
+    "gp_section_584229280238535434",
+    "gp_section_584229280238863114",
+    "gp_section_584229280238732042",
+    "gp_section_584229280238600970",
+    "gp_section_584229280238797578"
+  ],
+  "layout": "theme.gempages.blank"
+}
