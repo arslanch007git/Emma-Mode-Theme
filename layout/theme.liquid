@@ -42,6 +42,15 @@
     {{ 'mirzag_01.css' | asset_url | stylesheet_tag }}
 
     {{ content_for_header }}
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17530789490"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17530789490');
+</script>
   </head>
 
   <body class="template-{{ request.page_type | handle }}">
