@@ -1,0 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_582069065351168985": {
+      "settings": {
+        "checksum": "8cd21a3bee6b87100c874ca3ef2b43c150e49f8d29519c854e60ba20a8c2fce1_1_1_1_0_",
+        "section_preload": "true"
+      },
+      "type": "gp-section-582069065351168985"
+    },
+    "gp_section_582069065367945841": {
+      "settings": {
+        "checksum": "0d19171c209fe0a6fbb61bee1dd3d337c67dfb9083785f7360f5ff0bac286f8b_1_1_1_0_"
+      },
+      "type": "gp-section-582069065367945841"
+    },
+    "gp_section_582069066223584217": {
+      "settings": {
+        "checksum": "88b7429d79c0e79c7c589505c9be9a6afa4bbac9f91559441761f342a8192d1b_1_1_1_0_"
+      },
+      "type": "gp-section-582069066223584217"
+    },
+    "gp_section_582092852004127345": {
+      "settings": {
+        "checksum": "820f9b966901b4dc2fb89231548e9011efa8da0f4447225c41dee78d93a67a62_1_1_1_0_"
+      },
+      "type": "gp-section-582092852004127345"
+    },
+    "gp_section_582093019138753176": {
+      "settings": {
+        "checksum": "2c20917fb08179e1deb1c06260af9b7d46e479992096fc0d116c8ba0035a873c_1_1_1_0_"
+      },
+      "type": "gp-section-582093019138753176"
+    },
+    "gp_section_582094844382413425": {
+      "settings": {
+        "checksum": "168f28bf2f03d58ee112da8637edcbe090ed2d75b8bfd18ec810cbb532225cea_1_1_1_0_"
+      },
+      "type": "gp-section-582094844382413425"
+    }
+  },
+  "order": [
+    "gp_section_582069065351168985",
+    "gp_section_582094844382413425",
+    "gp_section_582069065367945841",
+    "gp_section_582069066223584217",
+    "gp_section_582093019138753176",
+    "gp_section_582092852004127345"
+  ],
+  "layout": "theme.gempages.footer"
+}
