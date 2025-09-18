@@ -9,14 +9,14 @@
       gp-data='{"uid":"gZ98phD0Xd","setting":{"display":{"desktop":"after-first-cart-button","tablet":"after-first-cart-button","mobile":"after-first-cart-button"}},"advanced":{"d":{"desktop":true,"mobile":true,"tablet":true}}}'
       id="gZ98phD0Xd"
       data-id="gZ98phD0Xd"
-      class="sticky-wrapper !gp-pointer-events-none [&_gp-button_button]:!gp-pointer-events-auto gZ98phD0Xd undefined {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+      class="sticky-wrapper !gp-pointer-events-none [&_gp-button_button]:!gp-pointer-events-auto gZ98phD0Xd my-sticky-button {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
       style="--w:96%;--w-tablet:100%;--w-mobile:100%;margin:0 auto;--left:50%;--t:translateX(-50%);--left-tablet:50%;--t-tablet:translateX(-50%);--left-mobile:50%;--t-mobile:translateX(-50%);--top:auto;--bottom:0;--pos:fixed;--d:none;--top-tablet:auto;--bottom-tablet:0;--pos-tablet:fixed;--d-tablet:none;--top-mobile:auto;--bottom-mobile:0;--pos-mobile:fixed;--d-mobile:none;z-index:999"
     >
       <style>.drawer-page-content {
        transform: none !important;
       -webkit-transform: none !important;
   }</style>
-      <div  style="--m:0 auto;--pb:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--pageType:GP_STATIC;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--bgc:#00000000;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+      <div  style="--m:0 auto;--pt:0px;--pb:0px;--pr:0px;--pl:0px;--pt-mobile:0px;--pb-mobile:0px;--pr-mobile:0px;--pl-mobile:0px;--pt-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--pl-tablet:0px;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--pageType:GP_STATIC;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:0px;--mb-tablet:0px;--mb-mobile:0px;--bgc:#00000000;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
         <div
       data-same-height-display-contents
       
@@ -86,49 +86,14 @@
     </gp-button>
   
       <style id="custom-css-gS4h3XssKv">
-        button.gS4h3XssKv {
+        .gS4h3XssKv {
 
-}gp-sticky.gS4h3XssKv {
-display: none!important;
-}
-
-gp-sticky.gS4h3XssKv.display-me {
-display: block!important;
-}
-add
-.my-sticky-button {
-opacity: 0;
-visibility: hidden;
-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
       </style>
     
       <script id="custom-js-gS4h3XssKv">
         try {
           //const currentElement = document.getElementsByClassName('gS4h3XssKv');
-
-document.addEventListener("DOMContentLoaded", function () {
-const target = document.querySelector('gp-sticky.gS4h3XssKv');
-if (!target) return;
-
-// Ensure it's hidden initially (in case CSS handles the visibility)
-target.classList.remove('display-me');
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', function () {
-const scrollTop = window.scrollY;
-const scrollPercent = (scrollTop / (document.body.scrollHeight - window.innerHeight)) * 100;
-
-if (scrollPercent >= 50) {
-target.classList.add('display-me');
-} else if (scrollTop < lastScrollY && scrollPercent < 50) {
-target.classList.remove('display-me');
-}
-
-lastScrollY = scrollTop;
-});
-});
 
         } catch(err){}
       </script>
@@ -250,6 +215,52 @@ lastScrollY = scrollTop;
     </gp-sticky>
     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-sticky-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
   
+      <style id="custom-css-gZ98phD0Xd">
+        gp-sticky.gZ98phD0Xd {
+display: none!important;
+}
+
+gp-sticky.gZ98phD0Xd.display-me {
+display: block!important;
+}
+add
+.my-sticky-button {
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+      </style>
+    
+      <script id="custom-js-gZ98phD0Xd">
+        try {
+          //const currentElement = document.getElementsByClassName('gZ98phD0Xd');
+
+document.addEventListener("DOMContentLoaded", function () {
+const target = document.querySelector('gp-sticky.gZ98phD0Xd');
+if (!target) return;
+
+// Ensure it's hidden initially (in case CSS handles the visibility)
+target.classList.remove('display-me');
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', function () {
+const scrollTop = window.scrollY;
+const scrollPercent = (scrollTop / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+if (scrollPercent >= 50) {
+target.classList.add('display-me');
+} else if (scrollTop < lastScrollY && scrollPercent < 50) {
+target.classList.remove('display-me');
+}
+
+lastScrollY = scrollTop;
+});
+});
+
+        } catch(err){}
+      </script>
+    
     
     
 {% schema %}
