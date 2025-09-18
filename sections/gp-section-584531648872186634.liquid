@@ -56,7 +56,7 @@
           data-id="gS4h3XssKv" dataId="gS4h3XssKv" data-state="idle" aria-label="<p><span style='font-size:18px;'>BESUCHEN SIE MEINEN SHOP</span></p>"
           
           href="https://www.claudia-schmuckatelier.com/collections/moonstone" target="_blank"
-          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:20px;--pb:20px;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--shadow:none;--bgi:;--hvr-bgi:;--hvr-bg:#07829F;--bg:#07829F;--c:var(--g-c-text-3, text-3);--ff:var(--g-font-body, body);--weight:600;--ls:0px;--size:23px;--size-tablet:20px;--size-mobile:20px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:10px;--pr:10px;--pt:10px;--pb:10px;--radius:var(--g-radius-small);--hvr-radius:var(--g-radius-small);--shadow:none;--bgi:;--hvr-bgi:;--hvr-bg:#07829F;--bg:#07829F;--c:var(--g-c-text-3, text-3);--ff:var(--g-font-body, body);--weight:600;--ls:0px;--size:23px;--size-tablet:20px;--size-mobile:20px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%"
           class="gS4h3XssKv gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 gp-text-g-text-3 "
         >
         
@@ -88,15 +88,57 @@
       <style id="custom-css-gS4h3XssKv">
         button.gS4h3XssKv {
 
+}gp-sticky.gS4h3XssKv {
+display: none!important;
+}
+
+gp-sticky.gS4h3XssKv.display-me {
+display: block!important;
+}
+add
+.my-sticky-button {
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
       </style>
+    
+      <script id="custom-js-gS4h3XssKv">
+        try {
+          //const currentElement = document.getElementsByClassName('gS4h3XssKv');
+
+document.addEventListener("DOMContentLoaded", function () {
+const target = document.querySelector('gp-sticky.gS4h3XssKv');
+if (!target) return;
+
+// Ensure it's hidden initially (in case CSS handles the visibility)
+target.classList.remove('display-me');
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', function () {
+const scrollTop = window.scrollY;
+const scrollPercent = (scrollTop / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+if (scrollPercent >= 50) {
+target.classList.add('display-me');
+} else if (scrollTop < lastScrollY && scrollPercent < 50) {
+target.classList.remove('display-me');
+}
+
+lastScrollY = scrollTop;
+});
+});
+
+        } catch(err){}
+      </script>
     
     <gp-button
       gp-data='{"btnLink":{"link":"#scroll-to-top","selectedTab":"scrollToList","target":"_self","title":"Section"}}'
       
       class="gp-flex gp-flex-col"
     >
-      <div style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--pageType:GP_STATIC;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-m);--mb-mobile:var(--g-s-xl);--mr-mobile:0px;--pb-mobile:0px;--pr-mobile:15px;--ta:right" >
+      <div style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:none;--d-mobile:block;--d-tablet:block;--op:100%;--op-mobile:100%;--pageType:GP_STATIC;--bblr:0px;--bbrr:0px;--btlr:0px;--btrr:0px;--mb:var(--g-s-m);--pt:0px;--pl:0px;--pb:0px;--pr:0px;--mb-tablet:var(--g-s-m);--pt-tablet:0px;--pl-tablet:0px;--pb-tablet:0px;--pr-tablet:0px;--mb-mobile:var(--g-s-xl);--mr-mobile:0px;--pb-mobile:0px;--pr-mobile:15px;--ta:right" >
         <style>[data-id="gzlEA5070X"].gp-button-base::before, [data-id="gzlEA5070X-interaction"].gp-button-base::before {
       
     content: "";
@@ -133,8 +175,8 @@
           data-id="gzlEA5070X" dataId="gzlEA5070X" data-state="idle" aria-label
           
           href="#scroll-to-top" target="_self"
-          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:12px;--pr:12px;--pt:12px;--pb:12px;--pl-mobile:11px;--pr-mobile:11px;--pt-mobile:11px;--pb-mobile:11px;--bblr:6px;--bbrr:6px;--btlr:6px;--btrr:6px;--hvr-bblr:6px;--hvr-bbrr:6px;--hvr-btlr:6px;--hvr-btrr:6px;--shadow:none;--bgi:;--hvr-bgi:;--hvr-bg:#07829F;--bg:#07829F;--c:var(--g-c-text-3, text-3);--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:0.6px;--size:24px;--size-tablet:14px;--size-mobile:14px;--lh:140%;--lh-tablet:140%;--lh-mobile:140%"
-          class="gzlEA5070X gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 gp-text-g-text-3 "
+          style="--w:Auto;--w-tablet:Auto;--w-mobile:Auto;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:12px;--pr:12px;--pt:12px;--pb:12px;--pl-mobile:11px;--pr-mobile:11px;--pt-mobile:11px;--pb-mobile:11px;--bblr:6px;--bbrr:6px;--btlr:6px;--btrr:6px;--hvr-bblr:6px;--hvr-bbrr:6px;--hvr-btlr:6px;--hvr-btrr:6px;--shadow:none;--bgi:;--hvr-bgi:;--hvr-bg:#07829F;--bg:#07829F;--c:#07829F;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:0.6px;--size:24px;--size-tablet:14px;--size-mobile:14px;--lh:140%;--lh-tablet:140%;--lh-mobile:140%"
+          class="gzlEA5070X gp-text-center gp-button-base gp-group gp-relative gp-inline-flex gp-max-w-full gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-200 disabled:gp-btn-disabled disabled:gp-opacity-30 "
         >
         
         <div class="gp-inline-flex">
@@ -155,6 +197,54 @@
       <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://assets.gemcommerce.com/assets-v2/gp-button-v7-5.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
     </gp-button>
   
+      <style id="custom-css-gzlEA5070X">
+        .gzlEA5070X {
+
+}gp-sticky.gzlEA5070X {
+display: none!important;
+}
+
+gp-sticky.gzlEA5070X.display-me {
+display: block!important;
+}
+add
+.my-sticky-button {
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+      </style>
+    
+      <script id="custom-js-gzlEA5070X">
+        try {
+          //const currentElement = document.getElementsByClassName('gzlEA5070X');
+
+document.addEventListener("DOMContentLoaded", function () {
+const target = document.querySelector('gp-sticky.gzlEA5070X');
+if (!target) return;
+
+// Ensure it's hidden initially (in case CSS handles the visibility)
+target.classList.remove('display-me');
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', function () {
+const scrollTop = window.scrollY;
+const scrollPercent = (scrollTop / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+if (scrollPercent >= 50) {
+target.classList.add('display-me');
+} else if (scrollTop < lastScrollY && scrollPercent < 50) {
+target.classList.remove('display-me');
+}
+
+lastScrollY = scrollTop;
+});
+});
+
+        } catch(err){}
+      </script>
+    
     </div>
       </div>
     </gp-sticky>
