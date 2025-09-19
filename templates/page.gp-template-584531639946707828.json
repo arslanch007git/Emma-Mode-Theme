@@ -9,12 +9,6 @@
  */
 {
   "sections": {
-    "gp_section_584531648872186634": {
-      "settings": {
-        "checksum": "d409bc4835e220e8436b599c4118c0f5b6a1b95877f8b4994a3be63e9b202415_1_1_1_0__1"
-      },
-      "type": "gp-section-584531648872186634"
-    },
     "gp_section_584531649509786181": {
       "settings": {
         "checksum": "dd3cd2e0630f9e5f1912b7bddb206b92300b34ca9c0bf5d4b7d56321560cbea6_1_1_1_0__1",
@@ -73,13 +67,19 @@
         "ggyxzS_OnMD_label": "<p><strong>BESUCHEN SIE MEINEN SHOP</strong></p>"
       },
       "type": "gp-section-584531649643938570"
+    },
+    "gp_section_585090122127508285": {
+      "settings": {
+        "checksum": "d65412aed9073f1ed003a2d37defbca3e6b2641005218f00dde1191756096c4d_1_1_1_0__1"
+      },
+      "type": "gp-section-585090122127508285"
     }
   },
   "order": [
     "gp_section_584531649526498058",
     "gp_section_584531649643938570",
     "gp_section_584531649509786181",
-    "gp_section_584531648872186634"
+    "gp_section_585090122127508285"
   ],
   "layout": "theme.gempages.footer"
 }
