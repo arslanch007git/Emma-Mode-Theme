@@ -1,0 +1,100 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_586255106974942043": {
+      "settings": {
+        "checksum": "5f19474b96d40683c0ec3e17b2213be772878b8c5e550fdbe410f99bfab8ec70_1_1_1_0__1"
+      },
+      "type": "gp-section-586255106974942043"
+    },
+    "gp_section_586255106975007579": {
+      "settings": {
+        "checksum": "ae0de600bde474663a7a8354f798272b66c61eaa05c82dab6e87dfdc4e6742c7_1_1_1_0__1",
+        "gg4t59GfUHB_text": "<p>Ein stiller Moment aus meiner Kindheit – wo das Sammeln von Steinen Zuflucht bedeutete.</p>",
+        "ggGi73QvO-9_text": "<p><strong>Ich war das stille Mädchen mit steinernen Hosentaschen.</strong></p>",
+        "ggQ0iRaAdmT_text": "<p>In meinem Atelier in Freiburg – hier entstehen seit Jahren meine stillen Begleiter.</p>",
+        "ggTfwx5OVu8_text": "<span style=\"font-size:25px;\"><strong>Ein stiller Abschied – und die Geschichte dahinter</strong>&nbsp;</span>",
+        "ggdHpaR-VXd_text": "<p>Zuhause sprachen wir nicht viel über <strong>Gefühle</strong>. Man machte einfach weiter. <strong>Stark bleiben</strong>.<br>Aber ich hatte oft <strong>Angst</strong> – als müsste ich <strong>perfekt</strong> sein, nur um <strong>sicher</strong> zu sein.</p><p>&nbsp;</p><p>Dieses Gefühl begleitete mich bis ins <strong>Erwachsenenleben</strong>.<br>Ich bemerkte immer das, was andere <strong>übersahen</strong>.<br><strong>Steine gaben mir Trost</strong>, wenn Worte <strong>fehlten</strong>.</p><p>&nbsp;</p><p>In meinen Zwanzigern und Dreißigern tat ich alles „<strong>richtig</strong>“. Ein <strong>sicherer Job</strong>. Eine <strong>langjährige Beziehung</strong>. Ein Leben, das auf dem Papier gut aussah.<br>Aber innerlich fühlte ich mich <strong>entfremdet</strong> – als spielte ich eine <strong>Rolle in der Geschichte eines anderen</strong>.</p><p>&nbsp;</p><p>Mit <strong>33</strong> kam der <strong>Zusammenbruch</strong>.<br><strong>Emotional erschöpft</strong>. <strong>Ausgebrannt</strong>. <strong>Zweifelnd an allem</strong>.</p><p>&nbsp;</p><p>Meine Eltern merkten es – besonders meine <strong>Mutter</strong>.<br>Sie war nie gut mit Worten, aber eines Tages legte sie mir eine kleine Schachtel in die Hände. Darin lag ein Stein, <strong>blass und leuchtend wie Mondlicht</strong>.</p><p>&nbsp;</p><p>Ein <strong>Mondstein</strong>.</p><p>&nbsp;</p><p>„Wir haben ihn in <strong>Österreich</strong> gesehen“, sagte sie. „Er hat uns an <strong>dich</strong> erinnert.“</p>",
+        "ggwWkx2k6It_text": "<p>Ich war <strong>müde</strong>. <strong>Leer von innen</strong>. <strong>Still zerbrechend</strong>.<br>Dann, eines Tages, legte mir meine Mutter einen kleinen <strong>Stein</strong> in die Hand. Und alles begann sich zu <strong>verändern</strong>.</p><p>&nbsp;</p><p>Heute sitze ich in meinem <strong>Heimatelier in Freiburg</strong>, wo ich seit Jahren jedes einzelne <strong>Mondstein-Schmuckstück</strong> von Hand fertige, <strong>langsam</strong>, <strong>behutsam</strong>, mit <strong>stiller Hingabe</strong>. Aber meine Reise begann lange, bevor ich je ein Werkzeug in die Hand nahm.</p>",
+        "ggxDyDai6Fk_text": "<p>Schon als Kind, in einem kleinen Dorf in <strong>Süddeutschland</strong>, fühlte ich mich zum <strong>Himmel</strong> hingezogen – besonders in der <strong>Nacht</strong>. Nicht nur zu den Sternen, sondern zum <strong>Mond</strong>. Dieses <strong>sanfte Leuchten</strong>, das nie das Hellste sein musste, um dennoch gesehen zu werden. Ich lag stundenlang im Garten meiner Großeltern und betrachtete ihn, spürte sein Licht an Orten in mir, die keinen Namen hatten.</p><p>&nbsp;</p><p>Ich war <strong>empfindsam</strong>. <strong>Still</strong>. Ich fühlte alles <strong>tief</strong>.<br>Während die anderen Kinder auf Bäume kletterten und lachten, <strong>sammelte ich Steine</strong> – kleine <strong>Schätze</strong>, die mir halfen, mich <strong>sicher</strong> zu fühlen, wenn die Welt zu <strong>laut</strong> wurde.</p><p>&nbsp;</p>"
+      },
+      "type": "gp-section-586255106975007579"
+    },
+    "gp_section_586255106975073115": {
+      "settings": {
+        "checksum": "7b041cd1b477e92839145a8c4df0201d5390e078314fd0eae6a57600e4c225e4_1_1_1_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-586255106975073115"
+    },
+    "gp_section_586255106975138651": {
+      "settings": {
+        "checksum": "c01da4ba52fafe4f80e8831a3183d05c5164d1a1f9bb144ace779b6e0b3a42e5_1_1_1_0__1",
+        "gg5umlEKhx6_text": "<p><a href=\"https://www.claudia-schmuckatelier.com/pages/impressum\" target=\"_blank\"><u>Impressum</u></a></p>"
+      },
+      "type": "gp-section-586255106975138651"
+    },
+    "gp_section_586255106975204187": {
+      "settings": {
+        "checksum": "e4996caffef8d8cc8e6ae753b56a72bf60d0e5ede4e2bb53786a9488547c715a_1_1_1_0__1",
+        "gg3eJzASpd5_label": "In den Warenkorb",
+        "gg3eJzASpd5_outOfStockLabel": "Out Of Stock",
+        "gg3eJzASpd5_unavailableLabel": "Unavailable",
+        "gg3eJzASpd5_variantSelectionRequiredMessage": "Bitte wählen Sie eine Variante aus, um das Produkt in den Warenkorb zu legen."
+      },
+      "type": "gp-section-586255106975204187"
+    },
+    "gp_section_586255106975335259": {
+      "settings": {
+        "checksum": "b67f91e8b8094b43531bbcc454c82a6f869e2a22cc910703098216114f800e58_1_1_1_0__1",
+        "gg4J3cwoCEz_text": "<p>Der Moment, der alles veränderte – ein stilles Geschenk, das Licht brachte.</p>",
+        "gg4RQwJuZsh_text": "<p>- Jana W. aus Leipzig</p>",
+        "gg4o3i9U8Sl_text": "<p><strong>Von Hand gemacht, aus dem Herzen – getragen von Licht und Erinnerung.</strong></p>",
+        "gg5xzHUuE-5_text": "Entdecken Sie jetzt meine Werke",
+        "gg7sEKhLaDs_text": "<p>Was als <strong>privates Ritual</strong> begann, wurde langsam zu einer <strong>Berufung</strong>.<br><strong>Handgemacht</strong>. Von <strong>Herzen</strong>. Geleitet von <strong>Erinnerung</strong> und <strong>Bedeutung</strong>.</p><p>&nbsp;</p><p>Eines Tages fertigte ich ein <strong>Mondsteinarmband</strong> für eine liebe Freundin, die ihr <strong>Baby verloren</strong> hatte.<br>Als sie die Schachtel öffnete, <strong>weinte</strong> sie. Nicht weil es <strong>schön</strong> war –<br>sondern weil sie sich <strong>gesehen</strong> fühlte. <strong>Verstanden</strong>.</p><p>&nbsp;</p><p>Dieser Moment begleitet mich <strong>bis heute</strong>.</p><p>&nbsp;</p><p>Heute bin ich <strong>70</strong>. Ich fertige noch immer jedes Stück <strong>von Hand</strong> in meinem Zuhause in Freiburg. Mein Atelier ist <strong>schlicht</strong>: ein <strong>Holztisch</strong>, ein <strong>Fenster voller Licht</strong>, und ein stilles <strong>Notizbuch voller Geschichten</strong> wie meiner eigenen.</p><p>&nbsp;</p><p>Der <strong>Mondstein</strong> steht noch immer im <strong>Mittelpunkt von allem</strong>.</p><p>Denn für mich war er <strong>nie nur ein Edelstein</strong>.</p><p>&nbsp;</p><p>Er ist eine <strong>Erinnerung</strong>.</p><p>Daran, dass <strong>Heilung leise</strong> sein darf.<br>Dass <strong>Sanftheit Kraft</strong> ist.<br>Dass das <strong>Licht in uns bleibt</strong> –<br>selbst wenn wir vergessen, dass es da ist.</p><p>&nbsp;</p><p>Nach vielen <strong>stillen</strong>, <strong>erfüllten Jahren</strong> spüre ich: Es ist Zeit, <strong>loszulassen</strong>.</p><p>Ich gehe in den <strong>Ruhestand</strong> und schließe meinen <strong>Shop</strong> an diesem Wochenende.</p><p>&nbsp;</p><p>Diese Entscheidung treffe ich mit <strong>Frieden</strong>. Mit <strong>Weichheit</strong>. Mit <strong>tiefer Dankbarkeit</strong>.</p><p>Ich werde keine neuen <strong>Kollektionen</strong> mehr schaffen.<br>Was jetzt noch bleibt, sind die letzten Stücke – <strong>stille Begleiter*innen</strong><br>für alle, die durch ihre eigene <strong>dunkle Nacht</strong> gegangen sind,<br>die lernen, wieder <strong>nach innen zu hören</strong>,<br>die bereit sind, sich <strong>selbst zu erinnern</strong>.</p><p>&nbsp;</p><p>Diese letzten Stücke sind <strong>kein Ende</strong>.<br>Sie sind ein <strong>leiser Abschied</strong> – jedes einzelne trägt denselben <strong>Geist</strong> in sich, mit dem alles begann.</p>",
+        "gg8HtEsrilS_text": "<p>Ich habe Claudia zufällig entdeckt, als ich auf der Suche nach etwas Echtem war. Der Ring ist wunderschön verarbeitet, aber noch wichtiger: Er gibt mir Halt in meiner Heilung.</p>",
+        "ggBQ6MDhLeb_text": "<p>Jedes Stück wird gefertigt, um Ruhe, Klarheit und Neubeginn zu unterstützen.</p>",
+        "ggD5oG5bdUr_label": "<p>Jetzt kaufen</p>",
+        "ggD7PGLzjkC_text": "Das sagen meine Kundinnen und Kunden",
+        "ggDl-E_ahL0_text": "<p>- Maria K aus Freiburg</p>",
+        "ggI1sLBOv6K_text": "<p>Mein heiliger Ort – Tee, Mondlicht und Hände, die still erschaffen.</p>",
+        "ggJr3tkfSQI_text": "<p>Lena R. aus Köln</p>",
+        "ggOqmfjjJra_label": "<p>Besuche meinen Onlineshop</p>",
+        "ggWEbIgc5v8_text": "<p><i><strong>Ein stiller Neubeginn – getragen von einem Stein, der mich wieder atmen ließ.</strong></i></p>",
+        "ggbw8JTazQJ_text": "<p>Nach meiner Kündigung war ich verloren. Ich wollte mir etwas schenken, das mir Kraft gibt. Die Mondstein-Kette ist leise, warm – sie erinnert mich daran, dass ich mich selbst nicht vergessen darf.</p>",
+        "ggelCgSI5QY_text": "<p>30 Tage Geld-zurück-Garantie</p>",
+        "ggiMQgazrNs_text": "<p>Damals wusste ich noch nicht, dass dieser <strong>Stein</strong> mein Leben <strong>verändern</strong> würde.</p><p>&nbsp;</p><p>In jener Nacht legte ich ihn auf meinen <strong>Nachttisch</strong>. Zum ersten Mal seit Monaten schlief ich <strong>tief</strong>. Später trug ich ihn um den Hals – ganz <strong>still</strong>, nur für mich.<br>Er wurde zu einer <strong>stillen Erinnerung</strong>:</p><p>&nbsp;</p><p><strong>Langsam</strong> zu machen.<br><strong>Zu atmen</strong>.<br>Mir selbst die Hand zu halten, wenn ich es am meisten brauchte.</p><p>&nbsp;</p><p>Als ich seine Bedeutung las, erfuhr ich, dass der Mondstein als <strong>Stein der Neuanfänge</strong> gilt –<br>er unterstützt <strong>Emotion</strong>, <strong>Intuition</strong>, <strong>Wandlung</strong> und <strong>inneren Frieden</strong>.</p><p>&nbsp;</p><p>Und genau das <strong>brauchte ich</strong>.</p><p>&nbsp;</p><p>Ich hörte auf, mich <strong>reparieren</strong> zu wollen.<br>Ich begann, mich <strong>selbst zu verstehen</strong>.<br>Ich erkannte, dass meine <strong>Sensibilität kein Makel</strong> war –<br>sondern eine <strong>Stärke</strong>, der ich nie beigebracht wurde, zu vertrauen.</p><p>&nbsp;</p><p>Mit <strong>38</strong> begann ich, kleine <strong>Schmuckstücke</strong> zu fertigen.<br>Nicht zum <strong>Verkauf</strong>. Nur für mich. Für <strong>Freundinnen</strong>. In den stillen Momenten nach der Arbeit – <strong>leise Musik</strong>, eine <strong>warme Tasse Tee</strong>, <strong>Mondsteine</strong> auf dem Tisch.<br>Es ging nie ums <strong>Geschäft</strong>. Es ging ums <strong>Atmen</strong>.<br>Um das <strong>Zurückfinden zu mir selbst</strong>.</p><p>&nbsp;</p>",
+        "ggiMkxB6xzM_text": "<p><strong>Meine letzten Mondstein-Stücke sind noch bis zum Ende dieses Wochenendes erhältlich.</strong><br>Danach beende ich meine Arbeit. Jedes Stück ist handgefertigt, herzensnah und mit tiefer Liebe erschaffen.</p><p>&nbsp;</p><p><strong>Von Herzen,</strong><br><strong>Claudia Meissner</strong></p>",
+        "ggivdXzVAMN_text": "<p>- Elisa M aus München</p>",
+        "gglranQ3A6E_text": "<p>Meine Tochter hat mir eine Mondstein-Kette geschenkt, nachdem ich jemanden verloren hatte. Ich hätte nie gedacht, dass sie mir so viel bedeutet. Sie trägt Ruhe in sich – genau das, was ich gebraucht habe.</p>",
+        "ggnIqYERfYh_text": "<p>Ich habe den Ring in einer Zeit getragen, in der mir alles zu viel wurde. Er erinnert mich jeden Tag daran, dass ich langsamer machen darf. Einfach atmen. Einfach sein.</p>"
+      },
+      "type": "gp-section-586255106975335259"
+    },
+    "gp_section_586256620229493533": {
+      "settings": {
+        "checksum": "de84cd8d9129d50209485fd0f62b68ebadd979a2f23745c8eec867ad48cb4b2e_1_1_1_0__1",
+        "ggE84afW_QD_text": "<p>Haftungsausschluss</p>"
+      },
+      "type": "gp-section-586256620229493533"
+    }
+  },
+  "order": [
+    "gp_section_586255106975073115",
+    "gp_section_586255106975007579",
+    "gp_section_586255106975335259",
+    "gp_section_586255106975204187",
+    "gp_section_586255106975138651",
+    "gp_section_586256620229493533",
+    "gp_section_586255106974942043"
+  ],
+  "layout": "theme.gempages.blank"
+}
