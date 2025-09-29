@@ -81,10 +81,16 @@
     },
     "gp_section_586256620229493533": {
       "settings": {
-        "checksum": "8c5aef704eb0125d117e437df6b42d5ce0d428e4e9c95dfb270d524d46dcb38f_1_1_1_0__1",
-        "ggE84afW_QD_text": "<p>Haftungsausschluss</p>"
+        "checksum": "448c2db3fcccdca2f2af85289768a9a2f0278a863aeb77ffff5e296e429861bd_1_1_1_0__1"
       },
       "type": "gp-section-586256620229493533"
+    },
+    "gp_section_586525253874746059": {
+      "settings": {
+        "checksum": "db11b036b02906536369611cdb9fdfcdc0fa9619346e5757f201c4c127c9375e_1_1_1_0__1",
+        "ggE84afW_QD_text": "<p><a href=\"https://www.claudia-schmuckatelier.com/pages/Haftungsausschluss\" target=\"_blank\"><u>Haftungsausschluss</u></a></p>"
+      },
+      "type": "gp-section-586525253874746059"
     }
   },
   "order": [
@@ -92,6 +98,7 @@
     "gp_section_586255106975007579",
     "gp_section_586255106975335259",
     "gp_section_586255106975204187",
+    "gp_section_586525253874746059",
     "gp_section_586255106975138651",
     "gp_section_586256620229493533",
     "gp_section_586255106974942043"
