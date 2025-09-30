@@ -314,7 +314,7 @@
             "uspimgsize": 52,
             "usp-text": "<strong>Sylvia R.</strong>",
             "verify-img": "shopify://shop_images/verifyIcon.webp",
-            "usp-text2": "Und mehr als <strong>20.000</strong> weitere Frauen fanden dank der Mondsteine mehr Ruhe",
+            "usp-text2": "Und mehr als <strong>20.000</strong> weitere Frauen fanden dank der Smaragd mehr Ruhe",
             "uspclr": "#000000",
             "usptxtsize": 15
           }
@@ -477,11 +477,42 @@
     },
     "recommendations": {
       "type": "recommended-products",
+      "disabled": true,
       "settings": {
         "title": "Das wird Ihnen auch gefallen",
         "subheading": "",
         "maximum_products": 15,
         "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_slider_mEGJJC": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_w9VciE": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "emerald-jewelry",
+            "collection_name": "First collection"
+          }
+        }
+      },
+      "block_order": [
+        "collection_w9VciE"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Das wird Ihnen auch gefallen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_products": 8,
+        "columns": "4",
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
@@ -1154,6 +1185,7 @@
     "main",
     "product_tabs",
     "recommendations",
+    "featured_collection_slider_mEGJJC",
     "image_with_text_gMPh73",
     "multi_column",
     "rich_text_DaEhdi",
