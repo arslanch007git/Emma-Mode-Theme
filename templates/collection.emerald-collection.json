@@ -15,7 +15,7 @@
         "slide_WHYqML": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/claudia_banner.png",
+            "image": "shopify://shop_images/website-banner.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
@@ -77,7 +77,7 @@
         "text_cgVhQh": {
           "type": "text",
           "settings": {
-            "text": "<p>Seit fast 20 Jahren fertige ich in meinem Atelier in Freiburg Mondstein-Schmuck mit Ruhe, Achtsamkeit und echter Handwerkskunst. Diese Stücke sind mehr als nur Schmuck. Sie sind stille Begleiter für Neuanfänge, Veränderungen und innere Ruhe.</p><p>Nun ist es Zeit, loszulassen.</p><p><strong>Meine letzte Kollektion ist nur dieses Wochenende erhältlich  mit bis zu 80% Rabatt</strong></p>",
+            "text": "<p>Seit fast 20 Jahren fertige ich in meinem Atelier in Freiburg Smaragd-Schmuck mit Achtsamkeit, Hingabe und echter Handwerkskunst. Diese Stücke sind mehr als nur Schmuck – sie sind stille Begleiter für Klarheit, Heilung und inneres Wachstum.</p><p>Nun ist es Zeit, loszulassen.</p><p><strong>Meine letzte Kollektion ist nur dieses Wochenende erhältlich – mit bis zu 80 % Rabatt.</strong></p>",
             "text_font_class": "fs-body-75"
           }
         }
