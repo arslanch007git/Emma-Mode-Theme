@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_587467977134179307": {
+      "settings": {
+        "checksum": "b1e377c2225b1b84e7fd34d7fc958964e196ff308ce1b3d1951b8c9727dc72b8_1_1_1_0__1"
+      },
+      "type": "gp-section-587467977134179307"
+    },
+    "gp_section_587467977134244843": {
+      "settings": {
+        "checksum": "923e81d20ead8602777b4d72b1e58e1114fbe3ad1a688a53a596235df5e36e61_1_1_1_0__1",
+        "gg4t59GfUHB_text": "<p>Ein stiller Moment aus meiner Kindheit – wo das Sammeln von Steinen Zuflucht bedeutete.</p>",
+        "ggFP6617l6D_text": "<p>Während andere Kinder auf Bäume kletterten und lachten,<strong>&nbsp;sammelte ich Steine</strong> - kleine Schätze, die mir halfen, mich&nbsp;<strong>sicher</strong> zu fühlen, wenn die Welt zu laut wurde.</p>",
+        "ggGi73QvO-9_text": "<p>Ich war das stille Mädchen mit Taschen voller Steine.</p>",
+        "ggNmk_r91RV_text": "<p>Dann, eines Tages, legte mir meine Mutter einen kleinen&nbsp;<strong>Stein</strong> in die Hand. Und alles begann sich zu&nbsp;<strong>verändern.</strong></p>",
+        "ggQ0iRaAdmT_text": "<p>In meinem Atelier in Freiburg – hier entstehen seit Jahren meine stillen Begleiter.</p>",
+        "ggTfwx5OVu8_text": "<span style=\"font-size:25px;\"><strong>Ein stiller Abschied – und die Geschichte dahinter</strong>&nbsp;</span>",
+        "ggdHpaR-VXd_text": "<p>Zuhause sprachen wir nicht viel über&nbsp;<strong>Gefühle</strong>. Man machte einfach weiter.&nbsp;<strong>Stark bleiben.</strong></p><p>Doch ich hatte oft Angst - als müsste ich&nbsp;<strong>perfekt</strong> sein, nur um mich&nbsp;<strong>sicher</strong> zu fühlen.</p><p>&nbsp;</p><p>Dieses Gefühl begleitete mich bis ins&nbsp;<strong>Erwachsenenalter.</strong></p><p>Ich bemerkte immer, was andere&nbsp;übersahen.&nbsp;Steine gaben mir Trost, wenn Worte versagten.</p><p>In meinen Zwanzigern und Dreißigern machte ich alles&nbsp;<strong>\"richtig.\"</strong> Ein&nbsp;<strong>sicherer Job.</strong></p><p>&nbsp;</p><p>Eine&nbsp;<strong>langjährige Beziehung.</strong> Ein Leben, das auf dem Papier gut aussah.</p><p>Doch innerlich fühlte ich mich&nbsp;<strong>abgetrennt</strong> - als würde ich eine&nbsp;<strong>Rolle in der Geschichte eines anderen</strong> spielen.</p><p>&nbsp;</p><p>Mit 33 kam der&nbsp;<strong>Zusammenbruch.</strong></p><p><strong>Emotional erschöpft. Ausgebrannt. An allem zweifelnd.</strong></p><p>&nbsp;</p><p>Meine Eltern bemerkten es - besonders meine&nbsp;<strong>Mutter.</strong></p><p>Sie war nie gut mit Worten, doch eines Tages legte sie mir eine kleine Schachtel in die Hände. Darin lag ein Stein,&nbsp;<strong>tiefgrün wie das Herz des Waldes.</strong></p><p>&nbsp;</p><p>Ein&nbsp;<strong>Smaragd</strong>.</p><p>\"Wir haben ihn in&nbsp;<strong>Österreich</strong> gesehen\", sagte sie. \"Er erinnerte uns an&nbsp;<strong>dich.</strong>\"</p>",
+        "ggeNE01Hol3_text": "<p>Heute sitze ich in meinem&nbsp;<strong>Heimatelier in Freiburg</strong>, wo ich seit Jahren jedes einzelne&nbsp;<strong>Smaragd-Schmuckstück</strong> von Hand fertige,&nbsp;l<strong>angsam, behutsam, mit stiller Hingabe.</strong> Aber meine Reise begann lange, bevor ich je in die Hand nahm.</p>",
+        "gghi84a65E__text": "<p>Ich war&nbsp;<strong>empfindsam. Still.</strong> Ich fühlte alles&nbsp;<strong>tief.</strong></p>",
+        "ggwWkx2k6It_text": "<p>Ich war&nbsp;<strong>müde. Leer von innen. Still zerbrechend.</strong></p>",
+        "ggxDyDai6Fk_text": "<p>Schon als Kind, in einem kleinen Dorf in&nbsp;<strong>Süddeutschland</strong>, fühlte ich mich zur Erde unter meinen Füßen hingezogen - besonders zu den tiefen, uralten Wäldern, die unser Zuhause umgaben. Dieses lebendige Grün, das alle Geheimnisse des Lebens in seiner Tiefe zu bergen schien. Ich wanderte stundenlang zwischen den Bäumen und spürte ihre stille Kraft an Orten in mir, die keinen Namen hatten.</p>"
+      },
+      "type": "gp-section-587467977134244843"
+    },
+    "gp_section_587467977134310379": {
+      "settings": {
+        "checksum": "2319472ad36bbc21fbf85ccba3ee795169e5cf1cff120ff964d3bf360852ffd5_1_1_1_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-587467977134310379"
+    },
+    "gp_section_587467977134375915": {
+      "settings": {
+        "checksum": "0d6cec2e5737c4b3b5dc864911d1da3fde78fa59492f87f8fd91b9dcca2caf27_1_1_1_0__1",
+        "gg3eJzASpd5_label": "In den Warenkorb",
+        "gg3eJzASpd5_outOfStockLabel": "Out Of Stock",
+        "gg3eJzASpd5_unavailableLabel": "Unavailable",
+        "gg3eJzASpd5_variantSelectionRequiredMessage": "Bitte wählen Sie eine Variante aus, um das Produkt in den Warenkorb zu legen."
+      },
+      "type": "gp-section-587467977134375915"
+    },
+    "gp_section_587467977134441451": {
+      "settings": {
+        "checksum": "db68d52a933093fd13e6233d8b20eb4e2ddba06af3cdba9d08a2124480df8413_1_1_1_0__1",
+        "gg4J3cwoCEz_text": "<p>Der Moment, der alles veränderte – ein stilles Geschenk, das Licht brachte.</p>",
+        "gg4RQwJuZsh_text": "<p>- Jana W. aus Leipzig</p>",
+        "gg4o3i9U8Sl_text": "<p><strong>Was als privates Ritual begann, wurde langsam zu einer Berufung.</strong></p>",
+        "gg5xzHUuE-5_text": "Entdecken Sie jetzt meine Werke",
+        "gg7sEKhLaDs_text": "<p><strong>Handgemacht</strong>. Von&nbsp;<strong>Herzen</strong>. Geleitet von&nbsp;<strong>Erinnerung</strong> und&nbsp;<strong>Bedeutung.</strong></p><p>&nbsp;</p><p>Eines Tages fertigte ich ein Smaragd-Armband für eine liebe Freundin, die ihren Weg verloren hatte.</p><p>&nbsp;</p><p>Als sie die Schachtel öffnete, weinte sie. Nicht weil es schön war - sondern weil sie sich&nbsp;<strong>gesehen</strong> fühlte.&nbsp;<strong>Erneuert.</strong></p><p>&nbsp;</p><p>Dieser Moment bleibt&nbsp;<strong>bis heute</strong> bei mir.</p><p>&nbsp;</p><p>Heute bin ich&nbsp;<strong>70</strong>. Ich fertige immer noch jedes Stück&nbsp;<strong>von Hand</strong> in meinem Zuhause in Freiburg. Mein Studio ist&nbsp;<strong>schlicht</strong>: ein&nbsp;<strong>Holztisch</strong>, ein&nbsp;<strong>Fenster voller Waldlicht</strong> und ein stilles&nbsp;<strong>Notizbuch voller Geschichten</strong> wie meiner eigenen.</p><p>&nbsp;</p><p>Der&nbsp;<strong>Smaragd</strong> bleibt nach wie vor im&nbsp;<strong>Zentrum</strong> von allem.</p><p>&nbsp;</p><p>Denn für mich war er&nbsp;<strong>nie nur ein Edelstein</strong>. Er ist eine&nbsp;<strong>Erinnerung.</strong></p><p>&nbsp;</p><p>Dass&nbsp;<strong>Heilung sanft </strong>sein kann. Dass Wachstum Zeit braucht. Dass die&nbsp;<strong>Lebenskraft in uns fortbesteht</strong> - selbst wenn wir vergessen, dass es da ist.</p><p>&nbsp;</p><p><strong>Nach vielen stillen, erfüllten Jahren spüre ich, dass es Zeit ist loszulassen.</strong></p><p>&nbsp;</p><p>Ich gehe in&nbsp;<strong>Rente</strong> und schließe mein&nbsp;<strong>Geschäft</strong> an diesem Wochenende.</p><p>Ich treffe diese Entscheidung mit&nbsp;<strong>Frieden. Mit Sanftheit. Mit tiefer Dankbarkeit.</strong></p><p>Ich werde keine neuen&nbsp;<strong>Kollektionen</strong> mehr erschaffen.</p><p>&nbsp;</p><p>Was nun bleibt, sind die letzten Stücke -&nbsp;<strong>stille Begleiter</strong> für all jene, die durch ihre eigenen Zeiten des Zweifels gegangen sind, die lernen, ihrer inneren Weisheit wieder zu vertrauen, die bereit sind, sich an ihre eigene Kraft zu erinnern.</p><p>&nbsp;</p><p>Diese letzten Stücke sind&nbsp;<strong>kein Ende.</strong> Sie sind ein&nbsp;<strong>stiller Abschied</strong> - jedes trägt denselben&nbsp;Geist, mit dem alles begann.</p>",
+        "gg8HtEsrilS_text": "<p>Ich habe Claudia zufällig entdeckt, als ich auf der Suche nach etwas Echtem war. Der Ring ist wunderschön verarbeitet, aber noch wichtiger: Er gibt mir Halt in meiner Heilung.</p>",
+        "ggBQ6MDhLeb_text": "<p>Jedes Stück wird gefertigt, um Ruhe, Klarheit und Neubeginn zu unterstützen.</p>",
+        "ggD5oG5bdUr_label": "<p>Jetzt kaufen</p>",
+        "ggD7PGLzjkC_text": "Das sagen meine Kundinnen und Kunden",
+        "ggDl-E_ahL0_text": "<p>- Maria K aus Freiburg</p>",
+        "ggI1sLBOv6K_text": "<p>Mein heiliger Ort – Tee, Smaragde und Hände, die still erschaffen.</p>",
+        "ggJr3tkfSQI_text": "<p>Lena R. aus Köln</p>",
+        "ggOqmfjjJra_label": "<p>Besuche meinen Onlineshop</p>",
+        "ggWEbIgc5v8_text": "<p><strong>Ein stiller Neuanfang - getragen von einem Stein, der mich wieder atmen ließ.</strong></p>",
+        "ggbw8JTazQJ_text": "<p>Nach meiner Kündigung war ich verloren. Ich wollte mir etwas schenken, das mir Kraft gibt. Die Smaragd-Kette ist leise, warm – sie erinnert mich daran, dass ich mich selbst nicht vergessen darf.</p>",
+        "ggelCgSI5QY_text": "<p>30 Tage Geld-zurück-Garantie</p>",
+        "ggiMQgazrNs_text": "<p>Damals wusste ich nicht, dass dieser&nbsp;<strong>Stein</strong> mein&nbsp;<strong>Leben verändern</strong> würde.</p><p>&nbsp;</p><p>In jener Nacht stellte ich ihn auf meinen&nbsp;<strong>Nachttisch.</strong> Zum ersten Mal seit Monaten schlief ich&nbsp;<strong>tief</strong>. Später trug ich ihn um den Hals -&nbsp;<strong>still</strong>, nur für mich.</p><p>&nbsp;</p><p>Er wurde zu einer&nbsp;<strong>stillen Erinnerung:</strong></p><p><strong>Langsam</strong> zu wachsen.&nbsp;<strong>Zu atmen</strong>. Der stillen Kraft in mir zu vertrauen.</p><p>&nbsp;</p><p>Als ich seine Bedeutung las, erfuhr ich, dass der Smaragd als&nbsp;<strong>Stein der Erneuerung</strong> gilt - er unterstützt Wachstum, Fülle, Herzheilung und innere Weisheit.</p><p>&nbsp;</p><p>Und genau das&nbsp;<strong>brauchte ich.</strong></p><p>&nbsp;</p><p>Ich hörte auf zu versuchen, mich zu&nbsp;<strong>reparieren</strong>. Ich begann, mich&nbsp;<strong>selbst zu nähren.</strong></p><p>Ich erkannte, dass meine&nbsp;<strong>Sensibilität kein Makel</strong> war, sondern eine&nbsp;<strong>Stärke</strong>, die ich nie gelernt hatte zu ehren.</p><p>&nbsp;</p><p>Mit 38 begann ich, kleine&nbsp;<strong>Schmuckstücke </strong>zu fertigen.</p><p>Nicht zum&nbsp;<strong>Verkauf</strong>. Nur für mich. Für&nbsp;<strong>Freunde.</strong> In den stillen Momenten nach der Arbeit -&nbsp;<strong>sanfte Musik, eine warme Tasse Tee, Smaragde</strong> auf dem Tisch.</p><p>Es ging nie um&nbsp;<strong>Geschäfte.</strong> Es ging ums&nbsp;<strong>Wachsen.</strong> Darum, mich wieder mit meinem wahren Selbst zu verbinden.</p>",
+        "ggiMkxB6xzM_text": "<p><strong>Meine letzten Smaragd-Stücke sind noch bis zum Ende dieses Wochenendes erhältlich.</strong><br>Danach beende ich meine Arbeit. Jedes Stück ist handgefertigt, herzensnah und mit tiefer Liebe erschaffen.</p><p>&nbsp;</p><p><strong>Von Herzen,</strong><br><strong>Claudia Meissner</strong></p>",
+        "ggivdXzVAMN_text": "<p>- Elisa M aus München</p>",
+        "gglranQ3A6E_text": "<p>Meine Tochter hat mir eine Smaragd-Kette geschenkt, nachdem ich jemanden verloren hatte. Ich hätte nie gedacht, dass sie mir so viel bedeutet. Sie trägt Ruhe in sich – genau das, was ich gebraucht habe.</p>",
+        "ggnIqYERfYh_text": "<p>Ich habe den Ring in einer Zeit getragen, in der mir alles zu viel wurde. Er erinnert mich jeden Tag daran, dass ich langsamer machen darf. Einfach atmen. Einfach sein.</p>"
+      },
+      "type": "gp-section-587467977134441451"
+    }
+  },
+  "order": [
+    "gp_section_587467977134310379",
+    "gp_section_587467977134244843",
+    "gp_section_587467977134441451",
+    "gp_section_587467977134375915",
+    "gp_section_587467977134179307"
+  ],
+  "layout": "theme.gempages.blank"
+}
