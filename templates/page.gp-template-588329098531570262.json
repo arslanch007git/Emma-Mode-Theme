@@ -1,0 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_588329098615456342": {
+      "settings": {
+        "checksum": "064698786706623a63e80597c2bd7f81689d2e0154376222d411ad5ba2f13ed8_1_1_1_0__1"
+      },
+      "type": "gp-section-588329098615456342"
+    },
+    "gp_section_588329098615521878": {
+      "settings": {
+        "checksum": "ac5b64b6b46407ef8f0892cc356a00d7e1c3b6cae6d21742c1890b6002cfb893_1_1_1_0__1",
+        "gg4t59GfUHB_text": "<p>Ein stiller Moment aus meiner Kindheit – wo das Sammeln von Steinen Zuflucht bedeutete.</p>",
+        "ggBmF-5ogih_text": "<p>“Wir haben sie in&nbsp;<strong>Österreich</strong> gesehen\", sagte sie. “Sie hat uns an&nbsp;<strong>dich</strong> erinnert.\"</p>",
+        "ggFP6617l6D_text": "<p>Während andere Kinder auf Bäume kletterten und lachten,&nbsp;<strong>sammelte</strong> <strong>ich glatte Steine</strong> und Muschelstücke, kleine&nbsp;<strong>Schätze</strong>, die mir halfen, mich&nbsp;<strong>sicher</strong> zu fühlen, wenn die Welt zu&nbsp;<strong>laut</strong> wurde.</p>",
+        "ggGi73QvO-9_text": "<p><span style=\"background-color:transparent;color:#000000;font-size:13pt;\"><strong>Ich war das stille Mädchen mit Taschen voller Schätze.</strong></span></p>",
+        "ggK6KbSmPjA_text": "<p>Meine Eltern bemerkten es, besonders meine&nbsp;<strong>Mutter</strong>. Sie war nie gut mit Worten, doch eines Tages legte sie mir eine kleine Schachtel in die Hände. Darin lag eine&nbsp;<strong>zarte Halskette mit einer Perle,&nbsp;leuchtend wie im Wasser eingefangenes Mondlicht</strong>.</p>",
+        "ggNmk_r91RV_text": "<p>Dann, eines Tages, legte mir meine Mutter ein <strong>kleines Geschenk</strong> in die Hand. Und alles begann sich zu verändern.</p>",
+        "ggQ0iRaAdmT_text": "<p>In meinem Atelier in Freiburg – hier entstehen seit Jahren meine stillen Begleiter.</p>",
+        "ggTfwx5OVu8_text": "<span style=\"font-size:25px;\"><strong>Ein stiller Abschied – und die Geschichte dahinter</strong>&nbsp;</span>",
+        "ggblCrTtU6h_text": "<p>In meinen Zwanzigern und Dreißigern machte ich alles&nbsp;<strong>“richtig\"</strong>. Ein sicherer Job. Eine langjährige Beziehung. Ein Leben, das&nbsp;<strong>auf dem Papier</strong> gut aussah.</p>",
+        "ggcsqZn1l3m_text": "<p>Doch innerlich fühlte ich mich&nbsp;<strong>entfremdet</strong>, als würde ich eine Rolle in der Geschichte eines anderen spielen.</p>",
+        "ggdHpaR-VXd_text": "<p>Zuhause sprachen wir nicht viel über&nbsp;<strong>Gefühle</strong>. Man machte einfach weiter.&nbsp;<strong>Sei stark</strong>. Doch ich hatte oft&nbsp;<strong>Angst</strong>, als müsste ich&nbsp;<strong>perfekt</strong> sein, nur um mich sicher zu fühlen.</p>",
+        "ggeNE01Hol3_text": "<p>Heute sitze ich in meinem <strong>Heimatelier in Freiburg</strong>, wo ich seit Jahren jedes einzelne <strong>Perlenschmuckstück</strong> von Hand fertige, <strong>langsam, sanft, mit stiller Hingabe.</strong> Doch meine Reise begann lange bevor ich je ein Werkzeug in die Hand nahm.</p>",
+        "ggf5GST2RrG_text": "<p>Mit 33 kam der&nbsp;<strong>Zusammenbruch.&nbsp;Emotional erschöpft. Ausgebrannt. An allem zweifelnd.</strong></p>",
+        "gghi84a65E__text": "<p>Ich war<strong>&nbsp;sensibel. Still.</strong> Ich fühlte alles&nbsp;<strong>tief.</strong></p>",
+        "ggwWkx2k6It_text": "<p>Ich war&nbsp;<strong>müde. Leer von innen. Still zerbrechend.</strong></p>",
+        "ggxDyDai6Fk_text": "<p>Schon als Kind, in einem kleinen Dorf in&nbsp;<strong>Süddeutschland</strong>, fühlte ich mich zum&nbsp;<strong>Wasser</strong> hingezogen, besonders zu den stillen Bächen und verborgenen Seen in den Wäldern nahe unserem Zuhause.</p>",
+        "ggy2_p_GIdn_text": "<p>Dieses Gefühl begleitete mich bis ins&nbsp;<strong>Erwachsenenalter</strong>. Ich bemerkte immer, was andere&nbsp;<strong>übersahen</strong>.&nbsp;<strong>Schätze</strong> gaben mir&nbsp;<strong>Trost</strong>, wenn Worte&nbsp;<strong>versagten</strong>.</p>"
+      },
+      "type": "gp-section-588329098615521878"
+    },
+    "gp_section_588329098615587414": {
+      "settings": {
+        "checksum": "6f25480ca1fcd5734db786c0bfe5f670e18bc85754e9f679ed8ff2077545679a_1_1_1_0__1",
+        "section_preload": "true"
+      },
+      "type": "gp-section-588329098615587414"
+    },
+    "gp_section_588329098615652950": {
+      "settings": {
+        "checksum": "7a39b95ac930afa2ae2338c8d709674d3870a2516d7b82847a55056141417ea2_1_1_1_0__1",
+        "gg3eJzASpd5_label": "In den Warenkorb",
+        "gg3eJzASpd5_outOfStockLabel": "Out Of Stock",
+        "gg3eJzASpd5_unavailableLabel": "Unavailable",
+        "gg3eJzASpd5_variantSelectionRequiredMessage": "Bitte wählen Sie eine Variante aus, um das Produkt in den Warenkorb zu legen."
+      },
+      "type": "gp-section-588329098615652950"
+    },
+    "gp_section_588329098615718486": {
+      "settings": {
+        "checksum": "ddf14db14f98ba6f5be9f5ce2ba5facfa77972552d00ed7897f96b749a9f8d96_1_1_1_0__1",
+        "gg3s1FTdJ_t_text": "<p>Ich hörte auf, mich&nbsp;<strong>reparieren</strong> zu wollen. Ich begann, mich zu&nbsp;<strong>wertzuschätzen</strong>. Ich erkannte, dass meine Sensibilität kein&nbsp;<strong>Fehler</strong> war, sondern ein&nbsp;<strong>Geschenk</strong>, dem ich nie zu vertrauen gelernt hatte.</p>",
+        "gg4J3cwoCEz_text": "<p>Der Moment, der alles veränderte – ein stilles Geschenk, das Ruhe brachte.</p>",
+        "gg4RQwJuZsh_text": "<p>- Jana W. aus Leipzig</p>",
+        "gg4o3i9U8Sl_text": "<p><strong>Was als privates Ritual begann, wurde langsam zu einer Berufung.</strong></p>",
+        "gg5xzHUuE-5_text": "Entdecken Sie jetzt meine Werke",
+        "gg7sEKhLaDs_text": "<p>Eines Tages fertigte ich ein Perlenarmband für eine liebe Freundin, die ihr&nbsp;<strong>Baby</strong> verloren hatte. Als sie die Schachtel öffnete,&nbsp;<strong>weinte</strong> sie. Nicht weil es schön war, sondern weil&nbsp;<strong>sie sich gesehen fühlte. Verstanden</strong>.</p>",
+        "gg8HtEsrilS_text": "<p>Ich habe Claudia zufällig entdeckt, als ich auf der Suche nach etwas Echtem war. Der Ring ist wunderschön verarbeitet, aber noch wichtiger: Er gibt mir Halt in meiner Heilung.</p>",
+        "ggBQ6MDhLeb_text": "<p>Jedes Stück wird gefertigt, um Ruhe, Klarheit und Neubeginn zu unterstützen.</p>",
+        "ggD5oG5bdUr_label": "<p>Jetzt kaufen</p>",
+        "ggD7PGLzjkC_text": "Das sagen meine Kundinnen und Kunden",
+        "ggDD8ufNjHg_text": "<p>Denn für mich war sie nie nur ein Edelstein.&nbsp;<strong>Sie ist eine Erinnerung</strong>.</p>",
+        "ggDl-E_ahL0_text": "<p>- Maria K aus Freiburg</p>",
+        "ggFBuzii96e_text": "<p><strong>Langsamer zu werden. Zu atmen</strong>. Den Schatz in mir zu ehren.</p>",
+        "ggI1sLBOv6K_text": "<p>Mein heiliger Ort – Tee, Perlen und Hände, die still erschaffen.</p>",
+        "ggJcQk5t9jj_text": "<p>Als ich ihre Bedeutung las, erfuhr ich, dass die Perle als&nbsp;<strong>Stein der Weisheit und Reinheit </strong>gilt. Sie unterstützt&nbsp;<strong>emotionales Gleichgewicht, inneren Schatz, Verwandlung durch Geduld und stille Kraft</strong>.</p>",
+        "ggJr3tkfSQI_text": "<p>Lena R. aus Köln</p>",
+        "ggMGgppNb-S_text": "<p>In jener Nacht legte ich sie auf meinen&nbsp;<strong>Nachttisch</strong>. Zum ersten Mal seit Monaten schlief ich&nbsp;<strong>tief</strong>. Später trug ich sie um meinen Hals – still, nur für mich. Sie wurde zu einer&nbsp;<strong>stillen Erinnerung</strong>:</p>",
+        "ggOqmfjjJra_label": "<p>Besuche meinen Onlineshop</p>",
+        "ggPLDdIeFgu_text": "<p>Mit 38 begann ich, kleine&nbsp;<strong>Schmuckstücke</strong> zu fertigen. Nicht zum Verkauf. Nur für mich. Für Freunde. In den stillen Momenten nach der Arbeit – sanfte Musik, eine warme Tasse Tee, Perlen auf dem Tisch. Es ging nie ums&nbsp;<strong>Geschäft</strong>. Es ging ums&nbsp;Atmen. Um die&nbsp;Rückverbindung zu mir selbst.</p>",
+        "ggSjiRyD4-p_text": "<p><strong>Die Perle bleibt nach wie vor im Zentrum von allem.</strong></p>",
+        "ggT91XnL6tP_text": "<p>Heute bin ich&nbsp;<strong>70</strong>. Ich fertige immer noch jedes Stück von Hand in meinem Zuhause in Freiburg. Mein Atelier ist&nbsp;<strong>schlicht</strong>: ein&nbsp;<strong>Holztisch</strong>, ein&nbsp;<strong>Fenster voller</strong> <strong>sanftem</strong> <strong>Licht</strong> und ein&nbsp;<strong>stilles Notizbuch</strong> voller Geschichten wie meiner eigenen.</p>",
+        "ggWEbIgc5v8_text": "<p>Ein stiller Neuanfang – getragen von einem Schatz, der mich wieder atmen ließ.</p>",
+        "ggWGoWxiw4S_text": "<p>Und genau das&nbsp;<strong>brauchte</strong> ich.</p>",
+        "ggWlERCEMFe_text": "<p>Ich gehe in den Ruhestand und schließe meinen Shop dieses Wochenende.</p>",
+        "ggXFmwCTMyv_text": "<p>Diese letzten Stücke sind kein Ende.&nbsp;<strong>Sie sind ein stiller Abschied</strong> – jedes trägt denselben Geist, mit dem alles begann.</p>",
+        "ggazyEfpxd-_text": "<p>Ich treffe diese Entscheidung mit&nbsp;<strong>Frieden. Mit Sanftheit. Mit tiefer Dankbarkeit</strong>.</p>",
+        "ggbw8JTazQJ_text": "<p>Nachdem ich meinen Job gekündigt hatte, fühlte ich mich verloren. Ich wollte mir etwas schenken, das mir Kraft gibt. Die Perlenkette ist still, warm – sie erinnert mich daran, mich selbst nicht zu vergessen.</p>",
+        "ggcCy4WVnI2_text": "<p>Ich werde&nbsp;<strong>keine neuen Kollektionen</strong> mehr erschaffen. Was jetzt bleibt, sind&nbsp;<strong>die letzten Stücke</strong> – stille Begleiter für alle, die durch ihre&nbsp;<strong>eigenen dunklen Tiefen</strong> gegangen sind, die lernen, wieder&nbsp;<strong>nach innen zu hören</strong>, die bereit sind,&nbsp;<strong>sich selbst zu erinnern</strong>.</p>",
+        "ggelCgSI5QY_text": "<p>30 Tage Geld-zurück-Garantie</p>",
+        "ggf242lBugL_text": "<p>Jedes Stück ist gefertigt, um&nbsp;<strong>Weisheit, Reinheit und inneren Schatz</strong> zu unterstützen.</p>",
+        "ggiMQgazrNs_text": "<p>Damals wusste ich nicht, dass diese&nbsp;<strong>Perlenhalskette</strong> mein Leben verändern würde.</p>",
+        "ggiMkxB6xzM_text": "<p><strong>Meine letzten Perlenstücke sind bis Ende dieses Wochenendes verfügbar</strong>. Danach werde ich meine Arbeit beenden. Jedes Stück ist&nbsp;<strong>handgefertigt, von Herzen</strong> und mit&nbsp;<strong>tiefer Liebe</strong> erschaffen.</p><p>&nbsp;</p><p><strong>Von Herzen,</strong><br><strong>Claudia Meissner</strong></p>",
+        "ggivdXzVAMN_text": "<p>- Elisa M aus München</p>",
+        "gglranQ3A6E_text": "<p>Meine Tochter hat mir eine Perlenkette geschenkt, nachdem ich jemanden verloren hatte. Ich hätte nie gedacht, dass sie mir so viel bedeutet. Sie trägt Ruhe in sich – genau das, was ich gebraucht habe.</p>",
+        "ggnIqYERfYh_text": "<p>Ich habe den Ring in einer Zeit getragen, in der mir alles zu viel wurde. Er erinnert mich jeden Tag daran, dass ich langsamer machen darf. Einfach atmen. Einfach sein.</p>",
+        "ggwLf64H8L-_text": "<p>Dieser Moment bleibt&nbsp;<strong>bis heute</strong> bei mir.</p>",
+        "ggxdviD5LZ3_text": "<p><strong>Dass Heilung still sein kann. Dass Sanftheit Stärke ist</strong>. Dass der&nbsp;<strong>Schatz in uns</strong> bleibt – auch wenn wir vergessen, dass er da ist.</p>",
+        "ggyFgkEgzs9_text": "<p><span style=\"font-size:21px;\">Nach vielen stillen, erfüllten Jahren spüre ich: Es ist Zeit loszulassen</span></p>"
+      },
+      "type": "gp-section-588329098615718486"
+    }
+  },
+  "order": [
+    "gp_section_588329098615587414",
+    "gp_section_588329098615521878",
+    "gp_section_588329098615718486",
+    "gp_section_588329098615652950",
+    "gp_section_588329098615456342"
+  ],
+  "layout": "theme.gempages.blank"
+}
