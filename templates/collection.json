@@ -194,6 +194,39 @@
         "divider_style": "none"
       }
     },
+    "rich_text_CmDQf8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_khdGFi": {
+          "type": "heading",
+          "settings": {
+            "title": "Alles handgefertigt",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_atFjyR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Werfen Sie einen Blick hinter die Kulissen</p><p></p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_khdGFi",
+        "text_atFjyR"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
     "video_hero_Kb8DPG": {
       "type": "video-hero",
       "name": "t:sections.video_hero.presets.name",
@@ -224,6 +257,7 @@
     "slideshow_4Tjkip",
     "banner",
     "product-grid",
+    "rich_text_CmDQf8",
     "video_hero_Kb8DPG"
   ]
 }
