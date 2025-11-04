@@ -489,6 +489,36 @@
         "section_padding": "section--vertical-padding-top-bottom"
       }
     },
+    "featured_collection_slider_DDVfgX": {
+      "type": "featured-collection-slider",
+      "blocks": {
+        "collection_hhLbQh": {
+          "type": "collection",
+          "settings": {
+            "show_view_all": true,
+            "collection": "bogo-moonstones",
+            "collection_name": "MONDSTEIN-SCHMUCK"
+          }
+        }
+      },
+      "block_order": [
+        "collection_hhLbQh"
+      ],
+      "name": "t:sections.featured_collection_slider.presets.name",
+      "settings": {
+        "heading": "Das wird Ihnen auch gefallen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "shopify://collections/bogo-moonstones",
+        "link_text": "Alle Mondstein-Stücke anzeigen",
+        "maximum_products": 10,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
     "featured_collection_grid_JWe7Gj": {
       "type": "featured-collection-grid",
       "blocks": {
@@ -502,6 +532,7 @@
       "block_order": [
         "collection_8jHD6q"
       ],
+      "disabled": true,
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
         "heading": "Das wird Ihnen auch gefallen",
@@ -1183,6 +1214,7 @@
     "main",
     "product_tabs",
     "recommendations",
+    "featured_collection_slider_DDVfgX",
     "featured_collection_grid_JWe7Gj",
     "image_with_text_gMPh73",
     "multi_column",
