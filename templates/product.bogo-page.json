@@ -207,13 +207,13 @@
             "title": "RÄUMUNGSVERKAUF",
             "title_font_size": 22,
             "title_font_weight": "700",
-            "line_1": "Kaufe 2 Artikel und erhalte 20% RABATT",
+            "line_1": "Kaufe 2, erhalte 1 GRATIS",
             "line_1_font_size": 16,
             "line_1_font_weight": "500",
-            "line_2": "Kaufe 3 Artikel und erhalte 30% RABATT",
+            "line_2": "Kaufe 3, erhalte 2 GRATIS",
             "line_2_font_size": 16,
             "line_2_font_weight": "500",
-            "line_3": "Kaufe 4 Artikel und erhalte 40% RABATT",
+            "line_3": "Kaufe 4, erhalte 3 GRATIS",
             "line_3_font_size": 16,
             "line_3_font_weight": "500",
             "bg_color": "#fdf8f3",
@@ -477,10 +477,39 @@
     },
     "recommendations": {
       "type": "recommended-products",
+      "disabled": true,
       "settings": {
         "title": "Das wird Ihnen auch gefallen",
         "subheading": "",
         "maximum_products": 15,
+        "columns": "5",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
+    },
+    "featured_collection_grid_JWe7Gj": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "collection_8jHD6q": {
+          "type": "collection",
+          "settings": {
+            "collection": "bogo-moonstones"
+          }
+        }
+      },
+      "block_order": [
+        "collection_8jHD6q"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "Das wird Ihnen auch gefallen",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 5,
         "columns": "5",
         "mobile_columns": "2",
         "enable_animation": true,
@@ -1154,6 +1183,7 @@
     "main",
     "product_tabs",
     "recommendations",
+    "featured_collection_grid_JWe7Gj",
     "image_with_text_gMPh73",
     "multi_column",
     "rich_text_DaEhdi",
