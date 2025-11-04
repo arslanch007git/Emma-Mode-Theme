@@ -77,7 +77,7 @@
         "text_cgVhQh": {
           "type": "text",
           "settings": {
-            "text": "<p>Seit fast 20 Jahren fertige ich in meinem Atelier in Freiburg Mondstein-Schmuck mit Ruhe, Achtsamkeit und echter Handwerkskunst. Diese Stücke sind mehr als nur Schmuck. Sie sind stille Begleiter für Neuanfänge, Veränderungen und innere Ruhe.</p><p>Nun ist es Zeit, loszulassen.</p><p><strong>Meine letzte Kollektion ist nur noch bis Sonntag mit bis zu 80% Rabatt erhältlich.</strong></p>",
+            "text": "<p>Seit fast 20 Jahren fertige ich in meinem Atelier in Freiburg Mondstein-Schmuck mit Ruhe, Achtsamkeit und echter Handwerkskunst. Diese Stücke sind mehr als nur Schmuck. Sie sind stille Begleiter für Neuanfänge, Veränderungen und innere Ruhe.</p><p>Nun ist es Zeit, loszulassen.</p><p><strong>Meine letzte Kollektion ist nur noch bis Sonntag mit bis zu 80% Rabatt erhältlich.</strong></p><p>Kaufe <strong>2</strong>, erhalte <strong>1</strong> GRATIS<br/>Kaufe <strong>3</strong>, erhalte <strong>2</strong> GRATIS<br/>Kaufe <strong>4</strong>, erhalte <strong>3</strong> GRATIS</p>",
             "text_font_class": "fs-body-75"
           }
         }
@@ -88,7 +88,7 @@
       ],
       "name": "t:sections.rich_text.presets.name",
       "settings": {
-        "alignment": "center_left",
+        "alignment": "center_center",
         "enable_animation": true,
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom",
