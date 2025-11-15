@@ -15,7 +15,7 @@
         "slide_pAiJTa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_6_jul_2025_11_05_29.png",
+            "image": "shopify://shop_images/claudia_banner.png",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
@@ -308,6 +308,7 @@
         "heading_qTNJYf",
         "text_GUzwrE"
       ],
+      "disabled": true,
       "name": "t:sections.image_with_text.presets.name",
       "settings": {
         "image_position": "right",
@@ -384,6 +385,7 @@
         },
         "image_BWk48A": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_27._Marz_2025_21_37_50.webp",
             "url": ""
