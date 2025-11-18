@@ -64,3 +64,47 @@
 <meta name="twitter:image" content="https:{{ social_image }}">
 <meta name="twitter:image:width" content="480">
 <meta name="twitter:image:height" content="480">
+<style>
+  #fv-loading-icon {
+    visibility: visible;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, sans-serif;
+    font-size: 190vw;
+    line-height: 1;
+    word-wrap: break-word;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-decoration: none;
+    filter: none;
+    transition: all 0s;
+    transform: none;
+    width: 99vw;
+    height: 99vh;
+    max-width: 99vw;
+    max-height: 99vh;
+    pointer-events: none;
+    z-index: -99;
+    overflow: hidden;
+    opacity: 0.0001;
+  }
+</style>
+<div id="fv-loading-icon">🔄</div>
+<link rel="preload" href="{{ 'preload_asset.js' | asset_url }}" as="script">
+{{ 'preload_asset.js' | asset_url | script_tag }}
+
+<style>@media only screen and (min-width: 600px) {.async-hide { opacity: 0 !important} }</style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c; })(window,document.documentElement,'async-hide','dataLayer',300, {'GTM-XXXXXX':true});</script>
+
+<style>.async-hide { opacity: 0 !important}</style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',500,
+{'GTM-XXXXXX':true});</script>
+
+<link rel="preload" href="{{ 'global-script.js' | asset_url }}" as="script">
+{{ 'global-script.js' | asset_url | script_tag }}
