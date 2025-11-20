@@ -157,6 +157,13 @@
             "divider_width": "none"
           }
         },
+        "custom_liquid_ddzrwj": {
+          "type": "custom_liquid",
+          "settings": {
+            "column_placement": "right",
+            "custom_liquid": "<div id='s-shipping-1'></div>"
+          }
+        },
         "secure_payment_HgEAF7": {
           "type": "secure_payment",
           "settings": {
@@ -334,6 +341,7 @@
         "quantity_selector",
         "bf_size_charts_block_Vyynxg",
         "buy_buttons",
+        "custom_liquid_ddzrwj",
         "secure_payment_HgEAF7",
         "text_icons_2",
         "selluxe_discount_banner_PUFjhG",
@@ -1180,6 +1188,62 @@
         "qty_input_radius": 6,
         "button_radius": 6
       }
+    },
+    "s_shipping_1_CMxUhU": {
+      "type": "s-shipping-1",
+      "name": "s-shipping-1",
+      "settings": {
+        "custom_display": true,
+        "sec_layout_full_width": "full-width",
+        "cont_cust_width": 440,
+        "padding-x": 0,
+        "padding-x-mob": 0,
+        "date_language": "en",
+        "background_color": "#f9f9f6",
+        "border_radius": 8,
+        "gap-between_text_image_pulse": 6,
+        "gap-between_text_image_pulse_mobile": 6,
+        "space-between_desktop": "space-between",
+        "space-between_mobile": "space-between",
+        "padding-top": 6,
+        "padding-bottom": 6,
+        "padding-left": 12,
+        "padding-right": 12,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding-top-mob": 6,
+        "padding-bottom-mob": 6,
+        "padding-left-mob": 12,
+        "padding-right-mob": 12,
+        "margin_top-mob": 0,
+        "margin_bottom-mob": 0,
+        "text_color": "#000",
+        "text_size_desktop": 16,
+        "line_height_desktop": 1.3,
+        "letter_spacing_desktop": 0,
+        "text_size_mobile": 14,
+        "line_height_mob": 1.2,
+        "letter_spacing_mob": 0,
+        "pulse_color": "#7aa87a",
+        "text_size_pulse": 10,
+        "margin-right_desktop": 0,
+        "text_size_pulse_mobile": 8,
+        "margin-right_mobile": 0,
+        "days_ahead": 2,
+        "text_ships_by": "Versand am",
+        "font_weight_desktop": "400",
+        "text_fast": "Kostenloser",
+        "fast_font_weight_desktop": "400",
+        "text_shipping": "Versand",
+        "show_country_code": true,
+        "shipping_font_weight_desktop": "400",
+        "flag_custom_image": false,
+        "flag_size_desktop": 18,
+        "flag_radius": 0,
+        "flag_size_mob": 18,
+        "space-between_right": 6,
+        "space-between_right_mob": 6
+      }
     }
   },
   "order": [
@@ -1196,6 +1260,7 @@
     "gallery_carousel_WXBk7M",
     "ss_faq_1_pro_wH8BCD",
     "m_guarantees_cdf7Bz",
-    "selluxe_sticky_atc_e8FH6e"
+    "selluxe_sticky_atc_e8FH6e",
+    "s_shipping_1_CMxUhU"
   ]
 }
