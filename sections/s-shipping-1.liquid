@@ -1,0 +1,934 @@
+<!-- sections/s-shipping-1.liquid -->
+{% capture shipping_markup %}
+<style>  
+  .s-shipping-1-{{ section.id }} {
+    {% if section.settings.sec_layout_full_width == 'full-width' %}
+   width: 100%;
+    {% else %}
+        max-width: {{ section.settings.cont_cust_width }}px;
+        {% comment %} margin-left: auto;
+        margin-right: auto; {% endcomment %}
+        padding-left:{{ section.settings.padding-x }}px;
+        padding-right:{{ section.settings.padding-x }}px;
+    {% endif %}
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+  }
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-wrapper {
+    background: {{ section.settings.background_color }};
+    color:{{ section.settings.text_color }};
+    border-radius: {{ section.settings.border_radius }}px;
+    padding: {{section.settings.padding-top}}px {{section.settings.padding-right}}px {{section.settings.padding-bottom}}px {{section.settings.padding-left}}px;
+    display: flex;
+    align-items: center;
+    justify-content: {{ section.settings.space-between_desktop }};
+    flex-wrap: wrap;
+    font-size: {{ section.settings.text_size_desktop }}px;
+      font-weight: {{  section.settings.font_weight_desktop }};
+    line-height: {{ section.settings.line_height_desktop }};
+    letter-spacing: {{ section.settings.letter_spacing_desktop }}px;
+  }
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-left {
+    display: flex;
+    align-items: center;
+    gap: {{  section.settings.gap-between_text_image_pulse }}px;
+  }
+
+
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-pulse {
+    width: {{  section.settings.text_size_pulse }}px;
+    height: {{  section.settings.text_size_pulse }}px;
+    border-radius: 50%;
+    background: {{ section.settings.pulse_color }};
+    box-shadow: 0 0 0 0 {{ section.settings.pulse_color }};
+    animation: pulse-anim-{{ section.id }} 2s infinite;
+    flex-shrink: 0;
+    display: block;
+    margin-right: {{ section.settings.margin-right_desktop }}px;
+  }
+
+
+
+
+
+
+
+
+  @keyframes pulse-anim-{{ section.id }} {
+    0% { box-shadow: 0 0 0 0 {{ section.settings.pulse_color }}; }
+    70% { box-shadow: 0 0 0 6px rgba(0,0,0,0); }
+    100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+  }
+
+
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-date {
+    font-weight: 600;
+  }
+
+
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-right {
+    font-size: {{ section.settings.text_size_desktop }}px;
+    display: flex;
+    align-items: center;    
+     
+    white-space: nowrap;
+  }
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-right .selluxe-shipping-fast{
+    margin-left: {{  section.settings.space-between_right }}px;
+    }
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-flag {
+    {% if section.settings.flag_custom_image == true %}
+      width: {{section.settings.flag_size_desktop}}px;
+      max-width: {{section.settings.flag_size_desktop}}px;
+      height: auto;    
+    {% else %}
+    width: 18px;
+    height: 12px;
+    {% endif %}
+    object-fit: cover;
+    border-radius: {{section.settings.flag_radius}}px;
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-code {
+    font-size: {{section.settings.shipping_code_text_size}}px;
+    opacity: {{section.settings.shipping_color_opacity }};
+  }
+
+
+
+
+
+
+
+
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-fast {
+    font-weight: {{section.settings.fast_font_weight_desktop}};
+  }
+  @media (max-width: 768px) {
+      .s-shipping-1-{{ section.id }} {
+      margin-top: {{ section.settings.margin_top-mob }}px;
+      margin-bottom: {{ section.settings.margin_bottom-mob }}px;
+          {% if section.settings.sec_layout_full_width == 'custom_width' %}
+        padding-left:{{ section.settings.padding-x-mob }}px;
+        padding-right:{{ section.settings.padding-x-mob }}px;
+    {% endif %}
+      }
+    .s-shipping-1-{{ section.id }} .selluxe-shipping-right {
+      font-size: {{ section.settings.text_size_mobile }}px;
+    }
+     .s-shipping-1-{{ section.id }} .selluxe-shipping-wrapper {
+      font-size: {{ section.settings.text_size_mobile }}px;
+      padding: {{section.settings.padding-top-mob}}px {{section.settings.padding-right-mob}}px {{section.settings.padding-bottom-mob}}px {{section.settings.padding-left-mob}}px;      
+      line-height: {{ section.settings.line_height_mob }};
+      letter-spacing: {{ section.settings.letter_spacing_mob }}px;
+      justify-content: {{ section.settings.space-between_mobile  }};
+    }
+    .s-shipping-1-{{ section.id }} .selluxe-shipping-pulse {
+      width: {{  section.settings.text_size_pulse_mobile }}px;
+      height: {{  section.settings.text_size_pulse_mobile }}px;
+      margin-right: {{ section.settings.margin-right_mobile }}px;
+    }
+    .s-shipping-1-{{ section.id }} .selluxe-flag {
+    {% if section.settings.flag_custom_image == true %}
+      width: {{section.settings.flag_size_mob}}px;    
+      max-width: {{section.settings.flag_size_mob}}px;    
+    {% endif %}    
+  }
+
+
+.s-shipping-1-{{ section.id }} .selluxe-shipping-right .selluxe-shipping-fast{
+    margin-left:{{  section.settings.space-between_right_mob }}px;
+    }
+  .s-shipping-1-{{ section.id }} .selluxe-shipping-left {
+    gap: {{  section.settings.gap-between_text_image_pulse_mobile }}px;
+    }
+    .s-shipping-1-{{ section.id }} .selluxe-shipping-code {
+    font-size: {{section.settings.shipping_code_text_size_mobile}}px;
+  }
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+<div class="s-shipping-1-{{ section.id }}">
+  <div class="selluxe-shipping-wrapper">
+    <div class="selluxe-shipping-left">
+      <div class="selluxe-shipping-pulse"></div>
+      <div class="selluxe-shipping-text">
+        {{ section.settings.text_ships_by }} <span class="selluxe-shipping-date"></span>
+      </div>
+    </div>
+
+
+
+
+    <div class="selluxe-shipping-right">
+    {% assign country_code = localization.country.iso_code | downcase %}
+    <img src="https://flagcdn.com/24x18/{{ country_code }}.png" width="100" alt="Flag" class="selluxe-flag" loading="lazy">
+<span class="selluxe-shipping-fast_main">
+      <span class="selluxe-shipping-fast">{{ section.settings.text_fast }}</span> <span style="font-weight:{{ section.settings.shipping_font_weight_desktop }}">{{ section.settings.text_shipping }} {% if section.settings.show_country_code %}{{ localization.country.iso_code }}{% endif %}</span>
+</span>
+    </div>    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+    var wrapper = document.querySelector(".s-shipping-1-{{ section.id }}");
+    if(!wrapper) return;
+
+
+
+
+
+
+
+
+    var dateEl = wrapper.querySelector(".selluxe-shipping-date");
+    if(!dateEl) return;
+
+
+
+
+
+
+
+
+    // 1️⃣ Determine locale from dropdown
+    var localeSetting = "{{ section.settings.date_language }}";
+    var localeMap = {
+      "en": "en-US",
+      "nl": "nl-NL",
+      "fr": "fr-FR",
+      "de": "de-DE",
+      "es": "es-ES",
+      "it": "it-IT",
+      "da": "da-DK",
+      "sv": "sv-SE",
+      "no": "nb-NO",
+      "fi": "fi-FI",
+      "pl": "pl-PL"
+    };
+    var locale = localeMap[localeSetting] || "en-US";
+
+
+
+
+
+
+
+
+    // 2️⃣ Calculate target date
+    var daysAhead = {{ section.settings.days_ahead }};
+    var d = new Date();
+    d.setDate(d.getDate() + daysAhead);
+
+
+
+
+
+
+
+
+    // 3️⃣ Format localized date
+    try {
+      var formatter = new Intl.DateTimeFormat(locale, {
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric'
+      });
+      dateEl.textContent = formatter.format(d);
+    } catch (err) {
+      dateEl.textContent = d.toDateString();
+    }
+  });
+</script>
+{% endcapture %}
+
+
+
+
+
+
+
+
+{% if section.settings.custom_display %}
+  <div id="s-shipping-1-template-{{ section.id }}" style="display:none;">
+    {{ shipping_markup }}
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var target = document.getElementById('s-shipping-1');
+      var tpl = document.getElementById('s-shipping-1-template-{{ section.id }}');
+      if(target && tpl){ target.innerHTML = tpl.innerHTML; }
+    });
+  </script>
+{% else %}
+  {{ shipping_markup }}
+{% endif %}
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "s-shipping-1",
+  "tag": "section",
+  "settings": [
+    {
+  "type": "header",
+  "content": "❓ Need help?",
+  "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)"
+},
+{
+  "type": "header",
+  "content": "1️⃣ Render section as block"
+},
+{
+  "type": "header",
+  "content": "Turn on 'Render as Block'"
+},
+{
+  "type": "checkbox",
+  "id": "custom_display",
+  "label": "2️⃣ Render as Block",
+  "default": false
+},
+{
+  "type": "header",
+  "content": "3️⃣ Go to Product Blocks"
+},
+{
+  "type": "header",
+  "content": "4️⃣ Add a Custom Liquid block"
+},
+{
+  "type": "header",
+  "content": "5️⃣ Paste this code:",
+  "info": "<div id='s-shipping-1'></div>"
+},
+{
+  "type": "header",
+  "content": "⚙️ Customize Settings",
+  "info": "Adjust visuals, colors, spacing, and other options below."
+},
+    {
+            "type": "select",
+            "id": "sec_layout_full_width",
+            "label": "Width",
+            "default": "custom_width",
+            "options": [
+                {
+                    "value": "full-width",
+                    "label": "Full width"
+                },
+                {
+                    "value": "custom_width",
+                    "label": "Custom width"
+                }
+            ]
+        },
+        {
+            "type": "number",
+            "id": "cont_cust_width",
+            "label": "Custom width",
+            "default": 440,
+            "info": "eg: 440",
+            "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
+     },          
+  {
+      "type": "range",
+      "id": "padding-x",
+      "label": "Padding left and right desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
+    },
+
+
+
+
+
+
+
+
+    {
+      "type": "range",
+      "id": "padding-x-mob",
+      "label": "Padding left and right mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
+    },
+    {
+      "type": "select",
+      "id": "date_language",
+      "label": "Date language",
+      "default": "en",
+      "options": [
+        { "value": "en", "label": "English" },
+        { "value": "nl", "label": "Dutch (Nederlands)" },
+        { "value": "fr", "label": "French (Français)" },
+        { "value": "de", "label": "German (Deutsch)" },
+        { "value": "es", "label": "Spanish (Español)" },
+        { "value": "it", "label": "Italian (Italiano)" },
+        { "value": "da", "label": "Danish (Dansk)" },
+        { "value": "sv", "label": "Swedish (Svenska)" },
+        { "value": "no", "label": "Norwegian (Norsk)" },
+        { "value": "fi", "label": "Finnish (Suomi)" },
+        { "value": "pl", "label": "Polish (Polski)" }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Main section"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f9f9f6"
+    },
+       {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "gap-between_text_image_pulse",
+      "label": "Gap between text image and pulse desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {    
+      "type": "range",
+      "id": "gap-between_text_image_pulse_mobile",
+      "label": "Gap between text image and pulse mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "select",
+      "id": "space-between_desktop",
+      "label": "Space between left and right section desktop",
+      "default": "space-between",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "space-around ", "label": "Space around " },
+        { "value": "space-between", "label": "Space between" },
+        { "value": "space-evenly", "label": "Space evenly" }        
+      ]
+    },
+    {
+      "type": "select",
+      "id": "space-between_mobile",
+      "label": "Space between left and right section mobile",
+      "default": "space-between",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "space-around ", "label": "Space around " },
+        { "value": "space-between", "label": "Space between" },
+        { "value": "space-evenly", "label": "Space evenly" }        
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Desktop Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding-left",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding-right",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+
+
+
+
+
+
+
+
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Mobile Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-top-mob",
+      "label": "Top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom-mob",
+      "label": "Bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding-left-mob",
+      "label": "Left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding-right-mob",
+      "label": "Right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+
+
+
+
+
+
+
+
+    {
+      "type": "range",
+      "id": "margin_top-mob",
+      "label": "Margin top",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom-mob",
+      "label": "Margin bottom",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 0
+    },      
+    {
+      "type": "header",
+      "content": "Text typography"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000"
+    },
+    {
+      "type": "range",
+      "id": "text_size_desktop",
+      "label": "Text size desktop",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+        "type": "range",
+        "id": "line_height_desktop",
+        "label": "Line height (em)",
+        "min": 0.8,
+        "max": 3,
+        "step": 0.1,
+        "default": 1.3
+      },
+    {
+      "type": "range",
+      "id": "letter_spacing_desktop",
+      "label": "Letter spacing (px)",
+      "min": -5,
+      "max": 10,
+      "step": 0.2,
+      "default": 0,
+      "unit":"px"
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Text size mobile",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+     {
+        "type": "range",
+        "id": "line_height_mob",
+        "label": "Line height mobile (em)",
+        "min": 0.8,
+        "max": 3,
+        "step": 0.1,
+        "default": 1.2
+      },
+    {
+      "type": "range",
+      "id": "letter_spacing_mob",
+      "label": "Letter spacing mobile (px)",
+      "min": -5,
+      "max": 10,
+      "step": 0.2,
+      "default": 0,
+      "unit":"px"
+    },
+    {
+      "type": "color",
+      "id": "pulse_color",
+      "label": "Pulse color",
+      "default": "#7aa87a"
+    },
+    {
+      "type": "header",
+      "content": "Pulse"
+    },
+   {
+      "type": "range",
+      "id": "text_size_pulse",
+      "label": "Pulse size desktop",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "margin-right_desktop",
+      "label": "margin right desktop",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "text_size_pulse_mobile",
+      "label": "Pulse size mobile",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "margin-right_mobile",
+      "label": "margin right mobile",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "days_ahead",
+      "label": "Days ahead for shipping date",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "text",
+      "id": "text_ships_by",
+      "label": "Text: Ships by",
+      "default": "Ships by"
+    },
+     {
+      "type": "select",
+      "id": "font_weight_desktop",
+      "label": "Font weight",
+      "default": "400",
+      "options": [
+        { "value": "100", "label": "Thin (100)" },
+        { "value": "200", "label": "Extra Light (200)" },
+        { "value": "300", "label": "Light (300)" },
+        { "value": "400", "label": "Regular (400)" },
+        { "value": "500", "label": "Medium (500)" },
+        { "value": "600", "label": "Semi Bold (600)" },
+        { "value": "700", "label": "Bold (700)" },
+        { "value": "800", "label": "Extra Bold (800)" },
+        { "value": "900", "label": "Black (900)" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "text_fast",
+      "label": "Text: Fast",
+      "default": "Fast"
+    },
+     {
+      "type": "select",
+      "id": "fast_font_weight_desktop",
+      "label": "Font weight",
+      "default": "700",
+      "options": [
+        { "value": "100", "label": "Thin (100)" },
+        { "value": "200", "label": "Extra Light (200)" },
+        { "value": "300", "label": "Light (300)" },
+        { "value": "400", "label": "Regular (400)" },
+        { "value": "500", "label": "Medium (500)" },
+        { "value": "600", "label": "Semi Bold (600)" },
+        { "value": "700", "label": "Bold (700)" },
+        { "value": "800", "label": "Extra Bold (800)" },
+        { "value": "900", "label": "Black (900)" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "text_shipping",
+      "label": "Text: Shipping",
+      "default": "Shipping"
+    },
+    {
+            "type": "checkbox",
+            "id": "show_country_code",
+            "label": "Show country code",
+            "default": true
+            },
+     {
+      "type": "select",
+      "id": "shipping_font_weight_desktop",
+      "label": "Font weight",
+      "default": "400",
+      "options": [
+        { "value": "100", "label": "Thin (100)" },
+        { "value": "200", "label": "Extra Light (200)" },
+        { "value": "300", "label": "Light (300)" },
+        { "value": "400", "label": "Regular (400)" },
+        { "value": "500", "label": "Medium (500)" },
+        { "value": "600", "label": "Semi Bold (600)" },
+        { "value": "700", "label": "Bold (700)" },
+        { "value": "800", "label": "Extra Bold (800)" },
+        { "value": "900", "label": "Black (900)" }
+      ]
+    },    
+    {
+      "type": "checkbox",
+      "id": "flag_custom_image",
+      "label": "Flag custom size",
+      "default": false
+    },
+      {
+      "type": "range",
+      "id": "flag_size_desktop",
+      "label": "Flag desktop size",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 18,
+      "visible_if": "{{ section.settings.flag_custom_image == true }}"
+    },
+    {
+      "type": "range",
+      "id": "flag_radius",
+      "label": "Flag radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+     {
+      "type": "range",
+      "id": "flag_size_mob",
+      "label": "Flag mobile size",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 18,
+      "visible_if": "{{ section.settings.flag_custom_image == true }}"
+    },
+    {
+      "type": "range",
+      "id": "space-between_right",
+      "label": "Space between flag and text",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "space-between_right_mob",
+      "label": "Space between flag and text (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 6
+    }
+
+
+  ],
+  "presets": [
+    { "name": "s-shipping-1", "category": "Selluxe" }
+  ]
+}
+{% endschema %}
