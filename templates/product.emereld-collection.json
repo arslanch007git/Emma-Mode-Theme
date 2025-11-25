@@ -1110,7 +1110,7 @@
           "settings": {
             "img": "shopify://shop_images/box-svgrepo-com.svg",
             "title": "KOSTENLOSER VERSAND",
-            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands an.",
+            "desc": "Ich biete immer kostenlosen Versand innerhalb Deutschlands, der Schweiz und Österreichs an",
             "text-decoration": "none",
             "link": ""
           }
@@ -1130,7 +1130,7 @@
           "settings": {
             "img": "shopify://shop_images/checkmark-svgrepo-com.svg",
             "title": "Handwerksgarantie",
-            "desc": "Auf unsere Handwerkskunst erhalten Sie lebenslange Garantie – und Ihre Zufriedenheit liegt mir persönlich am Herzen",
+            "desc": "Auf meine Handwerkskunst gebe ich eine lebenslange Garantie, und Ihre Zufriedenheit ist mir persönlich sehr wichtig",
             "text-decoration": "none",
             "link": "shopify://policies/refund-policy"
           }
