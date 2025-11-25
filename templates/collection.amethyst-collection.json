@@ -193,6 +193,34 @@
         "enable_animation": true,
         "divider_style": "none"
       }
+    },
+    "featured_collection_grid_iWXVWW": {
+      "type": "featured-collection-grid",
+      "blocks": {
+        "collection_Y4fdU6": {
+          "type": "collection",
+          "settings": {
+            "collection": "amethyst-kollektion"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Y4fdU6"
+      ],
+      "name": "t:sections.featured_collection_grid.presets.name",
+      "settings": {
+        "heading": "Meine persönlichen Favoriten",
+        "heading_tag": "h2",
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "maximum_collections": 4,
+        "columns": "4",
+        "mobile_columns": "2",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom"
+      }
     }
   },
   "order": [
@@ -200,6 +228,7 @@
     "rich_text_qKDbVj",
     "slideshow_4Tjkip",
     "banner",
-    "product-grid"
+    "product-grid",
+    "featured_collection_grid_iWXVWW"
   ]
 }
