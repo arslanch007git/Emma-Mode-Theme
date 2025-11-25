@@ -1205,7 +1205,7 @@
         "margin-right_desktop": 0,
         "text_size_pulse_mobile": 8,
         "margin-right_mobile": 0,
-        "days_ahead": 2,
+        "days_ahead": 1,
         "text_ships_by": "Versand am",
         "font_weight_desktop": "400",
         "text_fast": "Kostenloser",
