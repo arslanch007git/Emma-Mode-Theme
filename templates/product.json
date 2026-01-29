@@ -21,24 +21,6 @@
             "review_text": "[rating]/5 based on [reviews]+ Reviews"
           }
         },
-        "check_review_usp_GV63GY": {
-          "type": "check_review_usp",
-          "settings": {
-            "uspmt": 0,
-            "uspmb": 13,
-            "usppx": 10,
-            "usppy": 4,
-            "uspgap": 10,
-            "uspradius": 55,
-            "bg": "#fdf8f3",
-            "usp-img": "shopify://shop_images/handmade_with_love.webp",
-            "uspimgsize": 40,
-            "usp-text": "<strong>Handcrafted by Lara</strong>",
-            "usp-text2": "",
-            "uspclr": "#000000",
-            "usptxtsize": 14
-          }
-        },
         "product_header": {
           "type": "product_header",
           "settings": {
@@ -99,6 +81,24 @@
             "show_untracked_quantity": false
           }
         },
+        "check_review_usp_GV63GY": {
+          "type": "check_review_usp",
+          "settings": {
+            "uspmt": 0,
+            "uspmb": 13,
+            "usppx": 10,
+            "usppy": 4,
+            "uspgap": 10,
+            "uspradius": 55,
+            "bg": "#000000",
+            "usp-img": "shopify://shop_images/handmade_with_love.webp",
+            "uspimgsize": 40,
+            "usp-text": "<strong>Handcrafted by Lara</strong>",
+            "usp-text2": "",
+            "uspclr": "#ffffff",
+            "usptxtsize": 14
+          }
+        },
         "minventory_AXXdi3": {
           "type": "minventory",
           "settings": {
@@ -107,10 +107,10 @@
             "invenDot-adjust": 11,
             "invenDot-gap": 18,
             "invenDot-size": 12,
-            "invenDot-clr": "#d21404",
+            "invenDot-clr": "#ffbf52",
             "invenText-size": 16,
-            "invenText-clr": "#000000",
-            "invenText": "Weniger als <strong>6</strong> auf Lager"
+            "invenText-clr": "#ffbf52",
+            "invenText": "<strong>Only 4 pieces left</strong>"
           }
         },
         "selluxe_social_badge_hLrRB9": {
@@ -341,11 +341,11 @@
       },
       "block_order": [
         "selluxe_tp_stars_VXDnFr",
-        "check_review_usp_GV63GY",
         "product_header",
         "text_1",
         "product_callouts_mini_XdhknG",
         "stock_level_indicator",
+        "check_review_usp_GV63GY",
         "minventory_AXXdi3",
         "selluxe_social_badge_hLrRB9",
         "variant_picker",
@@ -573,6 +573,39 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
+    },
+    "17696824742b2d0c6c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8027042_cKfpHN": {
+          "type": "ai_gen_block_8027042",
+          "settings": {
+            "max_width": 1200,
+            "section_padding": 60,
+            "column_gap": 60,
+            "image": "shopify://shop_images/ChatGPT_Image_29_jan_2026_11_26_20.png",
+            "image_fit": "cover",
+            "background_color": "#ffffff",
+            "text_color": "#000000",
+            "headline_font": "serif",
+            "headline_size": 56,
+            "headline_spacing": 20,
+            "date_size": 42,
+            "date_spacing": 24,
+            "label_size": 12,
+            "label_letter_spacing": 2,
+            "label_spacing": 30,
+            "paragraph_size": 17,
+            "paragraph_line_height": 1.6,
+            "paragraph_max_width": 420
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8027042_cKfpHN"
+      ],
+      "settings": {}
     },
     "image_with_text_EgkTyL": {
       "type": "image-with-text",
@@ -1277,13 +1310,13 @@
         "sticky_position": "bottom",
         "background_color": "#ffffff",
         "text_color": "#000000",
-        "button_color": "#961f48",
+        "button_color": "#000000",
         "button_text_color": "#ffffff",
         "price_color": "#000000",
         "compare_price_color": "#888888",
-        "discount_bg_color": "#961f48",
+        "discount_bg_color": "#000000",
         "discount_text_color": "#ffffff",
-        "discount_text_prefix": "sparen",
+        "discount_text_prefix": "Save",
         "discount_badge_radius": 4,
         "image_radius": 6,
         "select_radius": 6,
@@ -1438,6 +1471,7 @@
     "product_tabs",
     "recommendations",
     "featured_collection_slider_WXeaX9",
+    "17696824742b2d0c6c",
     "image_with_text_EgkTyL",
     "image_with_text_gMPh73",
     "multi_column",
