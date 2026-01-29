@@ -22,15 +22,46 @@
             "collapse_on_mobile": true,
             "title": "Meine Arbeitszeiten:",
             "show_title_on_desktop": true,
-            "text": "<p>Ich bin immer für Sie da! Ich bin jeden Tag der Woche erreichbar.</p><p><strong>Arbeitszeiten:</strong></p><ul><li>Mo – Fr: 9:00 – 17:00 Uhr</li><li>Sa: 10:00 – 16:00 Uhr</li><li>So: geschlossen</li></ul><p>Ich bemühe mich, Ihnen innerhalb von 24 Stunden zu antworten, aber ich bin stets bestrebt, so schnell wie möglich zu reagieren.</p><p>E-Mail: kontakt@claudia-schmuckatelier.com</p>",
+            "text": "<p>At Ethan & Laraa, everything revolves around our passion for jewelry. We believe that jewelry is more than just an accessory it tells a story and expresses who you are. We lovingly select the most beautiful trendy and timeless designs, so that everyone can find something that fits their unique style.</p><p>★★★★★ (823 Reviews)</p>",
             "image_max_width": 200,
             "image_placement": "above_text",
             "show_social_icons": false,
             "enable_follow_on_shop": false
           }
         },
+        "text_ndNAQR": {
+          "type": "text",
+          "settings": {
+            "desktop_width": 30,
+            "desktop_padding": 2,
+            "collapse_on_mobile": true,
+            "title": "contact us",
+            "show_title_on_desktop": true,
+            "text": "<p>Do you have any questions?</p><p>Please contact Ethan or me (Lara) via:</p><p>✉️ info@ethan-laraa.com</p>",
+            "image_max_width": 200,
+            "image_placement": "below_text",
+            "show_social_icons": false,
+            "enable_follow_on_shop": false
+          }
+        },
+        "text_nFdXMa": {
+          "type": "text",
+          "settings": {
+            "desktop_width": 30,
+            "desktop_padding": 2,
+            "collapse_on_mobile": true,
+            "title": "Opening hours",
+            "show_title_on_desktop": true,
+            "text": "<p><strong>Monday to Friday:</strong> 9:00 am – 6:00 pm<br/><strong>Saturday:</strong> 9:00 am – 5:00 pm<br/><strong>Sunday:</strong> 10:00 am - 3:00 pm</p><p>📍 <strong>Location: </strong>Mission Boulevard, San Diego</p>",
+            "image_max_width": 200,
+            "image_placement": "below_text",
+            "show_social_icons": false,
+            "enable_follow_on_shop": false
+          }
+        },
         "footer-3": {
           "type": "links",
+          "disabled": true,
           "settings": {
             "desktop_width": 14,
             "desktop_padding": 3,
@@ -46,7 +77,7 @@
             "desktop_width": 20,
             "desktop_padding": 4,
             "collapse_on_mobile": true,
-            "title": "Links",
+            "title": "Legal menu",
             "show_title_on_desktop": true,
             "link_list": "footer"
           }
@@ -54,6 +85,8 @@
       },
       "block_order": [
         "text_7KBXnP",
+        "text_ndNAQR",
+        "text_nFdXMa",
         "footer-3",
         "links_YUWjNR"
       ],
