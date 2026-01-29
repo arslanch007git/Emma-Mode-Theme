@@ -286,7 +286,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "title": "Beschreibung",
+            "title": "Description",
             "title_tag": "h3",
             "text_font_class": "fs-body-100",
             "column_placement": "right",
@@ -299,9 +299,9 @@
           "settings": {
             "expand_by_default": false,
             "column_placement": "right",
-            "heading": "Mein persönliches Versprechen an Sie",
+            "heading": "Shipping Information",
             "heading_tag": "h3",
-            "content": "<p>Ich stecke mein Herz in jedes einzelne Stück und garantiere höchste Handwerkskunst mit einer lebenslangen Garantie. Sollten Sie aus irgendeinem Grund nicht mit Ihrem Schmuckstück zufrieden sein, können Sie es ganz einfach und unkompliziert zurückgeben. Sie erhalten den Kaufpreis vollständig zurück, ohne dass Fragen gestellt werden. Ihre Zufriedenheit bedeutet mir alles, und ich möchte, dass Sie sich bei jedem Kauf sicher sein können, dass er meine Hingabe für Qualität und Sorgfalt widerspiegelt.</p>",
+            "content": "<p><strong>We offer Express Shipping on all orders.</strong></p><p><strong>Hassle-free returns</strong> up to 30 days after delivery</p><p><strong>24/7 Customer Service</strong> to help you with any questions you may have</p><p>We work closely with<strong> </strong>UPS<strong> </strong>to deliver all orders quickly and safely. All orders will be shipped within a <strong>24-48 hour timeframe.</strong></p><p>This allows us to provide you with <strong>reliable tracking numbers</strong>, so you always know where your order is.</p>",
             "page_for_content": "",
             "custom_liquid": ""
           }
@@ -311,15 +311,16 @@
           "settings": {
             "expand_by_default": false,
             "column_placement": "right",
-            "heading": "Lebenslange Garantie auf die Farbe",
+            "heading": "Returns",
             "heading_tag": "h3",
-            "content": "<p>Ich bin überzeugt, dass unser Schmuck mit der Zeit nicht seine Farbe verliert. Ich bin von unserer Qualität so überzeugt, dass wir <strong>eine lebenslange Garantie</strong> auf alle farbbedingten Mängel gewähren.<br/></p><p>Sollte Ihr Schmuck seine goldene Farbe verlieren, befolgen Sie einfach meine Rücksendeanweisungen und ich sende Ihnen einen brandneuen Ersatz. <strong>Ohne Fragen.</strong></p>",
+            "content": "<p>Wrong size? Displeased? <strong>No problem! </strong>If for any reason you are not satisfied with the product, we offer a 30-day return policy.<br/></p>",
             "page_for_content": "",
             "custom_liquid": ""
           }
         },
         "check_review_usp_3qCprz": {
           "type": "check_review_usp",
+          "disabled": true,
           "settings": {
             "uspmt": 0,
             "uspmb": 17,
@@ -381,6 +382,39 @@
         "hide_mobile_carousel_dots": false,
         "enable_gift_card_recipient": true,
         "enable_animation": true
+      }
+    },
+    "rich_text_xKVFcV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ykRRN9": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Everything is Free",
+            "heading_tag": "h2",
+            "heading_font_class": "fs-heading-2-base"
+          }
+        },
+        "text_K4BQem": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For seven years, this small business has been my entire world. Every order, every message, and every bit of support carried me through both the highs and the hard moments. As I close this chapter, I didn’t want to simply walk away — I wanted to give something back.</p><p>Rather than letting the remaining pieces gather dust on a shelf, I’m giving them away for free as a heartfelt thank-you to everyone who’s been part of this journey.</p>",
+            "text_font_class": "fs-body-100"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ykRRN9",
+        "text_K4BQem"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "center_center",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
       }
     },
     "product_tabs": {
@@ -1259,6 +1293,7 @@
   },
   "order": [
     "main",
+    "rich_text_xKVFcV",
     "product_tabs",
     "recommendations",
     "featured_collection_slider_WXeaX9",
