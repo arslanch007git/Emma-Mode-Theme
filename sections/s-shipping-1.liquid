@@ -1,37 +1,78 @@
-<!-- sections/s-shipping-1.liquid -->
-{% capture shipping_markup %}
-<style>  
-  .s-shipping-1-{{ section.id }} {
+
+
+
+
+
+
+
+
+
+
+{%- assign sell_shipping = 's-shipping-1' -%}
+{%- assign sid = section.id -%}
+
+
+{%- style -%}
+  .{{ sell_shipping }}--{{ sid }} {
     {% if section.settings.sec_layout_full_width == 'full-width' %}
-   width: 100%;
+      width: 100%;
+    {% elsif section.settings.sec_layout_full_width == 'auto' %}
+        width:max-content;
+        max-width:100%;
     {% else %}
-        max-width: {{ section.settings.cont_cust_width }}px;
-        {% comment %} margin-left: auto;
-        margin-right: auto; {% endcomment %}
-        padding-left:{{ section.settings.padding-x }}px;
-        padding-right:{{ section.settings.padding-x }}px;
+      max-width: {{ section.settings.cont_cust_width }}px;
+      padding-left: {{ section.settings.padding_x }}px;
+      padding-right: {{ section.settings.padding_x }}px;
     {% endif %}
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
+    {%  if section.settings.cont_align  == 'end' %}
+        margin-left:auto;
+        margin-right:unset;
+        {% elsif section.settings.cont_align  == 'center' %}
+        margin-left:auto;
+        margin-right:auto;
+        {% else %}
+        margin-left:unset;
+        margin-right:auto;
+    {% endif %}
   }
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-wrapper {
+
+
+
+
+
+
+
+
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-wrapper {
     background: {{ section.settings.background_color }};
-    color:{{ section.settings.text_color }};
+    color: {{ section.settings.text_color }};
     border-radius: {{ section.settings.border_radius }}px;
-    padding: {{section.settings.padding-top}}px {{section.settings.padding-right}}px {{section.settings.padding-bottom}}px {{section.settings.padding-left}}px;
+    padding: {{ section.settings.padding_top }}px {{ section.settings.padding_right }}px {{ section.settings.padding_bottom }}px {{ section.settings.padding_left }}px;
     display: flex;
+    gap:10px;
     align-items: center;
-    justify-content: {{ section.settings.space-between_desktop }};
+    justify-content: {{ section.settings.space_between_desktop }};
     flex-wrap: wrap;
     font-size: {{ section.settings.text_size_desktop }}px;
-      font-weight: {{  section.settings.font_weight_desktop }};
+    text-transform:{{ section.settings.text_transform_desktop }};
+    font-weight: {{ section.settings.font_weight_desktop }};
     line-height: {{ section.settings.line_height_desktop }};
     letter-spacing: {{ section.settings.letter_spacing_desktop }}px;
   }
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-left {
+
+
+
+
+
+
+
+
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-left {
     display: flex;
     align-items: center;
-    gap: {{  section.settings.gap-between_text_image_pulse }}px;
+    gap: {{ section.settings.gap_between_text_image_pulse }}px;
   }
 
 
@@ -41,16 +82,16 @@
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-pulse {
-    width: {{  section.settings.text_size_pulse }}px;
-    height: {{  section.settings.text_size_pulse }}px;
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-pulse {
+    width: {{ section.settings.text_size_pulse }}px;
+    height: {{ section.settings.text_size_pulse }}px;
     border-radius: 50%;
     background: {{ section.settings.pulse_color }};
     box-shadow: 0 0 0 0 {{ section.settings.pulse_color }};
-    animation: pulse-anim-{{ section.id }} 2s infinite;
+    animation: pulse-anim-{{ sid }} {{ section.settings.pulse_animation_duration }}s infinite;
     flex-shrink: 0;
     display: block;
-    margin-right: {{ section.settings.margin-right_desktop }}px;
+    margin-right: {{ section.settings.margin_right_desktop }}px;
   }
 
 
@@ -60,9 +101,9 @@
 
 
 
-  @keyframes pulse-anim-{{ section.id }} {
+  @keyframes pulse-anim-{{ sid }} {
     0% { box-shadow: 0 0 0 0 {{ section.settings.pulse_color }}; }
-    70% { box-shadow: 0 0 0 6px rgba(0,0,0,0); }
+    70% { box-shadow: 0 0 0 {{ section.settings.pulse_animation_size }}px rgba(0,0,0,0); }
     100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
   }
 
@@ -73,8 +114,8 @@
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-date {
-    font-weight: 600;
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-date {
+    font-weight: {{ section.settings.date_font_weight }};
   }
 
 
@@ -84,33 +125,42 @@
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-right {
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-right {
     font-size: {{ section.settings.text_size_desktop }}px;
     display: flex;
-    align-items: center;    
-     
+    align-items: center;
     white-space: nowrap;
   }
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-right .selluxe-shipping-fast{
-    margin-left: {{  section.settings.space-between_right }}px;
-    }
 
 
 
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-flag {
+
+
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-right .selluxe-shipping-fast {
+    margin-left: {{ section.settings.space_between_right }}px;
+  }
+
+
+
+
+
+
+
+
+  .{{ sell_shipping }}--{{ sid }} .selluxe-flag {
     {% if section.settings.flag_custom_image == true %}
-      width: {{section.settings.flag_size_desktop}}px;
-      max-width: {{section.settings.flag_size_desktop}}px;
-      height: auto;    
+      width: {{ section.settings.flag_size_desktop }}px;
+      max-width: {{ section.settings.flag_size_desktop }}px;
+      height: auto;
     {% else %}
-    width: 18px;
-    height: 12px;
+      width: 18px;
+      height: 12px;
     {% endif %}
     object-fit: cover;
-    border-radius: {{section.settings.flag_radius}}px;
+    border-radius: {{ section.settings.flag_radius }}px;
     display: inline-block;
   }
 
@@ -121,9 +171,20 @@
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-code {
-    font-size: {{section.settings.shipping_code_text_size}}px;
-    opacity: {{section.settings.shipping_color_opacity }};
+  /* .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-code {
+    font-size: {{ section.settings.shipping_code_text_size }}px;
+    opacity: {{ section.settings.shipping_color_opacity }};
+  } */
+
+
+
+
+
+
+
+
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-fast {
+    font-weight: {{ section.settings.fast_font_weight_desktop }};
   }
 
 
@@ -133,49 +194,8 @@
 
 
 
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-fast {
-    font-weight: {{section.settings.fast_font_weight_desktop}};
-  }
-  @media (max-width: 768px) {
-      .s-shipping-1-{{ section.id }} {
-      margin-top: {{ section.settings.margin_top-mob }}px;
-      margin-bottom: {{ section.settings.margin_bottom-mob }}px;
-          {% if section.settings.sec_layout_full_width == 'custom_width' %}
-        padding-left:{{ section.settings.padding-x-mob }}px;
-        padding-right:{{ section.settings.padding-x-mob }}px;
-    {% endif %}
-      }
-    .s-shipping-1-{{ section.id }} .selluxe-shipping-right {
-      font-size: {{ section.settings.text_size_mobile }}px;
-    }
-     .s-shipping-1-{{ section.id }} .selluxe-shipping-wrapper {
-      font-size: {{ section.settings.text_size_mobile }}px;
-      padding: {{section.settings.padding-top-mob}}px {{section.settings.padding-right-mob}}px {{section.settings.padding-bottom-mob}}px {{section.settings.padding-left-mob}}px;      
-      line-height: {{ section.settings.line_height_mob }};
-      letter-spacing: {{ section.settings.letter_spacing_mob }}px;
-      justify-content: {{ section.settings.space-between_mobile  }};
-    }
-    .s-shipping-1-{{ section.id }} .selluxe-shipping-pulse {
-      width: {{  section.settings.text_size_pulse_mobile }}px;
-      height: {{  section.settings.text_size_pulse_mobile }}px;
-      margin-right: {{ section.settings.margin-right_mobile }}px;
-    }
-    .s-shipping-1-{{ section.id }} .selluxe-flag {
-    {% if section.settings.flag_custom_image == true %}
-      width: {{section.settings.flag_size_mob}}px;    
-      max-width: {{section.settings.flag_size_mob}}px;    
-    {% endif %}    
-  }
-
-
-.s-shipping-1-{{ section.id }} .selluxe-shipping-right .selluxe-shipping-fast{
-    margin-left:{{  section.settings.space-between_right_mob }}px;
-    }
-  .s-shipping-1-{{ section.id }} .selluxe-shipping-left {
-    gap: {{  section.settings.gap-between_text_image_pulse_mobile }}px;
-    }
-    .s-shipping-1-{{ section.id }} .selluxe-shipping-code {
-    font-size: {{section.settings.shipping_code_text_size_mobile}}px;
+  .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-shipping-text {
+    font-weight: {{ section.settings.shipping_font_weight_desktop }};
   }
 
 
@@ -185,7 +205,103 @@
 
 
 
+  @media screen and (max-width: 768px) {
+    .{{ sell_shipping }}--{{ sid }} {
+      margin-top: {{ section.settings.margin_top_mob }}px !important;
+      margin-bottom: {{ section.settings.margin_bottom_mob }}px !important;
+      {% if section.settings.sec_layout_full_width == 'custom_width' %}
+        padding-left: {{ section.settings.padding_x_mob }}px !important;
+        padding-right: {{ section.settings.padding_x_mob }}px !important;
+      {% endif %}
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-right {
+      font-size: {{ section.settings.text_size_mobile }}px !important;
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-wrapper {
+      font-size: {{ section.settings.text_size_mobile }}px !important;
+      padding: {{ section.settings.padding_top_mob }}px {{ section.settings.padding_right_mob }}px {{ section.settings.padding_bottom_mob }}px {{ section.settings.padding_left_mob }}px !important;
+      line-height: {{ section.settings.line_height_mob }} !important;
+      letter-spacing: {{ section.settings.letter_spacing_mob }}px !important;
+      justify-content: {{ section.settings.space_between_mobile }} !important;
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-pulse {
+      width: {{ section.settings.text_size_pulse_mobile }}px !important;
+      height: {{ section.settings.text_size_pulse_mobile }}px !important;
+      margin-right: {{ section.settings.margin_right_mobile }}px !important;
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-flag {
+      {% if section.settings.flag_custom_image == true %}
+        width: {{ section.settings.flag_size_mob }}px !important;
+        max-width: {{ section.settings.flag_size_mob }}px !important;
+      {% endif %}
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-right .selluxe-shipping-fast {
+      margin-left: {{ section.settings.space_between_right_mob }}px !important;
+    }
+
+
+
+
+
+
+
+
+    .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-left {
+      gap: {{ section.settings.gap_between_text_image_pulse_mobile }}px !important;
+    }
+
+
+
+
+
+
+
+
+    /* .{{ sell_shipping }}--{{ sid }} .selluxe-shipping-code {
+      font-size: {{ section.settings.shipping_code_text_size_mobile }}px !important;
+    } */
   }
+{%- endstyle -%}
 
 
 
@@ -194,75 +310,50 @@
 
 
 
-
-
-
-
-
-
-
-
-</style>
-
-
-
-
-
-
-
-
-<div class="s-shipping-1-{{ section.id }}">
+{% capture shipping_markup %}
+<div class="{{ sell_shipping }}--{{ sid }}">
   <div class="selluxe-shipping-wrapper">
+    {% if section.settings.show_left == true %}
     <div class="selluxe-shipping-left">
       <div class="selluxe-shipping-pulse"></div>
       <div class="selluxe-shipping-text">
         {{ section.settings.text_ships_by }} <span class="selluxe-shipping-date"></span>
       </div>
     </div>
-
-
-
-
+{% endif %}
+{% if section.settings.show_right == true %}
     <div class="selluxe-shipping-right">
-    {% assign country_code = localization.country.iso_code | downcase %}
-    <img src="https://flagcdn.com/24x18/{{ country_code }}.png" width="100" alt="Flag" class="selluxe-flag" loading="lazy">
-<span class="selluxe-shipping-fast_main">
-      <span class="selluxe-shipping-fast">{{ section.settings.text_fast }}</span> <span style="font-weight:{{ section.settings.shipping_font_weight_desktop }}">{{ section.settings.text_shipping }} {% if section.settings.show_country_code %}{{ localization.country.iso_code }}{% endif %}</span>
-</span>
-    </div>    
+      {% assign country_code = localization.country.iso_code | downcase %}
+     
+      {% if section.settings.flag_show == true %}
+        {% if section.settings.flag_image != blank %}
+            <img src="{{ section.settings.flag_image | image_url: width: 200 }}"
+                alt="{{ section.settings.flag_image.alt | default: 'Flag' }}"
+                class="selluxe-flag"
+                loading="lazy">
+        {% else %}
+            <img src="https://flagcdn.com/24x18/{{ country_code }}.png"
+                width="100"
+                alt="Flag"
+                class="selluxe-flag"
+                loading="lazy">
+        {% endif %}
+      {% endif %}
+      <span class="selluxe-shipping-fast_main">
+        <span class="selluxe-shipping-fast">{{ section.settings.text_fast }}</span>
+        <span class="selluxe-shipping-shipping-text">{{ section.settings.text_shipping }} {% if section.settings.show_country_code %}{{ localization.country.iso_code }}{% endif %}</span>
+      </span>
+    </div>
+{% endif %}
   </div>
 </div>
-
-
-
-
-
-
-
-
 <script>
   document.addEventListener("DOMContentLoaded", function(){
-    var wrapper = document.querySelector(".s-shipping-1-{{ section.id }}");
+    var wrapper = document.querySelector(".{{ sell_shipping }}--{{ sid }}");
     if(!wrapper) return;
-
-
-
-
-
-
-
-
     var dateEl = wrapper.querySelector(".selluxe-shipping-date");
     if(!dateEl) return;
-
-
-
-
-
-
-
-
-    // 1️⃣ Determine locale from dropdown
+   
     var localeSetting = "{{ section.settings.date_language }}";
     var localeMap = {
       "en": "en-US",
@@ -278,27 +369,11 @@
       "pl": "pl-PL"
     };
     var locale = localeMap[localeSetting] || "en-US";
-
-
-
-
-
-
-
-
-    // 2️⃣ Calculate target date
+   
     var daysAhead = {{ section.settings.days_ahead }};
     var d = new Date();
     d.setDate(d.getDate() + daysAhead);
-
-
-
-
-
-
-
-
-    // 3️⃣ Format localized date
+   
     try {
       var formatter = new Intl.DateTimeFormat(locale, {
         weekday: 'short',
@@ -316,20 +391,32 @@
 
 
 
-
-
-
-
 {% if section.settings.custom_display %}
-  <div id="s-shipping-1-template-{{ section.id }}" style="display:none;">
+  <div id="s-shipping-1-template-{{ sid }}" style="display:none;">
     {{ shipping_markup }}
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
       var target = document.getElementById('s-shipping-1');
-      var tpl = document.getElementById('s-shipping-1-template-{{ section.id }}');
+      var tpl = document.getElementById('s-shipping-1-template-{{ sid }}');
       if(target && tpl){ target.innerHTML = tpl.innerHTML; }
     });
+
+
+ 
+  document.addEventListener('click', function () {
+      var target = document.getElementById('s-shipping-1');
+      var tpl = document.getElementById('s-shipping-1-template-{{ sid }}');
+      if(target && tpl){ target.innerHTML = tpl.innerHTML; }
+  });
+ 
+     
+ document.addEventListener('variant:change', function () {
+    var target = document.getElementById('s-shipping-1');
+      var tpl = document.getElementById('s-shipping-1-template-{{ sid }}');
+      if(target && tpl){ target.innerHTML = tpl.innerHTML; }
+ });
+   
   </script>
 {% else %}
   {{ shipping_markup }}
@@ -338,241 +425,113 @@
 
 
 
-
-
-
-
 {% schema %}
 {
   "name": "s-shipping-1",
-  "tag": "section",
   "settings": [
     {
-  "type": "header",
-  "content": "❓ Need help?",
-  "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)"
-},
-{
-  "type": "header",
-  "content": "1️⃣ Render section as block"
-},
-{
-  "type": "header",
-  "content": "Turn on 'Render as Block'"
-},
-{
-  "type": "checkbox",
-  "id": "custom_display",
-  "label": "2️⃣ Render as Block",
-  "default": false
-},
-{
-  "type": "header",
-  "content": "3️⃣ Go to Product Blocks"
-},
-{
-  "type": "header",
-  "content": "4️⃣ Add a Custom Liquid block"
-},
-{
-  "type": "header",
-  "content": "5️⃣ Paste this code:",
-  "info": "<div id='s-shipping-1'></div>"
-},
-{
-  "type": "header",
-  "content": "⚙️ Customize Settings",
-  "info": "Adjust visuals, colors, spacing, and other options below."
-},
+      "type": "header",
+      "content": "❓ Need help?",
+      "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)"
+    },
     {
-            "type": "select",
-            "id": "sec_layout_full_width",
-            "label": "Width",
-            "default": "custom_width",
-            "options": [
-                {
-                    "value": "full-width",
-                    "label": "Full width"
-                },
-                {
-                    "value": "custom_width",
-                    "label": "Custom width"
-                }
-            ]
+      "type": "header",
+      "content": "Render section as block"
+    },
+    {
+      "type": "header",
+      "content": "1️⃣ Turn on 'Render as Block'"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_display",
+      "label": "Render as Block",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "2️⃣ Go to Product Blocks"
+    },
+    {
+      "type": "header",
+      "content": "3️⃣ Add a Custom Liquid block"
+    },
+    {
+      "type": "header",
+      "content": "4️⃣ Paste this code:",
+      "info": "<div id='s-shipping-1'></div>"
+    },
+    {
+      "type": "header",
+      "content": "📝 Content Settings"
+    },
+    {
+      "type": "header",
+      "content": "📐 Layout Settings (Desktop)"
+    },
+    {
+      "type": "select",
+      "id": "sec_layout_full_width",
+      "label": "Width",
+      "default": "custom_width",
+      "options": [
+        { "value": "full-width", "label": "Full width" },
+        { "value": "auto", "label": "Auto" },
+        { "value": "custom_width", "label": "Custom width" }
+      ]
+    },
+    {
+      "type": "number",
+      "id": "cont_cust_width",
+      "label": "Custom width",
+      "default": 440,
+      "info": "eg: 440"
+    },
+   
+    {
+      "type": "select",
+      "id": "cont_align",
+      "label": "block horizontal alignment",
+      "info":"when block width is below 100%",
+      "options": [
+        {
+          "value": "start",
+          "label": "left"
         },
         {
-            "type": "number",
-            "id": "cont_cust_width",
-            "label": "Custom width",
-            "default": 440,
-            "info": "eg: 440",
-            "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
-     },          
-  {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "end",
+          "label": "right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+    "type": "checkbox",
+    "id": "show_left",
+    "label": "Show left content",
+    "default": true
+    },
+    {
+    "type": "checkbox",
+    "id": "show_right",
+    "label": "Show right content",
+    "default": true
+    },
+    {
       "type": "range",
-      "id": "padding-x",
-      "label": "Padding left and right desktop",
+      "id": "padding_x",
+      "label": "Padding left and right",
       "min": 0,
       "max": 100,
       "step": 1,
+      "info": "when custom width",
       "unit": "px",
-      "default": 0,
-      "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
+      "default": 0
     },
-
-
-
-
-
-
-
-
-    {
-      "type": "range",
-      "id": "padding-x-mob",
-      "label": "Padding left and right mobile",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 0,
-      "visible_if": "{{ section.settings.sec_layout_full_width == 'custom_width' }}"
-    },
-    {
-      "type": "select",
-      "id": "date_language",
-      "label": "Date language",
-      "default": "en",
-      "options": [
-        { "value": "en", "label": "English" },
-        { "value": "nl", "label": "Dutch (Nederlands)" },
-        { "value": "fr", "label": "French (Français)" },
-        { "value": "de", "label": "German (Deutsch)" },
-        { "value": "es", "label": "Spanish (Español)" },
-        { "value": "it", "label": "Italian (Italiano)" },
-        { "value": "da", "label": "Danish (Dansk)" },
-        { "value": "sv", "label": "Swedish (Svenska)" },
-        { "value": "no", "label": "Norwegian (Norsk)" },
-        { "value": "fi", "label": "Finnish (Suomi)" },
-        { "value": "pl", "label": "Polish (Polski)" }
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Main section"
-    },
-    {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#f9f9f6"
-    },
-       {
-      "type": "range",
-      "id": "border_radius",
-      "label": "Border radius",
-      "min": 0,
-      "max": 40,
-      "step": 2,
-      "unit": "px",
-      "default": 8
-    },
-    {
-      "type": "range",
-      "id": "gap-between_text_image_pulse",
-      "label": "Gap between text image and pulse desktop",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 6
-    },
-    {    
-      "type": "range",
-      "id": "gap-between_text_image_pulse_mobile",
-      "label": "Gap between text image and pulse mobile",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 6
-    },
-    {
-      "type": "select",
-      "id": "space-between_desktop",
-      "label": "Space between left and right section desktop",
-      "default": "space-between",
-      "options": [
-        { "value": "center", "label": "Center" },
-        { "value": "space-around ", "label": "Space around " },
-        { "value": "space-between", "label": "Space between" },
-        { "value": "space-evenly", "label": "Space evenly" }        
-      ]
-    },
-    {
-      "type": "select",
-      "id": "space-between_mobile",
-      "label": "Space between left and right section mobile",
-      "default": "space-between",
-      "options": [
-        { "value": "center", "label": "Center" },
-        { "value": "space-around ", "label": "Space around " },
-        { "value": "space-between", "label": "Space between" },
-        { "value": "space-evenly", "label": "Space evenly" }        
-      ]
-    },
-    {
-      "type": "header",
-      "content": "Desktop Padding"
-    },
-    {
-      "type": "range",
-      "id": "padding-top",
-      "label": "Top",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 6
-    },
-    {
-      "type": "range",
-      "id": "padding-bottom",
-      "label": "Bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 6
-    },
-    {
-      "type": "range",
-      "id": "padding-left",
-      "label": "Left",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 12
-    },
-    {
-      "type": "range",
-      "id": "padding-right",
-      "label": "Right",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 12
-    },
-
-
-
-
-
-
-
-
     {
       "type": "range",
       "id": "margin_top",
@@ -594,144 +553,190 @@
       "default": 0
     },
     {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "label": "Padding left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "label": "Padding right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "space_between_desktop",
+      "label": "Space between left and right section",
+      "default": "space-between",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "space-around", "label": "Space around" },
+        { "value": "space-between", "label": "Space between" },
+        { "value": "space-evenly", "label": "Space evenly" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "gap_between_text_image_pulse",
+      "label": "Gap between text and pulse",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
       "type": "header",
-      "content": "Mobile Padding"
+      "content": "📱 Layout Settings (Mobile)"
     },
     {
       "type": "range",
-      "id": "padding-top-mob",
-      "label": "Top",
+      "id": "padding_x_mob",
+      "label": "Padding left and right",
       "min": 0,
       "max": 100,
       "step": 1,
       "unit": "px",
-      "default": 6
+      "info": "when custom width",
+      "default": 0
     },
     {
       "type": "range",
-      "id": "padding-bottom-mob",
-      "label": "Bottom",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 6
-    },
-    {
-      "type": "range",
-      "id": "padding-left-mob",
-      "label": "Left",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 12
-    },
-    {
-      "type": "range",
-      "id": "padding-right-mob",
-      "label": "Right",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "unit": "px",
-      "default": 12
-    },
-
-
-
-
-
-
-
-
-    {
-      "type": "range",
-      "id": "margin_top-mob",
+      "id": "margin_top_mob",
       "label": "Margin top",
       "min": -100,
       "max": 100,
       "step": 5,
+     
       "unit": "px",
       "default": 0
     },
     {
       "type": "range",
-      "id": "margin_bottom-mob",
+      "id": "margin_bottom_mob",
       "label": "Margin bottom",
       "min": -100,
       "max": 100,
       "step": 5,
       "unit": "px",
       "default": 0
-    },      
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mob",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_left_mob",
+      "label": "Padding left",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_right_mob",
+      "label": "Padding right",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "space_between_mobile",
+      "label": "Space between left and right section",
+      "default": "space-between",
+      "options": [
+        { "value": "center", "label": "Center" },
+        { "value": "space-around", "label": "Space around" },
+        { "value": "space-between", "label": "Space between" },
+        { "value": "space-evenly", "label": "Space evenly" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "gap_between_text_image_pulse_mobile",
+      "label": "Gap between text and pulse",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
     {
       "type": "header",
-      "content": "Text typography"
+      "content": "🎨 Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f9f9f6"
     },
     {
       "type": "color",
       "id": "text_color",
       "label": "Text color",
-      "default": "#000"
-    },
-    {
-      "type": "range",
-      "id": "text_size_desktop",
-      "label": "Text size desktop",
-      "min": 8,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 16
-    },
-    {
-        "type": "range",
-        "id": "line_height_desktop",
-        "label": "Line height (em)",
-        "min": 0.8,
-        "max": 3,
-        "step": 0.1,
-        "default": 1.3
-      },
-    {
-      "type": "range",
-      "id": "letter_spacing_desktop",
-      "label": "Letter spacing (px)",
-      "min": -5,
-      "max": 10,
-      "step": 0.2,
-      "default": 0,
-      "unit":"px"
-    },
-    {
-      "type": "range",
-      "id": "text_size_mobile",
-      "label": "Text size mobile",
-      "min": 8,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 14
-    },
-     {
-        "type": "range",
-        "id": "line_height_mob",
-        "label": "Line height mobile (em)",
-        "min": 0.8,
-        "max": 3,
-        "step": 0.1,
-        "default": 1.2
-      },
-    {
-      "type": "range",
-      "id": "letter_spacing_mob",
-      "label": "Letter spacing mobile (px)",
-      "min": -5,
-      "max": 10,
-      "step": 0.2,
-      "default": 0,
-      "unit":"px"
+      "default": "#000000"
     },
     {
       "type": "color",
@@ -739,108 +744,37 @@
       "label": "Pulse color",
       "default": "#7aa87a"
     },
+
+
+
+
+
+
+
+
     {
       "type": "header",
-      "content": "Pulse"
+      "content": "📱 text content"
     },
-   {
-      "type": "range",
-      "id": "text_size_pulse",
-      "label": "Pulse size desktop",
-      "min": 5,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "margin-right_desktop",
-      "label": "margin right desktop",
-      "min": 0,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "text_size_pulse_mobile",
-      "label": "Pulse size mobile",
-      "min": 5,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 8
-    },
-    {
-      "type": "range",
-      "id": "margin-right_mobile",
-      "label": "margin right mobile",
-      "min": 0,
-      "max": 30,
-      "step": 1,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "Text"
-    },
-    {
-      "type": "range",
-      "id": "days_ahead",
-      "label": "Days ahead for shipping date",
-      "min": 0,
-      "max": 30,
-      "step": 1,
-      "default": 2
-    },
+
+
+
+
+
+
+
+
     {
       "type": "text",
       "id": "text_ships_by",
       "label": "Text: Ships by",
       "default": "Ships by"
     },
-     {
-      "type": "select",
-      "id": "font_weight_desktop",
-      "label": "Font weight",
-      "default": "400",
-      "options": [
-        { "value": "100", "label": "Thin (100)" },
-        { "value": "200", "label": "Extra Light (200)" },
-        { "value": "300", "label": "Light (300)" },
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semi Bold (600)" },
-        { "value": "700", "label": "Bold (700)" },
-        { "value": "800", "label": "Extra Bold (800)" },
-        { "value": "900", "label": "Black (900)" }
-      ]
-    },
     {
       "type": "text",
       "id": "text_fast",
       "label": "Text: Fast",
       "default": "Fast"
-    },
-     {
-      "type": "select",
-      "id": "fast_font_weight_desktop",
-      "label": "Font weight",
-      "default": "700",
-      "options": [
-        { "value": "100", "label": "Thin (100)" },
-        { "value": "200", "label": "Extra Light (200)" },
-        { "value": "300", "label": "Light (300)" },
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semi Bold (600)" },
-        { "value": "700", "label": "Bold (700)" },
-        { "value": "800", "label": "Extra Bold (800)" },
-        { "value": "900", "label": "Black (900)" }
-      ]
     },
     {
       "type": "text",
@@ -849,86 +783,322 @@
       "default": "Shipping"
     },
     {
-            "type": "checkbox",
-            "id": "show_country_code",
-            "label": "Show country code",
-            "default": true
-            },
-     {
+      "type": "range",
+      "id": "days_ahead",
+      "label": "Days ahead for shipping date",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "em",
+      "default": 2
+    },
+    {
       "type": "select",
-      "id": "shipping_font_weight_desktop",
-      "label": "Font weight",
-      "default": "400",
+      "id": "date_language",
+      "label": "Date language",
+      "default": "en",
       "options": [
-        { "value": "100", "label": "Thin (100)" },
-        { "value": "200", "label": "Extra Light (200)" },
-        { "value": "300", "label": "Light (300)" },
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semi Bold (600)" },
-        { "value": "700", "label": "Bold (700)" },
-        { "value": "800", "label": "Extra Bold (800)" },
-        { "value": "900", "label": "Black (900)" }
+        { "value": "en", "label": "English" },
+        { "value": "nl", "label": "Dutch (Nederlands)" },
+        { "value": "fr", "label": "French (Français)" },
+        { "value": "de", "label": "German (Deutsch)" },
+        { "value": "es", "label": "Spanish (Español)" },
+        { "value": "it", "label": "Italian (Italiano)" },
+        { "value": "da", "label": "Danish (Dansk)" },
+        { "value": "sv", "label": "Swedish (Svenska)" },
+        { "value": "no", "label": "Norwegian (Norsk)" },
+        { "value": "fi", "label": "Finnish (Suomi)" },
+        { "value": "pl", "label": "Polish (Polski)" }
       ]
-    },    
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_code",
+      "label": "Show country code",
+      "default": true
+    },
+   
+   
+    {
+      "type": "header",
+      "content": "📝 Typography Settings (Desktop)"
+    },
+    {
+      "type": "range",
+      "id": "text_size_desktop",
+      "label": "Text size",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "font_weight_desktop",
+      "label": "Font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "line_height_desktop",
+      "label": "Line height",
+      "min": 0.8,
+      "max": 3,
+      "step": 0.1,
+      "unit": "em",
+      "default": 1.3
+    },
+    {
+      "type": "select",
+      "id": "text_transform_desktop",
+      "label": "Text transform",
+      "options": [
+        { "value": "none", "label": "None" },
+        { "value": "uppercase", "label": "Uppercase" },
+        { "value": "lowercase", "label": "Lowercase" },
+        { "value": "capitalize", "label": "Capitalize" }
+      ],
+      "default": "none"
+    },
+   
+    {
+      "type": "range",
+      "id": "letter_spacing_desktop",
+      "label": "Letter spacing",
+      "min": -5,
+      "max": 10,
+      "step": 0.2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "date_font_weight",
+      "label": "Date font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "unit": "px",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "fast_font_weight_desktop",
+      "label": "Fast text font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "shipping_font_weight_desktop",
+      "label": "Shipping text font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "unit": "px",
+      "default": 400
+    },
+   
+     {
+      "type": "header",
+      "content": "📝 Typography Settings (Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Text size",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "line_height_mob",
+      "label": "Line height",
+      "min": 0.8,
+      "max": 3,
+      "step": 0.1,
+      "unit": "em",
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing_mob",
+      "label": "Letter spacing",
+      "min": -5,
+      "max": 10,
+      "step": 0.2,
+      "unit": "px",
+      "default": 0
+    },
+   
+    {
+      "type": "header",
+      "content": "🎯 Pulse Settings (Desktop)"
+    },
+    {
+      "type": "range",
+      "id": "text_size_pulse",
+      "label": "Pulse size",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "margin_right_desktop",
+      "label": "Margin right",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "pulse_animation_duration",
+      "label": "Animation duration",
+      "min": 1,
+      "max": 5,
+      "step": 0.5,
+      "unit": "s",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "pulse_animation_size",
+      "label": "Animation size",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "header",
+      "content": "🎯 Pulse Settings (Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "text_size_pulse_mobile",
+      "label": "Pulse size",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "margin_right_mobile",
+      "label": "Margin right",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "🚩 Flag Settings (Desktop)"
+    },
+    {
+      "type": "checkbox",
+      "id": "flag_show",
+      "label": "show flag",
+      "default": true
+    },
     {
       "type": "checkbox",
       "id": "flag_custom_image",
       "label": "Flag custom size",
       "default": false
     },
-      {
+    {
+      "type": "image_picker",
+      "id": "flag_image",
+      "label": "Custom flag image"
+    },
+    {
       "type": "range",
       "id": "flag_size_desktop",
-      "label": "Flag desktop size",
+      "label": "Flag size",
       "min": 0,
       "max": 100,
       "step": 1,
-      "default": 18,
-      "visible_if": "{{ section.settings.flag_custom_image == true }}"
+      "unit": "px",
+      "default": 18
     },
     {
       "type": "range",
       "id": "flag_radius",
-      "label": "Flag radius",
+      "label": "Flag border radius",
       "min": 0,
       "max": 100,
       "step": 1,
+      "unit": "px",
       "default": 0
-    },
-     {
-      "type": "range",
-      "id": "flag_size_mob",
-      "label": "Flag mobile size",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 18,
-      "visible_if": "{{ section.settings.flag_custom_image == true }}"
     },
     {
       "type": "range",
-      "id": "space-between_right",
+      "id": "space_between_right",
       "label": "Space between flag and text",
       "min": 0,
       "max": 100,
       "step": 1,
+      "unit": "px",
       "default": 6
+    },
+   
+   
+   
+    {
+      "type": "header",
+      "content": "🚩 Flag Settings (Mobile)"
     },
     {
       "type": "range",
-      "id": "space-between_right_mob",
-      "label": "Space between flag and text (mobile)",
+      "id": "flag_size_mob",
+      "label": "Flag size",
       "min": 0,
       "max": 100,
       "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "space_between_right_mob",
+      "label": "Space between flag and text",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
       "default": 6
     }
-
-
   ],
   "presets": [
-    { "name": "s-shipping-1", "category": "Selluxe" }
+    {
+      "name": "s-shipping-1",
+      "category": "Selluxe"
+    }
   ]
 }
 {% endschema %}
+
+
+
+
+
