@@ -11,6 +11,28 @@
   "type": "header",
   "name": "t:groups.header_group.name",
   "sections": {
+    "176968640913c96d6f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4f42e53_49Apyx": {
+          "type": "ai_gen_block_4f42e53",
+          "settings": {
+            "announcement_text": "CLOSURE SALE – EVERYTHING FREE STORE WIDE",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "bar_height": 48,
+            "font_size": 14,
+            "font_weight": "700",
+            "letter_spacing": 1
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4f42e53_49Apyx"
+      ],
+      "settings": {}
+    },
     "header": {
       "type": "header",
       "blocks": {
@@ -109,6 +131,7 @@
         "announcement-bar-0",
         "announcement-bar-1"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_announcement_bar": "never",
         "autoplay_enabled": true,
@@ -119,6 +142,7 @@
     }
   },
   "order": [
+    "176968640913c96d6f",
     "header",
     "announcement-bar"
   ]
