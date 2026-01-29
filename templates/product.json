@@ -1347,6 +1347,46 @@
         "space-between_right": 6,
         "space-between_right_mob": 6
       }
+    },
+    "17696807719040b6df": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c7bb3a6_TdQFKr": {
+          "type": "ai_gen_block_c7bb3a6",
+          "settings": {
+            "icon_1": "shopify://shop_images/wired-outline-447-water-drop-hover-split_2_430x_eab69d5b-ab20-46cd-99a5-82e4b8e2ceb4.webp",
+            "heading_1": "WATER, SWEAT AND HEAT RESISTANT",
+            "text_1": "Whether you want to shower, exercise or swim, that's no problem!",
+            "icon_2": "shopify://shop_images/NO_GREEN_SKIN_480x480_2_430x_8705c765-363d-4922-ba27-8518d129eab3.gif",
+            "heading_2": "NO DISCOLORATION, NO GREEN COLOR",
+            "text_2": "Our jewelry always retains its original color and will never turn green.",
+            "icon_3": "shopify://shop_images/9i9_430x_3daf9f8f-0668-4633-a062-380081c979f2.webp",
+            "heading_3": "PREMIUM & TIMELESS MATERIALS",
+            "text_3": "The jewelry is made of the highest quality materials to ensure long-term use.",
+            "max_width": 1200,
+            "column_gap": 60,
+            "mobile_row_gap": 40,
+            "section_padding_top": 30,
+            "section_padding_bottom": 30,
+            "icon_size": 55,
+            "icon_spacing": 14,
+            "heading_size": 14,
+            "heading_weight": "700",
+            "heading_letter_spacing": 1,
+            "heading_color": "#000000",
+            "text_spacing": 8,
+            "text_size": 13,
+            "text_weight": "400",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c7bb3a6_TdQFKr"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -1366,6 +1406,7 @@
     "ss_faq_1_pro_wH8BCD",
     "m_guarantees_cdf7Bz",
     "selluxe_sticky_atc_e8FH6e",
-    "s_shipping_1_CMxUhU"
+    "s_shipping_1_CMxUhU",
+    "17696807719040b6df"
   ]
 }
