@@ -372,6 +372,9 @@
         "accordion_EJYLbz",
         "check_review_usp_3qCprz"
       ],
+      "custom_css": [
+        ".product__policies {display: none;}"
+      ],
       "settings": {
         "enable_sticky_product_details": true,
         "show_breadcrumbs": false,
