@@ -206,7 +206,7 @@
         "text_jxTjx4": {
           "type": "text",
           "settings": {
-            "text": "<p>At Ethan & Laraa, we create jewelry that celebrates individuality, confidence, and the spirit of California.Since 1996, we’ve combined classic elegance with modern trends, collaborating with skilled designers worldwide to craft pieces that inspire self-expression, embrace authenticity, and offer timeless beauty.</p>",
+            "text": "<p>At Ethan & Laraa, we create jewelry that celebrates individuality, confidence, and the spirit of California. Since 1996, we’ve combined classic elegance with modern trends, collaborating with skilled designers worldwide to craft pieces that inspire self-expression, embrace authenticity, and offer timeless beauty.</p>",
             "text_font_class": "fs-body-75"
           }
         }
@@ -300,6 +300,7 @@
         "image_B9aRfr",
         "image_BWk48A"
       ],
+      "disabled": true,
       "name": "SS - Scrolling images",
       "settings": {
         "heading": "<h1><strong>Über 20.000 zufriedene Frauen</strong></h1>",
@@ -490,6 +491,7 @@
       "block_order": [
         "collection_cMQBR7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Meine Lieblingsstücke",
         "heading_tag": "h2",
@@ -527,6 +529,7 @@
         "heading_7BFgwL",
         "text_FtThax"
       ],
+      "disabled": true,
       "name": "t:sections.rich_text.presets.name",
       "settings": {
         "alignment": "center_center",
@@ -539,6 +542,7 @@
     },
     "video_hero_4YFiHQ": {
       "type": "video-hero",
+      "disabled": true,
       "name": "t:sections.video_hero.presets.name",
       "settings": {
         "image_aspect": "original",
@@ -599,6 +603,7 @@
         "service_mhxC7f",
         "service_nLWdKD"
       ],
+      "disabled": true,
       "name": "M Guarantees",
       "settings": {
         "num": 3,
