@@ -477,10 +477,43 @@
             "testimonial_5_location": ""
           },
           "blocks": {}
+        },
+        "ai_gen_block_c7bb3a6_YqzgRe": {
+          "type": "ai_gen_block_c7bb3a6",
+          "name": "3 USP Icons Row (GIF)",
+          "settings": {
+            "icon_1": "shopify://shop_images/truck_gif_78e7cb21-04b7-4534-853d-e612680eee57_1_1_webp.webp",
+            "heading_1": "Premium shipping",
+            "text_1": "We offer premium shipping to ensure your order arrives fast and with care.",
+            "icon_2": "shopify://shop_images/Doc_gif_f73b8409-acde-4808-be00-6936d44896fc_1_1_webp.webp",
+            "heading_2": "30-Day Money-Back Guarantee",
+            "text_2": "Not completely satisfied? No problem! You can return your order at any time.",
+            "icon_3": "shopify://shop_images/checkmark_gif_8b703e19-13e3-49ff-ba0d-c7284996bff2_1_1_webp.webp",
+            "heading_3": "100% SECURE PAYMENT",
+            "text_3": "We offer secure payment methods to best protect our customers' data.",
+            "max_width": 1200,
+            "column_gap": 60,
+            "mobile_row_gap": 40,
+            "section_padding_top": 30,
+            "section_padding_bottom": 30,
+            "icon_size": 55,
+            "icon_spacing": 14,
+            "heading_size": 14,
+            "heading_weight": "700",
+            "heading_letter_spacing": 1,
+            "heading_color": "#000000",
+            "text_spacing": 8,
+            "text_size": 13,
+            "text_weight": "400",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_8d2c5c2_wQnVdJ"
+        "ai_gen_block_8d2c5c2_wQnVdJ",
+        "ai_gen_block_c7bb3a6_YqzgRe"
       ],
       "settings": {}
     },
