@@ -15,23 +15,24 @@
         "slide_pAiJTa": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/claudia_banner.png",
+            "image": "shopify://shop_images/openart-image_3fNb4bPd_1769687244378_raw.jpg",
+            "image_mobile": "shopify://shop_images/openart-image_6F4NkYEZ_1769687971007_raw.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
-            "text_position": "flex-start_flex-end",
+            "text_position": "center_flex-end",
             "text_position_mobile": "center_center",
             "accent": "",
-            "title": "",
+            "title": "Special Offers on our collections",
             "heading_tag": "h3",
-            "heading_font_class": "fs-heading-display-3",
+            "heading_font_class": "fs-heading-display-2",
             "subheading": "",
             "subheading_tag": "h3",
             "subheading_font_class": "fs-heading-5-base",
-            "text": "",
+            "text": "<p>Shop exclusive offers!</p>",
             "text_font_class": "fs-body-100",
-            "link_1": "",
-            "link_text_1": "",
+            "link_1": "shopify://collections",
+            "link_text_1": "Shop all",
             "button_style_1": "btn--secondary",
             "link_2": "",
             "link_text_2": "Read more",
@@ -199,6 +200,30 @@
         "section_padding": "section--vertical-padding-bottom-only"
       }
     },
+    "rich_text_mgm4Fp": {
+      "type": "rich-text",
+      "blocks": {
+        "text_jxTjx4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Ethan & Laraa, we create jewelry that celebrates individuality, confidence, and the spirit of California.Since 1996, we’ve combined classic elegance with modern trends, collaborating with skilled designers worldwide to craft pieces that inspire self-expression, embrace authenticity, and offer timeless beauty.</p>",
+            "text_font_class": "fs-body-75"
+          }
+        }
+      },
+      "block_order": [
+        "text_jxTjx4"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "alignment": "left_left",
+        "enable_animation": true,
+        "divider_style": "none",
+        "section_padding": "section--vertical-padding-top-bottom",
+        "content_width": "custom",
+        "custom_content_width": 700
+      }
+    },
     "featured_collection_slider_2": {
       "type": "featured-collection-slider",
       "blocks": {
@@ -215,7 +240,7 @@
         "collection_1"
       ],
       "settings": {
-        "heading": "Schmuck, der Ihr Selbstbewusstsein stärkt",
+        "heading": "Shop our bestsellers",
         "heading_tag": "h2",
         "subheading": "",
         "link": "",
@@ -327,6 +352,27 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "176968881186371b74": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b0ca729_GfEpDH": {
+          "type": "ai_gen_block_b0ca729",
+          "settings": {
+            "label": "ABOUT US",
+            "headline": "Ethan & Lara",
+            "paragraph": "<p>At Ethan & Lara, everything revolves around our passion for jewelry. We believe that jewelry is more than just an accessory it tells a story and expresses who you are. We lovingly select the most beautiful trendy and timeless designs, so that everyone can find something that fits their unique style.</p>",
+            "image": "shopify://shop_images/freepik__change-weight__94858_1.webp",
+            "image_aspect_ratio": "auto",
+            "image_position": "center"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b0ca729_GfEpDH"
+      ],
+      "settings": {}
     },
     "m_guarantees_b6jwVR": {
       "type": "M-guarantees",
@@ -577,8 +623,10 @@
     "collection_list_slider",
     "collection_list_grid_yWKbrK",
     "image_with_text_JX9J67",
+    "rich_text_mgm4Fp",
     "featured_collection_slider_2",
     "ss_scrolling_images_xFdg93",
+    "176968881186371b74",
     "m_guarantees_b6jwVR",
     "image_with_text_FtqEj3",
     "featured_collection_slider_MCkmDq",
