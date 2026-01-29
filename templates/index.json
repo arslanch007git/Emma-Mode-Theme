@@ -16,12 +16,12 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/openart-image_3fNb4bPd_1769687244378_raw.jpg",
-            "image_mobile": "shopify://shop_images/openart-image_6F4NkYEZ_1769687971007_raw.jpg",
+            "image_mobile": "shopify://shop_images/openart-image_m4TQIRqG_1769689046023_raw.jpg",
             "focal_point": "image_presentation",
             "mobile_focal_point": "image_presentation",
             "media_link": "",
             "text_position": "center_flex-end",
-            "text_position_mobile": "center_center",
+            "text_position_mobile": "center_flex-start",
             "accent": "",
             "title": "Special Offers on our collections",
             "heading_tag": "h3",
@@ -250,7 +250,7 @@
         "mobile_columns": "2",
         "enable_animation": true,
         "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom"
+        "section_padding": "section--vertical-padding-none"
       }
     },
     "ss_scrolling_images_xFdg93": {
@@ -431,6 +431,58 @@
         "descmargin": 18,
         "gap": 0
       }
+    },
+    "176968907964430d48": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8d2c5c2_wQnVdJ": {
+          "type": "ai_gen_block_8d2c5c2",
+          "settings": {
+            "heading": "Trusted By 10,000+ Happy Customers 💗",
+            "heading_font": "assistant_n4",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "card_border_radius": 12,
+            "review_text_size": 16,
+            "review_text_color": "#333333",
+            "star_color": "#FFD700",
+            "customer_name_color": "#000000",
+            "customer_location_color": "#666666",
+            "show_pagination_dots": true,
+            "dot_active_color": "#000000",
+            "dot_inactive_color": "#cccccc",
+            "testimonial_1_rating": 5,
+            "testimonial_1_review": "Absolutely love this product! The quality is outstanding and it exceeded all my expectations.",
+            "testimonial_1_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_132756.png",
+            "testimonial_1_name": "Sarah Johnson",
+            "testimonial_1_location": "New York, NY",
+            "testimonial_2_rating": 5,
+            "testimonial_2_review": "Best purchase I've made this year. The attention to detail is incredible and customer service was amazing.",
+            "testimonial_2_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_132900.png",
+            "testimonial_2_name": "Michael Chen",
+            "testimonial_2_location": "Los Angeles, CA",
+            "testimonial_3_rating": 5,
+            "testimonial_3_review": "I've recommended this to all my friends. The craftsmanship is beautiful and it's worth every penny.",
+            "testimonial_3_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_133103.png",
+            "testimonial_3_name": "Emma Williams",
+            "testimonial_3_location": "Chicago, IL",
+            "testimonial_4_rating": 5,
+            "testimonial_4_review": "Exceptional quality and fast shipping. This has become my go-to brand for luxury items.",
+            "testimonial_4_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_133231.png",
+            "testimonial_4_name": "David Martinez",
+            "testimonial_4_location": "Miami, FL",
+            "testimonial_5_rating": 5,
+            "testimonial_5_review": "",
+            "testimonial_5_name": "",
+            "testimonial_5_location": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8d2c5c2_wQnVdJ"
+      ],
+      "settings": {}
     },
     "image_with_text_FtqEj3": {
       "type": "image-with-text",
@@ -633,6 +685,7 @@
     "ss_scrolling_images_xFdg93",
     "176968881186371b74",
     "m_guarantees_b6jwVR",
+    "176968907964430d48",
     "image_with_text_FtqEj3",
     "featured_collection_slider_MCkmDq",
     "rich_text_RCeRTJ",
