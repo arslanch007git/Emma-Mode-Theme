@@ -43,13 +43,6 @@
             "show_custom_badges": true
           }
         },
-        "custom_liquid_JWPCKT": {
-          "type": "custom_liquid",
-          "settings": {
-            "column_placement": "right",
-            "custom_liquid": "{% comment %}\n  Custom Liquid: Price + Compare-at + SAVE badge (matches screenshot style)\n  - Badge background: #000\n  - Old price red: #DE0302\n  - Uses theme font (inherit) + boldness/spacing tuned to match\n{% endcomment %}\n\n{% assign v = product.selected_or_first_available_variant %}\n{% assign price = v.price %}\n{% assign compare = v.compare_at_price %}\n\n<div class=\"save-badge-row\" aria-label=\"Pricing and savings\">\n  <span class=\"save-badge-row__price\">{{ price | money }}</span>\n\n  {% if compare and compare > price %}\n    <span class=\"save-badge-row__compare\">{{ compare | money }}</span>\n\n    {% assign savings = compare | minus: price %}\n    <span class=\"save-badge-row__badge\">SAVE {{ savings | money }}</span>\n  {% endif %}\n</div>\n\n<style>\n  .save-badge-row{\n    display: inline-flex;\n    align-items: center;\n    gap: 12px;\n    font-family: inherit;\n    line-height: 1;\n  }\n\n  /* Current price ($0.00) */\n  .save-badge-row__price{\n    font-weight: 800;\n    font-size: 28px;\n    color: #000000;\n    letter-spacing: 0;\n  }\n\n  /* Old price ($139.95) */\n  .save-badge-row__compare{\n    font-weight: 800;\n    font-size: 28px;\n    color: #DE0302;            /* sampled red */\n    text-decoration: line-through;\n    text-decoration-thickness: 2px;\n    text-underline-offset: 3px;\n  }\n\n  /* SAVE badge */\n  .save-badge-row__badge{\n    background: #000000;\n    color: #ffffff;\n    font-weight: 800;\n    font-size: 18px;\n    padding: 6px 10px;\n    border-radius: 0;\n    text-transform: uppercase;\n    letter-spacing: 0;\n    display: inline-flex;\n    align-items: center;\n    white-space: nowrap;\n  }\n\n  /* Mobile tuning */\n  @media (max-width: 480px){\n    .save-badge-row__price,\n    .save-badge-row__compare{ font-size: 24px; }\n    .save-badge-row__badge{ font-size: 16px; padding: 6px 9px; }\n  }\n</style>"
-          }
-        },
         "custom_liquid_VgCrNq": {
           "type": "custom_liquid",
           "settings": {
@@ -356,7 +349,6 @@
       "block_order": [
         "selluxe_tp_stars_VXDnFr",
         "product_header",
-        "custom_liquid_JWPCKT",
         "custom_liquid_VgCrNq",
         "text_1",
         "product_callouts_mini_XdhknG",
