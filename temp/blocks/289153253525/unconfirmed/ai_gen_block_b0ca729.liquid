@@ -1,6 +1,439 @@
+{% doc %}
+  @prompt
+    Create a full-width split section where the image is visually dominant and the text panel is smaller.
+    
+    Layout
+    
+    Desktop:
+    
+    Right side: large image block (approx 65% width)
+    
+    Left side: black text panel (approx 35% width)
+    
+    Black panel overlaps slightly on top of the image
+    
+    Image clearly larger than text area
+    
+    Section centered inside max-width ~1300px
+    
+    Mobile:
+    
+    Stack vertically
+    
+    Text panel first
+    
+    Image second
+    
+    No overlap on mobile
+    
+    LEFT PANEL (Smaller Black Panel)
+    
+    Black background rectangle with left-aligned content.
+    
+    Content:
+    
+    Small uppercase label:
+    ABOUT US
+    
+    Large serif headline:
+    Ethan & Lara
+    
+    Paragraph (editable):
+    
+    At Ethan & Lara, everything revolves around our passion for jewelry. We believe that jewelry is more than just an accessory it tells a story and expresses who you are. We lovingly select the most beautiful trendy and timeless designs, so that everyone can find something that fits their unique style.
+    
+    Styling:
+    
+    Black background (#000)
+    
+    White text
+    
+    Label small uppercase with letter spacing
+    
+    Brand name larger serif font
+    
+    Paragraph smaller, clean line height
+    
+    Padding ~50–60px desktop, ~30px mobile
+    
+    Panel height adapts to content
+    
+    RIGHT SIDE (Image – Larger than Text Panel)
+    
+    Image picker
+    
+    Image occupies ~65% of section width on desktop
+    
+    Must be visually dominant
+    
+    No text overlay
+    
+    Object-fit cover
+    
+    Image height automatically matches text panel
+    
+    Include controls:
+    
+    Image aspect ratio selector:
+    
+    Auto
+    
+    Square (1:1)
+    
+    Landscape (4:3)
+    
+    Wide (16:9)
+    
+    Image position selector (left/center/right)
+    
+    Section Controls
+    
+    Must include:
+    
+    Editable label
+    
+    Editable headline
+    
+    Editable paragraph
+    
+    Image upload
+    
+    Image aspect ratio setting
+    
+    Image alignment setting
+    
+    Styling
+    
+    Luxury minimal aesthetic
+    
+    Plenty of whitespace around section
+    
+    Max width ~1300px
+    
+    Desktop overlap of black panel over image
+    
+    Clean mobile stacking
+    
+    Use theme fonts
+    
+    Name this section:
+    
+    About Us Image Dominant Split
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-about-split-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 60px 20px;
+  }
+
+  .ai-about-split-container-{{ ai_gen_id }} {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 0;
+    position: relative;
+    align-items: center;
+  }
+
+  .ai-about-split-text-panel-{{ ai_gen_id }} {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 50px;
+    position: relative;
+    z-index: 2;
+    margin-right: -40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ai-about-split-label-{{ ai_gen_id }} {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
+    font-weight: {{ settings.font_body.weight }};
+    margin: 0;
+  }
+
+  .ai-about-split-headline-{{ ai_gen_id }} {
+    font-size: 48px;
+    font-family: {{ settings.font_heading.family }}, {{ settings.font_heading.fallback_families }};
+    font-weight: {{ settings.font_heading.weight }};
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .ai-about-split-paragraph-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: {{ settings.font_body.family }}, {{ settings.font_body.fallback_families }};
+    font-weight: {{ settings.font_body.weight }};
+    margin: 0;
+  }
+
+  .ai-about-split-paragraph-{{ ai_gen_id }} p {
+    margin: 0 0 16px 0;
+  }
+
+  .ai-about-split-paragraph-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+  }
+
+  .ai-about-split-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-aspect-ratio="square"] .ai-about-split-image-{{ ai_gen_id }} {
+    aspect-ratio: 1 / 1;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-aspect-ratio="landscape"] .ai-about-split-image-{{ ai_gen_id }} {
+    aspect-ratio: 4 / 3;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-aspect-ratio="wide"] .ai-about-split-image-{{ ai_gen_id }} {
+    aspect-ratio: 16 / 9;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-aspect-ratio="auto"] .ai-about-split-image-{{ ai_gen_id }} {
+    aspect-ratio: auto;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-position="left"] .ai-about-split-image-{{ ai_gen_id }} {
+    object-position: left center;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-position="center"] .ai-about-split-image-{{ ai_gen_id }} {
+    object-position: center center;
+  }
+
+  .ai-about-split-image-wrapper-{{ ai_gen_id }}[data-position="right"] .ai-about-split-image-{{ ai_gen_id }} {
+    object-position: right center;
+  }
+
+  .ai-about-split-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-about-split-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-about-split-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-about-split-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .ai-about-split-text-panel-{{ ai_gen_id }} {
+      margin-right: 0;
+      padding: 40px 30px;
+      order: 1;
+    }
+
+    .ai-about-split-image-wrapper-{{ ai_gen_id }} {
+      order: 2;
+      min-height: 300px;
+    }
+
+    .ai-about-split-headline-{{ ai_gen_id }} {
+      font-size: 36px;
+    }
+
+    .ai-about-split-image-placeholder-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-about-split-{{ ai_gen_id }} {
+      padding: 40px 16px;
+    }
+
+    .ai-about-split-text-panel-{{ ai_gen_id }} {
+      padding: 30px 24px;
+    }
+
+    .ai-about-split-headline-{{ ai_gen_id }} {
+      font-size: 28px;
+    }
+
+    .ai-about-split-paragraph-{{ ai_gen_id }} {
+      font-size: 15px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-about-split-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-about-split-container-{{ ai_gen_id }}">
+    <div class="ai-about-split-text-panel-{{ ai_gen_id }}">
+      {% if block.settings.label != blank %}
+        <div class="ai-about-split-label-{{ ai_gen_id }}">
+          {{ block.settings.label }}
+        </div>
+      {% endif %}
+
+      {% if block.settings.headline != blank %}
+        <h2 class="ai-about-split-headline-{{ ai_gen_id }}">
+          {{ block.settings.headline }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.paragraph != blank %}
+        <div class="ai-about-split-paragraph-{{ ai_gen_id }}">
+          {{ block.settings.paragraph }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div 
+      class="ai-about-split-image-wrapper-{{ ai_gen_id }}"
+      data-aspect-ratio="{{ block.settings.image_aspect_ratio }}"
+      data-position="{{ block.settings.image_position }}"
+    >
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1400 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-about-split-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-about-split-image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-about-split-empty-state-{{ ai_gen_id }}">
+            Next, add an image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image dominant split",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Text panel"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "label",
+      "label": "Label",
+      "default": "ABOUT US"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Ethan & Lara"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "<p>At Ethan & Lara, everything revolves around our passion for jewelry. We believe that jewelry is more than just an accessory it tells a story and expresses who you are. We lovingly select the most beautiful trendy and timeless designs, so that everyone can find something that fits their unique style.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Auto"
+        },
+        {
+          "value": "square",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "landscape",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "wide",
+          "label": "Wide (16:9)"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image dominant split"
+    }
+  ]
+}
 {% endschema %}
