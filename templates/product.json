@@ -18,7 +18,7 @@
             "tp_star_color": "#fed801",
             "tp_rating": 4.8,
             "tp_reviews": 1700,
-            "review_text": "[rating]/5 [reviews]+ Bewertungen"
+            "review_text": "[rating]/5 based on [reviews]+ Reviews"
           }
         },
         "check_review_usp_GV63GY": {
@@ -33,7 +33,7 @@
             "bg": "#fdf8f3",
             "usp-img": "shopify://shop_images/handmade_with_love.webp",
             "uspimgsize": 40,
-            "usp-text": "<strong>Mit Liebe handgefertigt von Claudia</strong>",
+            "usp-text": "<strong>Handcrafted by Lara</strong>",
             "usp-text2": "",
             "uspclr": "#000000",
             "usptxtsize": 14
@@ -63,6 +63,7 @@
         },
         "text_1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text_font_class": "fs-body-75",
             "text": "<p><em>Diese kraftvollen Mondsteine befreien Sie von Ihren Sorgen und Ihrem Stress, erleichtern Ihnen den Weg und helfen Ihnen, die Reise des Lebens mit Klarheit zu meistern.</em></p>",
@@ -184,6 +185,7 @@
         },
         "text_icons_2": {
           "type": "product_callouts",
+          "disabled": true,
           "settings": {
             "title": "",
             "title_tag": "h3",
@@ -207,25 +209,33 @@
             "expand_by_default": false
           }
         },
+        "custom_liquid_maJjB4": {
+          "type": "custom_liquid",
+          "settings": {
+            "column_placement": "right",
+            "custom_liquid": "<style>\n.sale-update-banner {\n  background-color: #ECC5C5;\n  padding: 10px 16px;\n  margin: 12px 0;\n  border-radius: 2px;\n  font-size: 14px;\n  line-height: 1.4;\n  color: #B61B1B;\n}\n\n.sale-update-banner strong {\n  font-weight: 600;\n}\n</style>\n\n<div class=\"sale-update-banner\">\n  <strong>SALE UPDATE:</strong> Due to high order volume, our stock is very limited... \n  If you are still able to press the 'Add to Cart' button, there's still some stock left!\n</div>"
+          }
+        },
         "selluxe_discount_banner_PUFjhG": {
           "type": "selluxe_discount_banner",
+          "disabled": true,
           "settings": {
             "margin_top": 20,
             "margin_bottom": 20,
-            "title": "RÄUMUNGSVERKAUF",
+            "title": "",
             "title_font_size": 22,
             "title_font_weight": "700",
-            "line_1": "Kaufe 2 Artikel und erhalte 20% RABATT",
+            "line_1": "",
             "line_1_font_size": 16,
             "line_1_font_weight": "500",
-            "line_2": "Kaufe 3 Artikel und erhalte 30% RABATT",
+            "line_2": "",
             "line_2_font_size": 16,
             "line_2_font_weight": "500",
-            "line_3": "Kaufe 4 Artikel und erhalte 40% RABATT",
+            "line_3": "",
             "line_3_font_size": 16,
             "line_3_font_weight": "500",
-            "bg_color": "#fdf8f3",
-            "border_radius": 18,
+            "bg_color": "#ecc5c5",
+            "border_radius": 0,
             "enable_shadow": true
           }
         },
@@ -344,6 +354,7 @@
         "custom_liquid_ddzrwj",
         "secure_payment_HgEAF7",
         "text_icons_2",
+        "custom_liquid_maJjB4",
         "selluxe_discount_banner_PUFjhG",
         "usp_bg_3jnnYE",
         "text_icons_3",
