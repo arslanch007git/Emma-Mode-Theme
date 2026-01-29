@@ -1,6 +1,891 @@
+{% doc %}
+  @prompt
+    Create a full-width testimonial slider section with a clean luxury aesthetic.
+    
+    Header
+    
+    Centered headline at top:
+    
+    Trusted By 10,000+ Happy Customers 💗
+    
+    Medium-large font
+    
+    Center aligned
+    
+    Use theme font
+    
+    Slight spacing below headline
+    
+    Testimonial Slider
+    
+    Below the headline, add a horizontally scrolling testimonial carousel with three visible cards on desktop:
+    
+    Center card is the active testimonial (larger + elevated)
+    
+    Left and right cards partially visible and slightly faded
+    
+    Smooth sliding animation when changing testimonials
+    
+    Swipe enabled on mobile
+    
+    Each testimonial card contains:
+    
+    5-star rating at the top (solid stars)
+    
+    Body review text centered
+    
+    Circular customer avatar below review
+    
+    Customer name in bold
+    
+    City underneath in lighter text
+    
+    Card Styling
+    
+    White cards
+    
+    Soft shadow on active (center) card
+    
+    Rounded corners (~10–14px)
+    
+    Center card slightly larger scale than side cards
+    
+    Side cards reduced opacity (~70%)
+    
+    Equal padding inside cards
+    
+    Max card width ~360–400px
+    
+    Pagination Dots (Important)
+    
+    At the bottom of the slider:
+    
+    Show pagination dots (centered)
+    
+    One dot per testimonial
+    
+    Active dot filled black
+    
+    Inactive dots light gray
+    
+    Clickable dots to navigate testimonials
+    
+    Smooth transition when clicking dots
+    
+    Dots must be visible on both desktop and mobile.
+    
+    Content Fields (Editable)
+    
+    Each testimonial must have:
+    
+    Star rating (default 5)
+    
+    Review text
+    
+    Avatar image picker
+    
+    Customer name
+    
+    Customer location
+    
+    Allow adding/removing testimonials.
+    
+    Responsive Behavior
+    
+    Desktop:
+    
+    Show 3 cards
+    
+    Center card emphasized
+    
+    Mobile:
+    
+    Show 1 card
+    
+    Full width
+    
+    Swipe gestures enabled
+    
+    Dots remain visible underneath
+    
+    Section Settings
+    
+    Include:
+    
+    Editable headline
+    
+    Testimonial blocks (repeatable)
+    
+    Avatar upload per testimonial
+    
+    Star rating per testimonial
+    
+    Pagination dots toggle (default ON)
+    
+    Styling
+    
+    White background
+    
+    Minimal luxury look
+    
+    Centered content
+    
+    Max width ~1200px
+    
+    Plenty of vertical spacing
+    
+    Name the section:
+    
+    Testimonial Carousel with Dots
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-testimonial-carousel-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    display: block;
+  }
+
+  .ai-testimonial-carousel__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-testimonial-carousel__heading-{{ ai_gen_id }} {
+    text-align: center;
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0 0 50px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-testimonial-carousel__slider-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+
+  .ai-testimonial-carousel__slider-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .ai-testimonial-carousel__slide-{{ ai_gen_id }} {
+    flex: 0 0 calc(33.333% - 20px);
+    min-width: calc(33.333% - 20px);
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+  }
+
+  .ai-testimonial-carousel__slide-{{ ai_gen_id }}.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .ai-testimonial-carousel__card-{{ ai_gen_id }} {
+    background: #ffffff;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ai-testimonial-carousel__slide-{{ ai_gen_id }}.active .ai-testimonial-carousel__card-{{ ai_gen_id }} {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-testimonial-carousel__stars-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+
+  .ai-testimonial-carousel__star-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-testimonial-carousel__review-{{ ai_gen_id }} {
+    font-size: {{ block.settings.review_text_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.review_text_color }};
+    margin-bottom: 25px;
+    flex-grow: 1;
+  }
+
+  .ai-testimonial-carousel__customer-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-testimonial-carousel__avatar-{{ ai_gen_id }} {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+  .ai-testimonial-carousel__avatar-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-testimonial-carousel__avatar-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e1;
+  }
+
+  .ai-testimonial-carousel__avatar-placeholder-{{ ai_gen_id }} svg {
+    width: 30px;
+    height: 30px;
+    fill: #aaaaaa;
+  }
+
+  .ai-testimonial-carousel__name-{{ ai_gen_id }} {
+    font-weight: 600;
+    font-size: 16px;
+    color: {{ block.settings.customer_name_color }};
+    margin: 0;
+  }
+
+  .ai-testimonial-carousel__location-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.customer_location_color }};
+    opacity: 0.7;
+  }
+
+  .ai-testimonial-carousel__pagination-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .ai-testimonial-carousel__dot-{{ ai_gen_id }} {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_inactive_color }};
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-testimonial-carousel__dot-{{ ai_gen_id }}:hover {
+    transform: scale(1.2);
+  }
+
+  .ai-testimonial-carousel__dot-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.dot_active_color }};
+    width: 12px;
+    height: 12px;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-testimonial-carousel__slide-{{ ai_gen_id }} {
+      flex: 0 0 100%;
+      min-width: 100%;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .ai-testimonial-carousel__card-{{ ai_gen_id }} {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .ai-testimonial-carousel__heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.8);
+      margin-bottom: 30px;
+    }
+
+    .ai-testimonial-carousel__slider-{{ ai_gen_id }} {
+      gap: 0;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-testimonial-carousel-{{ ai_gen_id }} {
+      padding: 40px 15px;
+    }
+
+    .ai-testimonial-carousel__card-{{ ai_gen_id }} {
+      padding: 30px 20px;
+    }
+  }
+{% endstyle %}
+
+<testimonial-carousel-{{ ai_gen_id }}
+  class="ai-testimonial-carousel-{{ ai_gen_id }}"
+  data-testimonials='[
+    {% for i in (1..5) %}
+      {% liquid
+        assign rating_key = 'testimonial_' | append: i | append: '_rating'
+        assign review_key = 'testimonial_' | append: i | append: '_review'
+        assign avatar_key = 'testimonial_' | append: i | append: '_avatar'
+        assign name_key = 'testimonial_' | append: i | append: '_name'
+        assign location_key = 'testimonial_' | append: i | append: '_location'
+        
+        assign rating = block.settings[rating_key]
+        assign review = block.settings[review_key]
+        assign avatar = block.settings[avatar_key]
+        assign name = block.settings[name_key]
+        assign location = block.settings[location_key]
+      %}
+      {% if review != blank %}
+        {
+          "rating": {{ rating }},
+          "review": {{ review | json }},
+          "avatar": {% if avatar %}{{ avatar | image_url: width: 120 | json }}{% else %}null{% endif %},
+          "name": {{ name | json }},
+          "location": {{ location | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endif %}
+    {% endfor %}
+  ]'
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-testimonial-carousel__container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-testimonial-carousel__heading-{{ ai_gen_id }}">
+        {{ block.settings.heading }}
+      </h2>
+    {% endif %}
+
+    <div class="ai-testimonial-carousel__slider-wrapper-{{ ai_gen_id }}">
+      <div class="ai-testimonial-carousel__slider-{{ ai_gen_id }}" data-slider>
+        {% for i in (1..5) %}
+          {% liquid
+            assign rating_key = 'testimonial_' | append: i | append: '_rating'
+            assign review_key = 'testimonial_' | append: i | append: '_review'
+            assign avatar_key = 'testimonial_' | append: i | append: '_avatar'
+            assign name_key = 'testimonial_' | append: i | append: '_name'
+            assign location_key = 'testimonial_' | append: i | append: '_location'
+            
+            assign rating = block.settings[rating_key]
+            assign review = block.settings[review_key]
+            assign avatar = block.settings[avatar_key]
+            assign name = block.settings[name_key]
+            assign location = block.settings[location_key]
+          %}
+          {% if review != blank %}
+            <div class="ai-testimonial-carousel__slide-{{ ai_gen_id }}" data-slide>
+              <div class="ai-testimonial-carousel__card-{{ ai_gen_id }}">
+                <div>
+                  <div class="ai-testimonial-carousel__stars-{{ ai_gen_id }}">
+                    {% for j in (1..rating) %}
+                      <svg class="ai-testimonial-carousel__star-{{ ai_gen_id }}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    {% endfor %}
+                  </div>
+
+                  <div class="ai-testimonial-carousel__review-{{ ai_gen_id }}">
+                    {{ review }}
+                  </div>
+                </div>
+
+                <div class="ai-testimonial-carousel__customer-{{ ai_gen_id }}">
+                  <div class="ai-testimonial-carousel__avatar-{{ ai_gen_id }}">
+                    {% if avatar %}
+                      <img
+                        src="{{ avatar | image_url: width: 120 }}"
+                        alt="{{ name | escape }}"
+                        width="60"
+                        height="60"
+                        loading="lazy"
+                      >
+                    {% else %}
+                      <div class="ai-testimonial-carousel__avatar-placeholder-{{ ai_gen_id }}">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                      </div>
+                    {% endif %}
+                  </div>
+                  <div>
+                    <p class="ai-testimonial-carousel__name-{{ ai_gen_id }}">
+                      {{ name }}
+                    </p>
+                    <p class="ai-testimonial-carousel__location-{{ ai_gen_id }}">
+                      {{ location }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    {% if block.settings.show_pagination_dots %}
+      <div class="ai-testimonial-carousel__pagination-{{ ai_gen_id }}" data-pagination></div>
+    {% endif %}
+  </div>
+</testimonial-carousel-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TestimonialCarousel{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.autoplayInterval = null;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+      }
+
+      connectedCallback() {
+        this.slider = this.querySelector('[data-slider]');
+        this.slides = this.querySelectorAll('[data-slide]');
+        this.paginationContainer = this.querySelector('[data-pagination]');
+        
+        if (this.slides.length === 0) return;
+
+        this.createPagination();
+        this.updateSlider();
+        this.setupEventListeners();
+        this.startAutoplay();
+      }
+
+      createPagination() {
+        if (!this.paginationContainer) return;
+
+        this.paginationContainer.innerHTML = '';
+        this.slides.forEach((slide, index) => {
+          const dot = document.createElement('button');
+          dot.className = 'ai-testimonial-carousel__dot-{{ ai_gen_id }}';
+          dot.setAttribute('aria-label', 'Go to testimonial ' + (index + 1));
+          if (index === 0) dot.classList.add('active');
+          
+          dot.addEventListener('click', () => {
+            this.goToSlide(index);
+            this.resetAutoplay();
+          });
+          
+          this.paginationContainer.appendChild(dot);
+        });
+      }
+
+      setupEventListeners() {
+        this.slider.addEventListener('touchstart', (e) => {
+          this.touchStartX = e.changedTouches[0].screenX;
+        });
+
+        this.slider.addEventListener('touchend', (e) => {
+          this.touchEndX = e.changedTouches[0].screenX;
+          this.handleSwipe();
+        });
+
+        this.addEventListener('mouseenter', () => {
+          this.stopAutoplay();
+        });
+
+        this.addEventListener('mouseleave', () => {
+          this.startAutoplay();
+        });
+      }
+
+      handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = this.touchStartX - this.touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            this.nextSlide();
+          } else {
+            this.prevSlide();
+          }
+          this.resetAutoplay();
+        }
+      }
+
+      goToSlide(index) {
+        this.currentIndex = index;
+        this.updateSlider();
+      }
+
+      nextSlide() {
+        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+        this.updateSlider();
+      }
+
+      prevSlide() {
+        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+        this.updateSlider();
+      }
+
+      updateSlider() {
+        const isMobile = window.innerWidth <= 989;
+        
+        this.slides.forEach((slide, index) => {
+          slide.classList.remove('active');
+        });
+
+        if (isMobile) {
+          const offset = -this.currentIndex * 100;
+          this.slider.style.transform = 'translateX(' + offset + '%)';
+          this.slides[this.currentIndex].classList.add('active');
+        } else {
+          let centerIndex = this.currentIndex;
+          const offset = -(centerIndex * (100 / 3)) + (100 / 3);
+          this.slider.style.transform = 'translateX(' + offset + '%)';
+          this.slides[centerIndex].classList.add('active');
+        }
+
+        if (this.paginationContainer) {
+          const dots = this.paginationContainer.querySelectorAll('.ai-testimonial-carousel__dot-{{ ai_gen_id }}');
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === this.currentIndex);
+          });
+        }
+      }
+
+      startAutoplay() {
+        this.autoplayInterval = setInterval(() => {
+          this.nextSlide();
+        }, 5000);
+      }
+
+      stopAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+
+      resetAutoplay() {
+        this.stopAutoplay();
+        this.startAutoplay();
+      }
+
+      disconnectedCallback() {
+        this.stopAutoplay();
+      }
+    }
+
+    customElements.define('testimonial-carousel-{{ ai_gen_id }}', TestimonialCarousel{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Testimonial carousel",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Trusted By 10,000+ Happy Customers 💗"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "assistant_n4"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Review content"
+    },
+    {
+      "type": "range",
+      "id": "review_text_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Review text size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "review_text_color",
+      "label": "Review text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star color",
+      "default": "#FFD700"
+    },
+    {
+      "type": "header",
+      "content": "Customer info"
+    },
+    {
+      "type": "color",
+      "id": "customer_name_color",
+      "label": "Name color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "customer_location_color",
+      "label": "Location color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Pagination dots"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination_dots",
+      "label": "Show pagination dots",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "dot_active_color",
+      "label": "Active dot color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "dot_inactive_color",
+      "label": "Inactive dot color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 1"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_1_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_1_review",
+      "label": "Review text",
+      "default": "Absolutely love this product! The quality is outstanding and it exceeded all my expectations."
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_1_avatar",
+      "label": "Customer avatar"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_name",
+      "label": "Customer name",
+      "default": "Sarah Johnson"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_1_location",
+      "label": "Customer location",
+      "default": "New York, NY"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 2"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_2_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_2_review",
+      "label": "Review text",
+      "default": "Best purchase I've made this year. The attention to detail is incredible and customer service was amazing."
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_2_avatar",
+      "label": "Customer avatar"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_name",
+      "label": "Customer name",
+      "default": "Michael Chen"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_2_location",
+      "label": "Customer location",
+      "default": "Los Angeles, CA"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 3"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_3_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_3_review",
+      "label": "Review text",
+      "default": "I've recommended this to all my friends. The craftsmanship is beautiful and it's worth every penny."
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_3_avatar",
+      "label": "Customer avatar"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_name",
+      "label": "Customer name",
+      "default": "Emma Williams"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_3_location",
+      "label": "Customer location",
+      "default": "Chicago, IL"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 4"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_4_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_4_review",
+      "label": "Review text",
+      "default": "Exceptional quality and fast shipping. This has become my go-to brand for luxury items."
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_4_avatar",
+      "label": "Customer avatar"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_4_name",
+      "label": "Customer name",
+      "default": "David Martinez"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_4_location",
+      "label": "Customer location",
+      "default": "Miami, FL"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial 5"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_5_rating",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Star rating",
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_5_review",
+      "label": "Review text"
+    },
+    {
+      "type": "image_picker",
+      "id": "testimonial_5_avatar",
+      "label": "Customer avatar"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_5_name",
+      "label": "Customer name"
+    },
+    {
+      "type": "text",
+      "id": "testimonial_5_location",
+      "label": "Customer location"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial carousel"
+    }
+  ]
+}
 {% endschema %}
