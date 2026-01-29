@@ -1,6 +1,453 @@
+{% doc %}
+  @prompt
+    Create a full-width hero section with a split layout:
+    
+    Left side (text content, vertically centered):
+    
+    Large serif headline:
+    CLOSING THIS {{ weekday }}!
+    
+    Below headline: dynamic date in MM/DD/YYYY format (US style)
+    
+    Date must automatically update every day using America/New_York timezone.
+    
+    Under date: small uppercase subheading:
+    EVERYTHING IS FREE FINAL CHANCE
+    
+    Below this, a centered paragraph block (max width ~420px):
+    
+    After an amazing journey, it’s time to close this chapter. Instead of letting our remaining inventory go to waste, I want to give it back to the people who kept this small business alive. Everything is now free until {{ today + 1 day }} at midnight (New York time).
+    
+    I’ll be fulfilling orders until then as a small thank-you for all the years of support.
+    
+    Dynamic requirements:
+    
+    Headline weekday must be calculated live using New York timezone.
+    
+    Date must always reflect the current date in America/New_York.
+    
+    Closing midnight should always mean end of current day NY time.
+    
+    Use Liquid:
+    
+    {{ 'now' | date: '%A' }}
+    
+    {{ 'now' | date: '%m/%d/%Y' }}
+    
+    with timezone forced to America/New_York.
+    
+    Right side:
+    
+    Large image block (image picker)
+    
+    Image fills right 50% of screen
+    
+    Maintain aspect ratio
+    
+    No overlay text
+    
+    Desktop: split 50/50
+    
+    Mobile: image stacked below text
+    
+    Styling:
+    
+    White background
+    
+    Luxury serif font for headline (fallback to theme font)
+    
+    Headline large (~48–56px desktop)
+    
+    Date slightly smaller under headline
+    
+    Subheading small uppercase with letter spacing
+    
+    Body text light weight, centered
+    
+    Plenty of white space
+    
+    Content centered vertically on left
+    
+    Max content width left ~520px
+    
+    Padding top/bottom ~60px
+    
+    Section must include:
+    
+    Image picker
+    
+    Editable paragraph text
+    
+    Editable subheading
+    
+    Automatic weekday + date logic
+    
+    Responsive behavior
+    
+    Name section:
+    
+    Dynamic Closing Hero
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-closing-hero-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_top_bottom }}px 0;
+  }
+
+  .ai-closing-hero-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ai-closing-hero-left-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .ai-closing-hero-content-{{ ai_gen_id }} {
+    max-width: {{ block.settings.content_max_width }}px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ai-closing-hero-headline-{{ ai_gen_id }} {
+    font-family: {{ block.settings.headline_font.family }}, {{ block.settings.headline_font.fallback_families }};
+    font-weight: {{ block.settings.headline_font.weight }};
+    font-style: {{ block.settings.headline_font.style }};
+    font-size: {{ block.settings.headline_size }}px;
+    line-height: 1.1;
+    margin: 0 0 16px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-closing-hero-date-{{ ai_gen_id }} {
+    font-size: {{ block.settings.date_size }}px;
+    margin: 0 0 24px;
+    color: {{ block.settings.text_color }};
+    font-weight: 400;
+  }
+
+  .ai-closing-hero-subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    text-transform: uppercase;
+    letter-spacing: {{ block.settings.subheading_letter_spacing }}px;
+    margin: 0 0 32px;
+    color: {{ block.settings.text_color }};
+    font-weight: 600;
+  }
+
+  .ai-closing-hero-paragraph-{{ ai_gen_id }} {
+    max-width: {{ block.settings.paragraph_max_width }}px;
+    margin: 0 auto;
+    font-size: {{ block.settings.paragraph_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.text_color }};
+    font-weight: 300;
+  }
+
+  .ai-closing-hero-right-{{ ai_gen_id }} {
+    flex: 1;
+    position: relative;
+    min-height: 500px;
+  }
+
+  .ai-closing-hero-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-closing-hero-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-closing-hero-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-closing-hero-container-{{ ai_gen_id }} {
+      flex-direction: column-reverse;
+    }
+
+    .ai-closing-hero-left-{{ ai_gen_id }} {
+      padding: 30px 20px;
+    }
+
+    .ai-closing-hero-headline-{{ ai_gen_id }} {
+      font-size: {{ block.settings.headline_size | times: 0.65 }}px;
+    }
+
+    .ai-closing-hero-date-{{ ai_gen_id }} {
+      font-size: {{ block.settings.date_size | times: 0.75 }}px;
+    }
+
+    .ai-closing-hero-subheading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subheading_size | times: 0.85 }}px;
+    }
+
+    .ai-closing-hero-paragraph-{{ ai_gen_id }} {
+      font-size: {{ block.settings.paragraph_size | times: 0.9 }}px;
+    }
+
+    .ai-closing-hero-right-{{ ai_gen_id }} {
+      min-height: 300px;
+    }
+  }
+{% endstyle %}
+
+<dynamic-closing-hero-{{ ai_gen_id }}
+  class="ai-closing-hero-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-closing-hero-container-{{ ai_gen_id }}">
+    <div class="ai-closing-hero-left-{{ ai_gen_id }}">
+      <div class="ai-closing-hero-content-{{ ai_gen_id }}">
+        <h1 class="ai-closing-hero-headline-{{ ai_gen_id }}">
+          CLOSING THIS <span data-weekday-{{ ai_gen_id }}></span>!
+        </h1>
+
+        <div class="ai-closing-hero-date-{{ ai_gen_id }}" data-date-{{ ai_gen_id }}></div>
+
+        <div class="ai-closing-hero-subheading-{{ ai_gen_id }}">
+          {{ block.settings.subheading }}
+        </div>
+
+        <div class="ai-closing-hero-paragraph-{{ ai_gen_id }}">
+          {{ block.settings.paragraph }}
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-closing-hero-right-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 2000 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-closing-hero-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-closing-hero-image-placeholder-{{ ai_gen_id }}">
+          {{ 'lifestyle-1' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</dynamic-closing-hero-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class DynamicClosingHero{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.weekdayElement = this.querySelector('[data-weekday-{{ ai_gen_id }}]');
+        this.dateElement = this.querySelector('[data-date-{{ ai_gen_id }}]');
+      }
+
+      connectedCallback() {
+        this.updateDateTime();
+        this.intervalId = setInterval(() => this.updateDateTime(), 60000);
+      }
+
+      disconnectedCallback() {
+        if (this.intervalId) {
+          clearInterval(this.intervalId);
+        }
+      }
+
+      updateDateTime() {
+        const nyTime = new Date().toLocaleString('en-US', {
+          timeZone: 'America/New_York'
+        });
+        const nyDate = new Date(nyTime);
+
+        const weekday = nyDate.toLocaleDateString('en-US', {
+          weekday: 'long',
+          timeZone: 'America/New_York'
+        }).toUpperCase();
+
+        const month = String(nyDate.getMonth() + 1).padStart(2, '0');
+        const day = String(nyDate.getDate()).padStart(2, '0');
+        const year = nyDate.getFullYear();
+        const formattedDate = month + '/' + day + '/' + year;
+
+        if (this.weekdayElement) {
+          this.weekdayElement.textContent = weekday;
+        }
+
+        if (this.dateElement) {
+          this.dateElement.textContent = formattedDate;
+        }
+      }
+    }
+
+    customElements.define('dynamic-closing-hero-{{ ai_gen_id }}', DynamicClosingHero{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Dynamic closing hero",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Text content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "EVERYTHING IS FREE FINAL CHANCE"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraph",
+      "default": "<p>After an amazing journey, it's time to close this chapter. Instead of letting our remaining inventory go to waste, I want to give it back to the people who kept this small business alive. Everything is now free until tomorrow at midnight (New York time).</p><p>I'll be fulfilling orders until then as a small thank-you for all the years of support.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "font_picker",
+      "id": "headline_font",
+      "label": "Headline font",
+      "default": "serif"
+    },
+    {
+      "type": "range",
+      "id": "headline_size",
+      "min": 32,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Headline size",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "date_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Date size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "subheading_letter_spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "label": "Subheading letter spacing",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "paragraph_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Paragraph size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "min": 400,
+      "max": 700,
+      "step": 20,
+      "unit": "px",
+      "label": "Content max width",
+      "default": 520
+    },
+    {
+      "type": "range",
+      "id": "paragraph_max_width",
+      "min": 300,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "label": "Paragraph max width",
+      "default": 420
+    },
+    {
+      "type": "range",
+      "id": "padding_top_bottom",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Padding top and bottom",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic closing hero"
+    }
+  ]
+}
 {% endschema %}
