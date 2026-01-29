@@ -1478,21 +1478,24 @@
         "bullet_xV7i7x": {
           "type": "bullet",
           "settings": {
-            "bullet_text": "Gratis verzending met PostNL & Bpost",
+            "bullet_icon": "shopify://shop_images/delivery-van_1_1_1_2_100x_100x_e6e07ca2-e37b-41f7-b419-611e764a5007.svg",
+            "bullet_text": "<strong>Ships</strong> with UPS",
             "bullet_text_color": "#000000"
           }
         },
         "bullet_dCECm7": {
           "type": "bullet",
           "settings": {
-            "bullet_text": "14 dagen retourgarantie",
+            "bullet_icon": "shopify://shop_images/usa_2_100x_6a1348f8-040f-43d0-8f82-e5429c771e89.avif",
+            "bullet_text": "Proud American brand since 1996",
             "bullet_text_color": "#000000"
           }
         },
         "bullet_JwjfNE": {
           "type": "bullet",
           "settings": {
-            "bullet_text": "Betaal veilig met iDeal & Bancontact",
+            "bullet_icon": "shopify://shop_images/delivery-status_1_1_2_100x_100x_96311894-9d7d-49d7-87b4-4679c08958ec.svg",
+            "bullet_text": "30-Day Money-Back Guarantee",
             "bullet_text_color": "#000000"
           }
         }
