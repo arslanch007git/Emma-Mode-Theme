@@ -1391,7 +1391,7 @@
         "flag_show": true,
         "flag_custom_image": false,
         "flag_image": "shopify://shop_images/flag-3d-250.png",
-        "flag_size_desktop": 33,
+        "flag_size_desktop": 42,
         "flag_radius": 0,
         "space_between_right": 6,
         "flag_size_mob": 18,
