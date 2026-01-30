@@ -231,7 +231,7 @@
           "type": "collection",
           "settings": {
             "show_view_all": true,
-            "collection": "moonstone",
+            "collection": "matching-sets",
             "collection_name": "Collection"
           }
         }
@@ -445,7 +445,7 @@
             "card_border_radius": 12,
             "review_text_size": 16,
             "review_text_color": "#333333",
-            "star_color": "#FFD700",
+            "star_color": "#ffd700",
             "customer_name_color": "#000000",
             "customer_location_color": "#666666",
             "show_pagination_dots": true,
