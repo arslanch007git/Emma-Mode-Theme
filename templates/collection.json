@@ -48,6 +48,7 @@
       "block_order": [
         "slide_WHYqML"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "image_aspect": "original",
@@ -86,6 +87,7 @@
         "heading_bbFLhx",
         "text_cgVhQh"
       ],
+      "disabled": true,
       "name": "t:sections.rich_text.presets.name",
       "settings": {
         "alignment": "center_left",
@@ -171,6 +173,91 @@
         "section_padding": "section--vertical-padding-none"
       }
     },
+    "blocks_nEcEtq": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8d2c5c2_68eeJh": {
+          "type": "ai_gen_block_8d2c5c2",
+          "settings": {
+            "heading": "Trusted By 10,000+ Happy Customers 💗",
+            "heading_font": "assistant_n4",
+            "heading_size": 32,
+            "heading_color": "#000000",
+            "card_border_radius": 12,
+            "review_text_size": 16,
+            "review_text_color": "#333333",
+            "star_color": "#ffd700",
+            "customer_name_color": "#000000",
+            "customer_location_color": "#666666",
+            "show_pagination_dots": true,
+            "dot_active_color": "#000000",
+            "dot_inactive_color": "#cccccc",
+            "testimonial_1_rating": 5,
+            "testimonial_1_review": "Absolutely love this product! The quality is outstanding and it exceeded all my expectations.",
+            "testimonial_1_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_132756.png",
+            "testimonial_1_name": "Sarah Johnson",
+            "testimonial_1_location": "New York, NY",
+            "testimonial_2_rating": 5,
+            "testimonial_2_review": "Best purchase I've made this year. The attention to detail is incredible and customer service was amazing.",
+            "testimonial_2_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_132900.png",
+            "testimonial_2_name": "Michael Chen",
+            "testimonial_2_location": "Los Angeles, CA",
+            "testimonial_3_rating": 5,
+            "testimonial_3_review": "I've recommended this to all my friends. The craftsmanship is beautiful and it's worth every penny.",
+            "testimonial_3_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_133103.png",
+            "testimonial_3_name": "Emma Williams",
+            "testimonial_3_location": "Chicago, IL",
+            "testimonial_4_rating": 5,
+            "testimonial_4_review": "Exceptional quality and fast shipping. This has become my go-to brand for luxury items.",
+            "testimonial_4_avatar": "shopify://shop_images/Schermafbeelding_2026-01-29_133231.png",
+            "testimonial_4_name": "David Martinez",
+            "testimonial_4_location": "Miami, FL",
+            "testimonial_5_rating": 5,
+            "testimonial_5_review": "",
+            "testimonial_5_name": "",
+            "testimonial_5_location": ""
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_c7bb3a6_hqcynV": {
+          "type": "ai_gen_block_c7bb3a6",
+          "name": "3 USP Icons Row (GIF)",
+          "settings": {
+            "icon_1": "shopify://shop_images/truck_gif_78e7cb21-04b7-4534-853d-e612680eee57_1_1_webp.webp",
+            "heading_1": "Premium shipping",
+            "text_1": "We offer premium shipping to ensure your order arrives fast and with care.",
+            "icon_2": "shopify://shop_images/Doc_gif_f73b8409-acde-4808-be00-6936d44896fc_1_1_webp.webp",
+            "heading_2": "30-Day Money-Back Guarantee",
+            "text_2": "Not completely satisfied? No problem! You can return your order at any time.",
+            "icon_3": "shopify://shop_images/checkmark_gif_8b703e19-13e3-49ff-ba0d-c7284996bff2_1_1_webp.webp",
+            "heading_3": "100% SECURE PAYMENT",
+            "text_3": "We offer secure payment methods to best protect our customers' data.",
+            "max_width": 1200,
+            "column_gap": 60,
+            "mobile_row_gap": 40,
+            "section_padding_top": 30,
+            "section_padding_bottom": 30,
+            "icon_size": 55,
+            "icon_spacing": 14,
+            "heading_size": 14,
+            "heading_weight": "700",
+            "heading_letter_spacing": 1,
+            "heading_color": "#000000",
+            "text_spacing": 8,
+            "text_size": 13,
+            "text_weight": "400",
+            "text_color": "#000000",
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8d2c5c2_68eeJh",
+        "ai_gen_block_c7bb3a6_hqcynV"
+      ],
+      "settings": {}
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -207,6 +294,7 @@
       "block_order": [
         "collection_hyzzab"
       ],
+      "disabled": true,
       "name": "t:sections.featured_collection_grid.presets.name",
       "settings": {
         "heading": "Meine persönlichen Favoriten",
@@ -221,62 +309,6 @@
         "divider_style": "none",
         "section_padding": "section--vertical-padding-top-bottom"
       }
-    },
-    "rich_text_CmDQf8": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_khdGFi": {
-          "type": "heading",
-          "settings": {
-            "title": "Alles handgefertigt",
-            "heading_tag": "h2",
-            "heading_font_class": "fs-heading-2-base"
-          }
-        },
-        "text_atFjyR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Werfen Sie einen Blick hinter die Kulissen</p><p></p>",
-            "text_font_class": "fs-body-100"
-          }
-        }
-      },
-      "block_order": [
-        "heading_khdGFi",
-        "text_atFjyR"
-      ],
-      "name": "t:sections.rich_text.presets.name",
-      "settings": {
-        "alignment": "center_center",
-        "enable_animation": true,
-        "divider_style": "none",
-        "section_padding": "section--vertical-padding-top-bottom",
-        "content_width": "custom",
-        "custom_content_width": 700
-      }
-    },
-    "video_hero_Kb8DPG": {
-      "type": "video-hero",
-      "name": "t:sections.video_hero.presets.name",
-      "settings": {
-        "image_aspect": "custom",
-        "desktop_height": 50,
-        "mobile_height": 50,
-        "video": "shopify://files/videos/Ring making video_177d7a1d-abb3-4ae2-ac8b-6f5cb466148e.mp4",
-        "media_link": "",
-        "focal_point": "image_presentation",
-        "focal_point_mobile": "image_presentation",
-        "text_position": "center_center",
-        "text_position_mobile": "center_center",
-        "text_color": "#FFFFFF",
-        "button_background_color": "#FFFFFF",
-        "button_text_color": "#000000",
-        "color_overlay": "#000",
-        "color_overlay_gradient": "",
-        "overlay_opacity": 0,
-        "enable_animation": true,
-        "section_padding": "section--vertical-padding-none"
-      }
     }
   },
   "order": [
@@ -286,7 +318,6 @@
     "banner",
     "product-grid",
     "featured_collection_grid_EMG4bU",
-    "rich_text_CmDQf8",
-    "video_hero_Kb8DPG"
+    "blocks_nEcEtq"
   ]
 }
